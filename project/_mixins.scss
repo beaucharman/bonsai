@@ -1,0 +1,24 @@
+/*
+
+  SASS Mixins
+
+------------------------------------------------	
+  Version:     1.0
+  Description: 
+------------------------------------------------ */
+
+/* Clearfix
+------------------------------------------------
+Thank you http://nicolasgallagher.com/micro-clearfix-hack/
+------------------------------------------------ */
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " "; 
+    display: table; 
+  }
+  &:after {
+    clear: both;
+  }
+}
