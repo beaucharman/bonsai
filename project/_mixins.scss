@@ -22,3 +22,31 @@ Thank you http://nicolasgallagher.com/micro-clearfix-hack/
     clear: both;
   }
 }
+
+/* Breakpoints
+------------------------------------------------
+Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+------------------------------------------------ */
+@mixin breakpoint($point) {
+
+  @if $point == small {
+  
+    /* Min Width 480px - small screen and tablets
+    ------------------------------------------------ */
+    @media screen and (min-width: 480px) { @content; }
+  }
+
+  @else if $point == medium {
+   
+    /* Min Width 720px - medium tablets, screens and iPads
+    ------------------------------------------------ */
+    @media screen and (min-width: 720px) { @content; }
+  }
+  
+  @else if $point == large {
+    
+    /* Min width 1140px - larger desktop screens
+    ------------------------------------------------ */
+    @media screen and (min-width: 1140px) { @content; }
+  }
+}
