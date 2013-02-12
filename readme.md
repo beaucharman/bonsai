@@ -66,7 +66,7 @@ Type and font styles, and related element styles. Can also include font declarat
 
 WordPress related styles, and shortcode styles.	Default WordPress editor styles selectors are	found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 
-## WordPress theme development
+## WordPress Theme Development
 If using this with a WordPress theme, replace the `main.scss` header comments with the following (making your project specific changes):
 ```css
 /*	
