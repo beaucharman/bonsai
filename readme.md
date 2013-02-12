@@ -65,3 +65,21 @@ Type and font styles, and related element styles. Can also include font declarat
 `project/_wordpress.scss`
 
 WordPress related styles, and shortcode styles.	Default WordPress editor styles selectors are	found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
+
+## WordPress theme development
+If using this with a WordPress theme, replace the main.scss header comments with the following (making your project specific changes):
+```css
+/*	
+  Theme Name:        themename
+  Theme URI:         http://
+  Description:       
+  Author:            @authorname
+  Author URI:        http://
+  License:
+  License URI:
+  Version:           1.0
+  Version Date:      001/02/2013
+  Style Guide Notes: 
+  General Notes:
+------------------------------------------------ */
+```
