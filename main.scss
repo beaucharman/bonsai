@@ -1,13 +1,15 @@
-/*	
+/*
 
   SASS Directory
 
 ------------------------------------------------
-  main.scss 1.0 
+  main.scss 1.0
   Monday, 11th February 2013
   Beau Charman | @beaucharman | http://beaucharman.me
   Version: 1.0
   Notes:
+
+  For useful mixins: http://getpreboot.com/
 ------------------------------------------------ */
 
 /* SASS variables, mixins and functions
@@ -24,11 +26,11 @@
   @import 'project/global';
   @import 'project/layout';
   @import 'project/typography';
-  
+
   /* Project specific styles
   ------------------------------------------------ */
-  @import 'global/project';
-  
+  @import 'project/project';
+
   /* Helpers, forms, components and WordPress related styles
   ------------------------------------------------ */
   @import 'project/components';

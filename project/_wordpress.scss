@@ -90,12 +90,13 @@ blockquote.right {
 
 /* Columns
 ------------------------------------------------ */
-.article-column { margin-right:4%; float:left; }
-.article-column.one-fourth { width:22%; }
-.article-column.one-third { width:30.66%; }
-.article-column.one-half { width:44%; }
-.article-column.two-thirds { width:65.32%; }
-.article-column.last-column { margin-right:0 !important; clear:right; }
+.article-column { margin-right:4%; float:left;
+  &.one-fourth { width:22%; }
+  &.one-third { width:30.66%; }
+  &.one-half { width:44%; }
+  &.two-thirds { width:65.32%; }
+  &.last-column { margin-right:0 !important; clear:right; }
+}
 
 /*
 
