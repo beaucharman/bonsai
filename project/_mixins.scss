@@ -50,3 +50,11 @@ Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
     @media screen and (min-width: 1140px) { @content; }
   }
 }
+
+/* Background RGBA
+------------------------------------------------ */
+@mixin background-rgba($color, $opacity: 0.5)
+{
+    background-color: $color;
+    background-color: rgba($color, $opacity);
+}
