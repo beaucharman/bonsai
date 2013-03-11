@@ -58,3 +58,10 @@ Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
     background-color: $color;
     background-color: rgba($color, $opacity);
 }
+
+/* Border Radius
+------------------------------------------------ */
+@mixin rounded-top($radius: $default_border_radius)
+{
+  border-radius: $radius;
+}
