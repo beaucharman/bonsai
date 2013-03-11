@@ -1,48 +1,48 @@
-/*
+//
+//
+//  Sass Directory
+//
+//------------------------------------------------
+//  main.scss 1.0
+//  Monday, 11th February 2013
+//  Beau Charman | @beaucharman | http://beaucharman.me
+//  Version: 1.0
+//  Notes:
+//
+//  For useful mixins: http://getpreboot.com/
+//------------------------------------------------ */
 
-  SASS Directory
-
-------------------------------------------------
-  main.scss 1.0
-  Monday, 11th February 2013
-  Beau Charman | @beaucharman | http://beaucharman.me
-  Version: 1.0
-  Notes:
-
-  For useful mixins: http://getpreboot.com/
------------------------------------------------- */
-
-/* SASS variables, mixins and functions
------------------------------------------------- */
+//  Sass variables, mixins and functions
+//------------------------------------------------ */
 @import 'project/variables';
 @import 'project/mixins';
 @import 'project/functions';
 
 @media screen {
 
-  /* Base styles
-  ------------------------------------------------ */
+  //  Base styles
+  //------------------------------------------------ */
   @import 'project/tabularasa';
   @import 'project/global';
   @import 'project/layout';
   @import 'project/typography';
 
-  /* Project specific styles
-  ------------------------------------------------ */
+  //  Project specific styles
+  //------------------------------------------------ */
   @import 'project/project';
 
-  /* Helpers, forms, components and WordPress related styles
-  ------------------------------------------------ */
+  //  Helpers, forms, components and WordPress related styles
+  //------------------------------------------------ */
   @import 'project/components';
   @import 'project/controls';
   @import 'project/helpers';
   @import 'project/wordpress';
 }
 
-/* Media Queries
------------------------------------------------- */
+//  Media Queries
+//------------------------------------------------ */
 @import 'project/mediaqueries';
 
-/* Print styles
------------------------------------------------- */
+//  Print styles
+//------------------------------------------------ */
 @import 'project/print';
