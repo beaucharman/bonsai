@@ -1,16 +1,16 @@
-/*
+//
+//
+//  SASS Mixins
+//
+//------------------------------------------------
+//  Version:     1.0
+//  Description:
+//------------------------------------------------
 
-  SASS Mixins
-
-------------------------------------------------
-  Version:     1.0
-  Description:
------------------------------------------------- */
-
-/* Clearfix
-------------------------------------------------
-Thank you http://nicolasgallagher.com/micro-clearfix-hack/
------------------------------------------------- */
+//  Clearfix
+//------------------------------------------------
+//  Thank you http://nicolasgallagher.com/micro-clearfix-hack/
+//------------------------------------------------
 @mixin clearfix {
   *zoom: 1;
   &:before,
@@ -23,44 +23,44 @@ Thank you http://nicolasgallagher.com/micro-clearfix-hack/
   }
 }
 
-/* Breakpoints
-------------------------------------------------
-Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
------------------------------------------------- */
+//  Breakpoints
+//------------------------------------------------
+//  Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+//------------------------------------------------
 @mixin breakpoint($point) {
 
   @if $point == small {
 
-    /* Min Width 480px - small screen and tablets
-    ------------------------------------------------ */
+    //  Min Width 480px - small screen and tablets
+    //------------------------------------------------
     @media screen and (min-width: 480px) { @content; }
   }
 
   @else if $point == medium {
 
-    /* Min Width 720px - medium tablets, screens and iPads
-    ------------------------------------------------ */
+    //  Min Width 720px - medium tablets, screens and iPads
+    //------------------------------------------------
     @media screen and (min-width: 720px) { @content; }
   }
 
   @else if $point == large {
 
-    /* Min width 1140px - larger desktop screens
-    ------------------------------------------------ */
+    //  Min width 1140px - larger desktop screens
+    //------------------------------------------------
     @media screen and (min-width: 1140px) { @content; }
   }
 }
 
-/* Background RGBA
------------------------------------------------- */
+//  Background RGBA
+//------------------------------------------------
 @mixin background-rgba($color, $opacity: 0.5)
 {
     background-color: $color;
     background-color: rgba($color, $opacity);
 }
 
-/* Border Radius
------------------------------------------------- */
+//  Border Radius
+//------------------------------------------------
 @mixin rounded-top($radius: $default_border_radius)
 {
   border-radius: $radius;
