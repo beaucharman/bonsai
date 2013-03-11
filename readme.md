@@ -1,4 +1,4 @@
-# SASS Directory
+# Sass Directory
 
 One main.scss to rules them all, 
 
@@ -16,7 +16,7 @@ Any self contained blocks of code or Javascript plugin related styles, for examp
   
 For forms and their related controls. Can also include base and project specific styles related to buttons and clickable, interactive controls.
 
-### SASS Functions
+### Sass Functions
 `project/_functions.scss`
 
 ### Global styles
@@ -58,7 +58,7 @@ The normalize styles, or other reset stylesheets. Taken from normalize.css, git.
 
 Type and font styles, and related element styles. Can also include font declarations.
 
-### SASS Variables
+### Sass Variables
 `project/_variables.scss`
 
 ### Wordpress styles
