@@ -2,11 +2,11 @@
 
   Helper styles
 
-------------------------------------------------	
+------------------------------------------------
   Version:     1.0
-  Description: 
-  
-  Any modulated styles that help with cross browser 
+  Description:
+
+  Any modulated styles that help with cross browser
   compatibility and user feedback.
   thanks to http://html5boilerplate.com/
 ------------------------------------------------ */
@@ -63,18 +63,18 @@
     visibility: hidden;
 }
 
-/* Clearfix
+/* Clearfix | @extend .clearfix;
+------------------------------------------------
+  Thank you http://nicolasgallagher.com/micro-clearfix-hack/
 ------------------------------------------------ */
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
