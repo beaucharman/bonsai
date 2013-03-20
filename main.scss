@@ -14,36 +14,32 @@
 
 //  Sass variables, mixins and functions
 //------------------------------------------------ */
-@import 'project/variables';
-@import 'project/mixins';
-@import 'project/functions';
+@import 'options/variables';
+@import 'options/mixins';
+@import 'options/functions';
 
-// @import 'project/wp-theme-declaration';
+// @import 'includes/wp-theme-declaration';
 
 @media screen {
 
   //  Base styles
   //------------------------------------------------ */
-  @import 'project/tabularasa';
-  @import 'project/global';
-  @import 'project/layout';
-  @import 'project/typography';
+  @import 'styles/tabularasa';
+  @import 'styles/global';
+  @import 'styles/layout';
+  @import 'styles/typography';
 
   //  Project specific styles
   //------------------------------------------------ */
-  @import 'project/project';
+  @import 'styles/project';
 
   //  Helpers, forms, components and WordPress related styles
   //------------------------------------------------ */
-  @import 'project/components';
-  @import 'project/controls';
-  @import 'project/helpers';
-  @import 'project/wordpress';
+  @import 'styles/components';
+  @import 'styles/controls';
+  @import 'styles/helpers';
+  @import 'styles/wordpress';
 }
-
-//  Media Queries
-//------------------------------------------------ */
-@import 'project/mediaqueries';
 
 //  Print styles
 //------------------------------------------------ */

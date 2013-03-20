@@ -1,85 +1,80 @@
 # Sass Directory
 
-One main.scss to rules them all, 
+## File Structure
 
-One folder so I can damn well find them.
+`main.scss`
 
-## File Structure 
+### Sass Functions
+`options/_functions.scss`
 
-### Component styles 
-`project/_components.scss`
+### Mixins
+`options/_mixins.scss`
+
+### Sass Variables
+`options/_variables.scss`
+
+### Component styles
+`styles/_components.scss`
 
 Any self contained blocks of code or Javascript plugin related styles, for example: galleries and light boxes.
 
 ### Control styles
-`project/_controls.scss`
-  
+`styles/_controls.scss`
+
 For forms and their related controls. Can also include base and project specific styles related to buttons and clickable, interactive controls.
 
-### Sass Functions
-`project/_functions.scss`
-
 ### Global styles
-`project/_global.scss`
+`styles/_global.scss`
 
 Base / global / elements styles, core boilerplate styles. This can include inline and block level elements, and thier basic styles.
 
 ### Helper styles
-`project/_helpers.scss`
+`styles/_helpers.scss`
 
 Any modulated styles that help with cross browser compatibility and user feedback. thanks to http://html5boilerplate.com/
 
 ### Layout styles
-`project/_layout.scss`
+`styles/_layout.scss`
 
 Grid layouts and any global layout styles.
 
-### Media Queries
-`project/_mediaqueries.scss`
-
-### Mixins
-`project/_mixins.scss`
-
 ### Print Styles
-`project/_print.scss`
+`styles/_print.scss`
 
 ### Project styles
-`project/_project.scss`
+`styles/_project.scss`
 
 Project related styles, pages specific and branding styles etc...
 
 ### Tabula Rasa
-`project/_tabularasa.scss`
+`styles/_tabularasa.scss`
 
 The normalize styles, or other reset stylesheets. Taken from normalize.css, git.io/normalize, and http://html5boilerplate.com/, thank you :)
 
 ### Typography styles
-`project/_typography.scss`
+`styles/_typography.scss`
 
 Type and font styles, and related element styles. Can also include font declarations.
 
-### Sass Variables
-`project/_variables.scss`
-
 ### Wordpress styles
-`project/_wordpress.scss`
+`styles/_wordpress.scss`
 
 WordPress related styles, and shortcode styles.	Default WordPress editor styles selectors are	found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 
 ## WordPress Theme Development
-If using this with a WordPress theme, replace the `main.scss` header comments with the following (making your project specific changes):
+If using this with a WordPress theme, uncomment the `@import 'includes/wp-theme-declaration';` line in the `main.scss` file, and then add the appropriate information to that file. The `wp-theme-declaration.scss` file just contains:
 ```css
-/*	
+/*
   Theme Name:        themename
   Theme URI:         http://
-  Description:       
+  Description:
   Author:            @authorname
   Author URI:        http://
   License:
   License URI:
   Version:           1.0
   Version Date:      001/02/2013
-  Style Guide Notes: 
+  Style Guide Notes:
   General Notes:
 ------------------------------------------------ */
 ```
