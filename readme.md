@@ -1,5 +1,9 @@
 # Sass Directory
 
+## Todo (Roadmap)
+
+- Consider testing options (https://github.com/csswizardry/inuit.css)
+
 ## File Structure
 
 `main.scss`
