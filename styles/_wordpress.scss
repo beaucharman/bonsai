@@ -1,18 +1,24 @@
-/*
+//
+// WordPress
+// ------------------------------------------------------------------------
+// _wordpress.scss
+// @version   1.0 | 19th Feb, 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://beaucharman.me
+// @link      https://github.com/beaucharman/Sass-Directory
+// @license   GNU http://www.gnu.org/licenses/lgpl.txt
+//
+// WordPress related styles, and shortcode styles.
+// Default WordPress editor styles selectors are
+// found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
+// ------------------------------------------------------------------------ /
 
-  Wordpress styles
-
-------------------------------------------------
-  Version:     1.0
-  Description:
-
-  WordPress related styles, and shortcode styles.
-	Default WordPress editor styles selectors are
-	found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
------------------------------------------------- */
+/* ------------------------------------------------------------------------
+   WordPress
+   ------------------------------------------------------------------------ */
 
 /* Entry Container styles
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 .entry:before,
 .entry:after {
   content: " ";
@@ -25,7 +31,7 @@
   *zoom: 1; }
 
 /* Alignment styles
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 .alignleft, img.alignleft {
   margin-right: 1.5em;
   display: inline;
@@ -72,7 +78,7 @@ blockquote.right {
 .muted {  }
 
 /* Image and Gallery tyles
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 .hentry img {
   max-width: 100%;
   height: auto; }
@@ -96,15 +102,14 @@ blockquote.right {
   margin: 0 !important;
   max-height: 1em; }
 
-/*
-
-	Shortcode styles
-------------------------------------------------
- Specific to the lt3 theme
------------------------------------------------- */
+/**
+ * Shortcode styles
+ * ------------------------------------------------------------------------
+ * Specific to the lt3 theme
+ */
 
 /* Columns
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 .article-column { margin-right:4%; float:left;
   &.one-fourth { width:22%; }
   &.one-third { width:30.66%; }
@@ -113,11 +118,8 @@ blockquote.right {
   &.last-column { margin-right:0 !important; clear:right; }
 }
 
-/*
-
-	Comment styles
-
------------------------------------------------- */
+/* Comment styles
+   ------------------------------------------------------------------------ */
 #commentform input[type="text"],
 #commentform input[type="url"],
 #commentform input[type="email"] {

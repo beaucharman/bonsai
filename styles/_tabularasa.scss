@@ -1,20 +1,26 @@
-/*
+//
+// Tabula Rasa
+// ------------------------------------------------------------------------
+// _tabularasa.scss
+// @version   1.0 | 19th Feb, 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://beaucharman.me
+// @link      https://github.com/beaucharman/Sass-Directory
+// @license   GNU http://www.gnu.org/licenses/lgpl.txt
+//
+//  The normalize styles, or other reset stylesheets.
+//
+//  Taken from normalize.css
+//  git.io/normalize,
+// and http://html5boilerplate.com/, thank you :)
+// ------------------------------------------------------------------------ /
 
-  Tabula Rasa
-
-------------------------------------------------	
-  Version:     1.0
-  Description: 
-  
-  The normalize styles, or other reset stylesheets.
-
-  Taken from normalize.css 
-  git.io/normalize, 
-  and http://html5boilerplate.com/, thank you :)
------------------------------------------------- */
+/* ------------------------------------------------------------------------
+   Tabula Rasa
+   ------------------------------------------------------------------------ */
 
 /* HTML5 display definitions
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 article,
 aside,
 details,
@@ -47,7 +53,7 @@ audio:not([controls]) {
 }
 
 /* Base
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -67,7 +73,7 @@ body {
 }
 
 /* Links
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 a:focus {
     outline: thin dotted;
 }
@@ -78,7 +84,7 @@ a:hover {
 }
 
 /* Typography
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -182,7 +188,7 @@ sub {
 }
 
 /* Lists
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 dl,
 menu,
 ol,
@@ -207,7 +213,7 @@ nav ol {
 }
 
 /* Embedded content
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 img {
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -218,13 +224,13 @@ svg:not(:root) {
 }
 
 /* Figures
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 figure {
     margin: 0;
 }
 
 /* Forms
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 form {
     margin: 0;
 }
@@ -236,20 +242,20 @@ fieldset {
 }
 
 legend {
-    border: 0; 
+    border: 0;
     padding: 0;
-    white-space: normal; 
-    *margin-left: -7px; 
+    white-space: normal;
+    *margin-left: -7px;
 }
 
 button,
 input,
 select,
 textarea {
-    font-size: 100%; 
-    margin: 0; 
-    vertical-align: baseline; 
-    *vertical-align: middle; 
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
 }
 
 button,
@@ -258,12 +264,12 @@ input {
 }
 
 button,
-html input[type="button"], 
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; 
-    cursor: pointer; 
-    *overflow: visible; 
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
 }
 
 button[disabled],
@@ -273,16 +279,16 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     padding: 0;
-    *height: 13px; 
-    *width: 13px; 
+    *height: 13px;
+    *width: 13px;
 }
 
 input[type="search"] {
-    -webkit-appearance: textfield; 
+    -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -303,7 +309,7 @@ textarea {
 }
 
 /* Tables
------------------------------------------------- */
+   ------------------------------------------------------------------------ */
 table {
     border-collapse: collapse;
     border-spacing: 0;

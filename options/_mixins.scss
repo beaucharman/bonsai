@@ -1,50 +1,42 @@
 //
-//  Sass Mixins
-//
-//------------------------------------------------
-//  Version:     1.0
-//  Description:
-//------------------------------------------------
+// Mixins
+// ------------------------------------------------------------------------
+// _mixins.scss
+// @version   1.0 | 19th Feb, 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://beaucharman.me
+// @link      https://github.com/beaucharman/Sass-Directory
+// @license   GNU http://www.gnu.org/licenses/lgpl.txt
+// ------------------------------------------------------------------------ /
 
-//  Breakpoints
-//------------------------------------------------
-//  Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
-//------------------------------------------------
+// Breakpoints
+// ------------------------------------------------------------------------
+// Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+// ------------------------------------------------------------------------ /
 @mixin breakpoint($point) {
 
   @if $point == small {
 
-    //  Min Width - small screen and tablets
-    //------------------------------------------------
+    // Min Width - small screen and tablets
     @media screen and (min-width: $small) { @content; }
   }
 
   @else if $point == medium {
 
-    //  Min Width - medium tablets, screens and iPads
-    //------------------------------------------------
+    // Min Width - medium tablets, screens and iPads
     @media screen and (min-width: $medium) { @content; }
   }
 
   @else if $point == large {
 
-    //  Min width - larger desktop screens
-    //------------------------------------------------
+    // Min width - larger desktop screens
     @media screen and (min-width: $large) { @content; }
   }
 }
 
-//  Background RGBA
-//------------------------------------------------
+// Background RGBA
 @mixin background-rgba($color, $opacity: 0.5)
 {
     background-color: $color;
     background-color: rgba($color, $opacity);
-}
-
-//  Border Radius
-//------------------------------------------------
-@mixin rounded-top($radius: $default_border_radius)
-{
-  border-radius: $radius;
 }

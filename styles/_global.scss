@@ -1,14 +1,20 @@
-/*
+//
+// Global
+// ------------------------------------------------------------------------
+// _global.scss
+// @version   1.0 | 19th Feb, 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://beaucharman.me
+// @link      https://github.com/beaucharman/Sass-Directory
+// @license   GNU http://www.gnu.org/licenses/lgpl.txt
+//
+// base / global / elements styles, core boilerplate styles.
+// This can include inline and block level elements, and thier basic styles.
+// ------------------------------------------------------------------------ /
 
-  Global styles
-
-------------------------------------------------	
-  Version:     1.0
-  Description: 
-  
-  base / global / elements styles, core boilerplate styles.
-  This can include inline and block level elements, and thier basic styles.
------------------------------------------------- */
+/* ------------------------------------------------------------------------
+   Global
+   ------------------------------------------------------------------------ */
 
 html,
 button,
@@ -57,5 +63,5 @@ textarea {
 }
 
 table {
-  width: 100%;  
+  width: 100%;
 }

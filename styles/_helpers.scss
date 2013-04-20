@@ -1,15 +1,21 @@
-/*
+//
+// Helpers
+// ------------------------------------------------------------------------
+// _helpers.scss
+// @version   1.0 | 19th Feb, 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://beaucharman.me
+// @link      https://github.com/beaucharman/Sass-Directory
+// @license   GNU http://www.gnu.org/licenses/lgpl.txt
+//
+// Any modulated styles that help with cross browser
+// compatibility and user feedback.
+// thanks to http://html5boilerplate.com/
+// ------------------------------------------------------------------------ /
 
-  Helper styles
-
-------------------------------------------------
-  Version:     1.0
-  Description:
-
-  Any modulated styles that help with cross browser
-  compatibility and user feedback.
-  thanks to http://html5boilerplate.com/
------------------------------------------------- */
+/* ------------------------------------------------------------------------
+   Helpers
+   ------------------------------------------------------------------------ */
 
 .chromeframe {
     margin: 0.2em 0;

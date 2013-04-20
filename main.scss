@@ -1,19 +1,18 @@
 //
+// Sass Directory
+// ------------------------------------------------------------------------
+// main.scss
+// @version 1.0 | Monday, 11th February 2013
+// @package sass-directory
+// @author  Beau Charman | @beaucharman | http://beaucharman.me
+// @link    https://github.com/beaucharman/Sass-Directory
+// @license GNU http://www.gnu.org/licenses/lgpl.txt
 //
-//  Sass Directory
-//
-//------------------------------------------------
-//  main.scss 1.0
-//  Monday, 11th February 2013
-//  Beau Charman | @beaucharman | http://beaucharman.me
-//  Version: 1.0
-//  Notes:
-//
-//  For useful mixins: http://getpreboot.com/
-//------------------------------------------------ */
+// For useful mixins: http://getpreboot.com/
+// ------------------------------------------------------------------------ /
 
-//  Sass variables, mixins and functions
-//------------------------------------------------ */
+// Sass variables, mixins and functions
+// ------------------------------------------------------------------------ /
 @import 'options/variables';
 @import 'options/mixins';
 @import 'options/functions';
@@ -22,25 +21,25 @@
 
 @media screen {
 
-  //  Base styles
-  //------------------------------------------------ */
+  // Base styles
+  // ------------------------------------------------------------------------ /
   @import 'styles/tabularasa';
   @import 'styles/global';
   @import 'styles/layout';
   @import 'styles/typography';
 
-  //  Project specific styles
-  //------------------------------------------------ */
+  // Project specific styles
+  // ------------------------------------------------------------------------ /
   @import 'styles/project';
 
-  //  Helpers, forms, components and WordPress related styles
-  //------------------------------------------------ */
+  // Helpers, forms, components and WordPress related styles
+  // ------------------------------------------------------------------------ /
   @import 'styles/components';
   @import 'styles/controls';
   @import 'styles/helpers';
   @import 'styles/wordpress';
 }
 
-//  Print styles
-//------------------------------------------------ */
+// Print styles
+// ------------------------------------------------------------------------ /
 @import 'styles/print';
