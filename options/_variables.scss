@@ -9,15 +9,39 @@
 // @license   GNU http://www.gnu.org/licenses/lgpl.txt
 // ------------------------------------------------------------------------ /
 
-// Color
+// Brand Color
 // ------------------------------------------------------------------------ /
-$primary_brand_color:   #999;
-$secondary_brand_color: #777;
-$ternary_brand_color:   #555;
+$primary-brand-color:   #999;
+$secondary-brand-color: #777;
+$ternary-brand-color:   #555;
 
-// Font
+// Display Color
 // ------------------------------------------------------------------------ /
-$font_family: sans-serif;
+$foreground-color: #ddd;
+$background-color: #eee;
+
+// Grayscale
+$black-10: darken(#fff, 10%);
+$black-20: darken(#fff, 20%);
+$black-30: darken(#fff, 30%);
+$black-40: darken(#fff, 40%);
+$black-50: darken(#fff, 50%);
+$black-60: darken(#fff, 60%);
+$black-70: darken(#fff, 70%);
+$black-80: darken(#fff, 80%);
+$black-90: darken(#fff, 90%);
+
+// limit grey shades for simplicity of design
+$light-grey:  #ddd;
+$medium-grey: #555;
+$dark-grey:   #222;
+
+// Alert / notification colors
+$alert-primary: #428bca;
+$alert-success: #5cb85c;
+$alert-warning: #f0ad4e;
+$alert-danger:  #d9534f;
+$alert-info:    #5bc0de;
 
 // Shapes
 // ------------------------------------------------------------------------ /
@@ -28,3 +52,48 @@ $default_border_radius: 4px;
 $small:  480px;
 $medium: 720px;
 $large:  1140px;
+
+// Grid
+$grid-columns:            12;
+$grid-column-padding:     1.5em; // Left and right inner padding
+$grid-float-breakpoint:   $medium;
+
+// Typography
+// ------------------------------------------------------------------------ /
+
+// Font Families
+$font-family-serif:      "Lucida Serif", Lucida, Georgia, serif;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+$font-family-monospace:  Consolas, monaco, monospace;
+
+// Text
+$text-color: #111;
+
+// Links
+$link-color:       #ed6347;
+$link-color-hover: darken($link-color, 15%);
+
+// Base size
+$font-size-base:   16px;
+$font-size-large:  $font-size-base * 1.25;
+$font-size-small:  $font-size-base * 0.85;
+$font-size-mini:   $font-size-base * 0.75;
+
+// Base characteristics
+$font-family-base: $font-family-sans-serif;
+$font-weight-base: 400;
+$line-height-base: 1.6;
+
+// Headings
+// ------------------------------------------------------------------------ /
+$font-size-h1: 3.4em;
+$font-size-h2: 2.8em;
+$font-size-h3: 2.2em;
+$font-size-h4: 1.8em;
+$font-size-h5: 1.4em;
+$font-size-h6: 1em;
+
+// Heading characteristics
+$headings-font-family: $serif-font;
+$headings-font-weight: 500;
+$heading-line-height:  1.4;

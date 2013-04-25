@@ -11,3 +11,18 @@
 //  Built in Sass functions:
 //  http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
 // ------------------------------------------------------------------------ /
+
+//
+// Rhythm
+// ------------------------------------------------------------------------
+// rhythm()
+// @version 1.0 | April 25th 2013
+// @author  Beau Charman | @beaucharman | http://beaucharman.me
+// @link    https://gist.github.com/beaucharman/5459188/
+// @param  $fontsize   | em unit value
+// @param  $lineheight | decimal value
+// @return em unit value
+
+@function rhythm($fontsize, $lineheight: 1.4) {
+  @return ($lineheight + 0em) / $fontsize + 0em;
+}
