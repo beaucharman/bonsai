@@ -45,7 +45,6 @@
 // Grid system
 // ------------------------------------------------------------------------ /
 
-// Grid
 @mixin make-row {
   // Negative margin the row out to align the content of columns
   margin-left: -$grid-column-padding;
@@ -53,6 +52,7 @@
   // Then clear the floated columns
   @include clearfix;
 }
+
 @mixin make-column($columns) {
   @media (min-width: $grid-float-breakpoint) {
     float: left;
@@ -67,6 +67,7 @@
   // Proper box-model (padding doesn't add to width)
   @include box-sizing(border-box);
 }
+
 @mixin make-column-offset($columns) {
   @media (min-width: $grid-float-breakpoint) {
     margin-left: percentage($columns / $grid-columns);
