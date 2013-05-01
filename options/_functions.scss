@@ -22,7 +22,7 @@
 // @param  $fontsize   | em unit value
 // @param  $lineheight | decimal value
 // @return em unit value
-
+// ------------------------------------------------------------------------
 @function rhythm($fontsize, $lineheight: 1.4) {
   @return ($lineheight + 0em) / $fontsize + 0em;
 }
