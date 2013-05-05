@@ -68,17 +68,18 @@ WordPress related styles, and shortcode styles.	Default WordPress editor styles 
 ## WordPress Theme Development
 If using this with a WordPress theme, uncomment the `@import 'includes/wp-theme-declaration';` line in the `main.scss` file, and then add the appropriate information to that file. The `wp-theme-declaration.scss` file just contains:
 ```css
-/*
-  Theme Name:        themename
-  Theme URI:         http://
-  Description:
-  Author:            @authorname
-  Author URI:        http://
-  License:
-  License URI:
-  Version:           1.0
-  Version Date:      001/02/2013
-  Style Guide Notes:
-  General Notes:
------------------------------------------------- */
+/**
+ * Theme Name
+ * ------------------------------------------------------------------------
+ * style.css
+ * Theme Name:   themename
+ * Theme URI:    http://
+ * Description:
+ * Author:       @authorname | details
+ * Author URI:   http://
+ * Version:      1.0
+ * Version Date: xx/xx/xxxx
+ * License:
+ * License URI:
+ * ------------------------------------------------------------------------ */
 ```
