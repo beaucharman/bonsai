@@ -16,19 +16,16 @@
 @mixin breakpoint($point) {
 
   @if $point == small {
-
     // Min Width - small screen and tablets
     @media screen and (min-width: $small) { @content; }
   }
 
   @else if $point == medium {
-
     // Min Width - medium tablets, screens and iPads
     @media screen and (min-width: $medium) { @content; }
   }
 
   @else if $point == large {
-
     // Min width - larger desktop screens
     @media screen and (min-width: $large) { @content; }
   }
