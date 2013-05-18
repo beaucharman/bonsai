@@ -2,19 +2,11 @@
 // Sass Directory
 // ------------------------------------------------------------------------
 // main.scss
-<<<<<<< HEAD
 // @version 1.0 | Monday, 11th February 2013
 // @package sass-directory
 // @author  Beau Charman | @beaucharman | http://beaucharman.me
 // @link    https://github.com/beaucharman/sass-directory
 // @license MIT license
-=======
-// @version   1.0 | Monday, 11th February 2013
-// @package   sass-directory
-// @author    Beau Charman | @beaucharman | http://beaucharman.me
-// @link      https://github.com/beaucharman/sass-directory
-// @license   MIT license
->>>>>>> license changes
 //
 // For useful mixins: http://getpreboot.com/
 // ------------------------------------------------------------------------ /
@@ -34,17 +26,17 @@
   @import 'styles/tabularasa',
           'styles/global',
           'styles/layout',
-          'styles/typography',
+          'styles/typography';
 
   // Helpers, forms, components and WordPress related styles
   // ------------------------------------------------------------------------ /
-          'styles/components',
+  @import 'styles/components',
           'styles/controls',
-          'styles/helpers',
+          'styles/helpers';
 
   // Project specific styles
   // ------------------------------------------------------------------------ /
-          'styles/project';
+  @import 'styles/project';
 
   // @import 'styles/wordpress';
 }
