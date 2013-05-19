@@ -18,7 +18,7 @@ $ternary-brand-color:   #555;
 // Display Color
 // ------------------------------------------------------------------------ /
 $foreground-color: #ddd;
-$background-color: #eee;
+$background-color: #fff;
 
 // Grayscale
 $black-10: darken(#fff, 10%);
@@ -45,18 +45,21 @@ $alert-info:    #5bc0de;
 
 // Shapes
 // ------------------------------------------------------------------------ /
-$default_border_radius: 4px;
+$default-border-radius: 4px;
 
 // Breakpoints
 // ------------------------------------------------------------------------ /
-$small:  480px;
-$medium: 720px;
-$large:  1140px;
+$narrow-disply:  480px;
+$medium-disply: 720px;
+$wide-disply:  1140px;
 
 // Grid
 $grid-columns:            12;
 $grid-column-padding:     1.5em; // Left and right inner padding
-$grid-float-breakpoint:   $medium;
+$grid-float-breakpoint:   $medium-disply;
+
+// Vertical margin
+$base-vertical-margin: 1.5em;
 
 // Typography
 // ------------------------------------------------------------------------ /
@@ -83,6 +86,9 @@ $font-size-mini:   $font-size-base * 0.75;
 $font-family-base: $font-family-sans-serif;
 $font-weight-base: 400;
 $line-height-base: 1.6;
+
+// Miscellaneous type properties
+$font-family-code: $font-family-monospace;
 
 // Headings
 // ------------------------------------------------------------------------ /
