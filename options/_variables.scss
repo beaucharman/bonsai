@@ -11,9 +11,9 @@
 
 // Brand Color
 // ------------------------------------------------------------------------ /
-$primary-brand-color:   #999;
-$secondary-brand-color: #777;
-$ternary-brand-color:   #555;
+$brand-color--primary:   #999;
+$brand-color--secondary: #777;
+$brand-color--ternary:   #555;
 
 // Display Color
 // ------------------------------------------------------------------------ /
@@ -37,15 +37,15 @@ $medium-grey: #555;
 $dark-grey:   #222;
 
 // Alert / notification colors
-$alert-primary: #428bca;
-$alert-success: #5cb85c;
-$alert-warning: #f0ad4e;
-$alert-danger:  #d9534f;
-$alert-info:    #5bc0de;
+$alert--primary: #428bca;
+$alert--success: #5cb85c;
+$alert--warning: #f0ad4e;
+$alert--danger:  #d9534f;
+$alert--info:    #5bc0de;
 
 // Shapes
 // ------------------------------------------------------------------------ /
-$default-border-radius: 4px;
+$default--border-radius: 4px;
 
 // Breakpoints
 // ------------------------------------------------------------------------ /
@@ -54,12 +54,12 @@ $medium-disply: 720px;
 $wide-disply:  1140px;
 
 // Grid
-$grid-columns:            12;
-$grid-column-padding:     1.5em; // Left and right inner padding
-$grid-float-breakpoint:   $medium-disply;
+$grid--columns:            12;
+$grid--column-padding:     1.5em; // Left and right inner padding
+$grid--float-breakpoint:   $medium-disply;
 
 // Vertical margin
-$base-vertical-margin: 1.5em;
+$base--vertical-margin: 1.5em;
 
 // Typography
 // ------------------------------------------------------------------------ /
@@ -88,18 +88,18 @@ $font-weight-base: 400;
 $line-height-base: 1.6;
 
 // Miscellaneous type properties
-$font-family-code: $font-family-monospace;
+$font-family--code: $font-family-monospace;
 
 // Headings
 // ------------------------------------------------------------------------ /
-$font-size-h1: 3.4em;
-$font-size-h2: 2.8em;
-$font-size-h3: 2.2em;
-$font-size-h4: 1.8em;
-$font-size-h5: 1.4em;
-$font-size-h6: 1em;
+$font-size--h1: 3.4em;
+$font-size--h2: 2.8em;
+$font-size--h3: 2.2em;
+$font-size--h4: 1.8em;
+$font-size--h5: 1.4em;
+$font-size--h6: 1em;
 
 // Heading characteristics
-$headings-font-family: $font-family-serif;
-$headings-font-weight: 500;
-$heading-line-height:  1.4;
+$headings--font-family: $font-family-serif;
+$headings--font-weight: 500;
+$headings--line-height:  1.4;
