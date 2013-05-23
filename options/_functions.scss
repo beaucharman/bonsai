@@ -1,6 +1,6 @@
 //
 // Functions
-// ------------------------------------------------------------------------
+// ========================================================================
 // _functions.scss
 // @version   1.0 | 19th Feb, 2013
 // @packege   sass-directory
@@ -10,10 +10,10 @@
 //
 //  Built in Sass functions:
 //  http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
-// ------------------------------------------------------------------------ /
+// ======================================================================== /
 
 // Rhythm
-// ------------------------------------------------------------------------
+// ========================================================================
 // rhythm()
 // @version 1.0 | April 25th 2013
 // @author  Beau Charman | @beaucharman | http://beaucharman.me
@@ -21,7 +21,7 @@
 // @param  {em}    $fontsize   | em unit value
 // @param  {float} $lineheight | float value
 // @return {em}    em unit value
-// ------------------------------------------------------------------------ //
+// ======================================================================== //
 @function rhythm($fontsize, $lineheight: 1.4) {
   @return ($lineheight + 0em) / $fontsize + 0em;
 }

@@ -70,7 +70,7 @@ If using this with a WordPress theme, uncomment the `@import 'includes/wp-theme-
 ```css
 /**
  * Theme Name
- * ------------------------------------------------------------------------
+ * ========================================================================
  * style.css
  * Theme Name:   themename
  * Theme URI:    http://
@@ -81,5 +81,5 @@ If using this with a WordPress theme, uncomment the `@import 'includes/wp-theme-
  * Version Date: xx/xx/xxxx
  * License:
  * License URI:
- * ------------------------------------------------------------------------ */
+ * ======================================================================== */
 ```
