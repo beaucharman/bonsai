@@ -7,6 +7,11 @@
 // @author    Beau Charman | @beaucharman | http://beaucharman.me
 // @link      https://github.com/beaucharman/sass-directory
 // @license   MIT license
+//
+// {identifier}--{property}--{unique}
+// identifier: base, headings, brand, alert
+// property:   css selector, color, font-weight
+// unique:     primary, h1, small, 50, display
 // ------------------------------------------------------------------------ /
 
 // Brand Color
@@ -45,7 +50,7 @@ $alert--info:    #5bc0de;
 
 // Shapes
 // ------------------------------------------------------------------------ /
-$default--border-radius: 4px;
+$base--border-radius: 4px;
 
 // Breakpoints
 // ------------------------------------------------------------------------ /
@@ -65,30 +70,30 @@ $base--vertical-margin: 1.5em;
 // ------------------------------------------------------------------------ /
 
 // Font Families
-$font-family-serif:      "Lucida Serif", Lucida, Georgia, serif;
-$font-family-sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$font-family-monospace:  Consolas, monaco, monospace;
+$font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
+$font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+$font-family--monospace:  Consolas, monaco, monospace;
 
 // Text
-$text-color: #111;
+$base--text-color: #111;
 
 // Links
-$link-color:       #ed6347;
-$link-color-hover: darken($link-color, 15%);
+$base--link-color:       #ed6347;
+$base--link-color-hover: darken($link-color, 15%);
 
 // Base size
-$font-size-base:   16px;
-$font-size-large:  $font-size-base * 1.25;
-$font-size-small:  $font-size-base * 0.85;
-$font-size-mini:   $font-size-base * 0.75;
+$base--font-size: 16px;
+$base--font-size--large: $base--font-size * 1.25;
+$base--font-size--small: $base--font-size * 0.85;
+$base--font-size--mini:  $base--font-size * 0.75;
 
 // Base characteristics
-$font-family-base: $font-family-sans-serif;
-$font-weight-base: 400;
-$line-height-base: 1.6;
+$base--font-family: $font-family--sans-serif;
+$base--font-weight: 400;
+$base--line-height: 1.6;
 
 // Miscellaneous type properties
-$font-family--code: $font-family-monospace;
+$code--font-family: $font-family-monospace;
 
 // Headings
 // ------------------------------------------------------------------------ /
