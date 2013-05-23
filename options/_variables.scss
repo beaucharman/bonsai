@@ -64,22 +64,22 @@ $grid--column-padding:     1.5em; // Left and right inner padding
 $grid--float-breakpoint:   $medium-disply;
 
 // Vertical margin
-$base--vertical-margin: 1.5em;
+$base--margin--vertical: 1.5em;
 
 // Typography
 // ------------------------------------------------------------------------ /
 
 // Font Families
-$font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
-$font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$font-family--monospace:  Consolas, monaco, monospace;
+$base--font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
+$base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+$base--font-family--monospace:  Consolas, monaco, monospace;
 
 // Text
 $base--text-color: #111;
 
 // Links
 $base--link-color:       #ed6347;
-$base--link-color-hover: darken($link-color, 15%);
+$base--link-color-hover: darken($base--link-color, 15%);
 
 // Base size
 $base--font-size: 16px;
@@ -88,23 +88,23 @@ $base--font-size--small: $base--font-size * 0.85;
 $base--font-size--mini:  $base--font-size * 0.75;
 
 // Base characteristics
-$base--font-family: $font-family--sans-serif;
+$base--font-family: $base--font-family--sans-serif;
 $base--font-weight: 400;
 $base--line-height: 1.6;
 
 // Miscellaneous type properties
-$code--font-family: $font-family-monospace;
+$code--font-family: $base--font-family--monospace;
 
 // Headings
 // ------------------------------------------------------------------------ /
-$font-size--h1: 3.4em;
-$font-size--h2: 2.8em;
-$font-size--h3: 2.2em;
-$font-size--h4: 1.8em;
-$font-size--h5: 1.4em;
-$font-size--h6: 1em;
+$h1--font-size: 3.4em;
+$h2--font-size: 2.8em;
+$h3--font-size: 2.2em;
+$h4--font-size: 1.8em;
+$h5--font-size: 1.4em;
+$h6--font-size: 1em;
 
 // Heading characteristics
-$headings--font-family: $font-family-serif;
+$headings--font-family: $base--font-family--serif;
 $headings--font-weight: 500;
-$headings--line-height:  1.4;
+$headings--line-height: 1.4;

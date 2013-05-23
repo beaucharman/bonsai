@@ -23,43 +23,43 @@ html {
 }
 
 body {
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  font-family: $font-family-base;
-  color: $text-color;
+  font-size: $base--font-size;
+  line-height: $base--line-height;
+  font-family: $base--font-family;
+  color: $base--text-color;
 }
 
 /* Headings
    ------------------------------------------------------------------------ */
 h1, .alpha {
-  font-size: $font-size-h1;
-  margin: rhythm($font-size-h1, $line-height-base) 0;
+  font-size: $h1--font-size;
+  margin: rhythm($h1--font-size, $base--line-height) 0;
 }
 h2, .beta {
-  font-size: $font-size-h2;
-  margin: rhythm($font-size-h2, $line-height-base) 0;
+  font-size: $h2--font-size;
+  margin: rhythm($h2--font-size, $base--line-height) 0;
 }
 h3, .gamma {
-  font-size: $font-size-h3;
-  margin: rhythm($font-size-h3, $line-height-base) 0;
+  font-size: $h3--font-size;
+  margin: rhythm($h3--font-size, $base--line-height) 0;
 }
 h4, .delta {
-  font-size: $font-size-h4;
-  margin: rhythm($font-size-h4, $line-height-base) 0;
+  font-size: $h4--font-size;
+  margin: rhythm($h4--font-size, $base--line-height) 0;
 }
 h5, .epsilon {
-  font-size: $font-size-h5;
-  margin: rhythm($font-size-h5, $line-height-base) 0;
+  font-size: $h5--font-size;
+  margin: rhythm($h5--font-size, $base--line-height) 0;
 }
 h6, .zeta {
-  font-size: $font-size-h6;
-  margin: rhythm($font-size-h6, $line-height-base) 0;
+  font-size: $h6--font-size;
+  margin: rhythm($h6--font-size, $base--line-height) 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $heading-line-height;
+  font-family: $headings--font-family;
+  font-weight: $headings--font-weight;
+  line-height: $headings--line-height;
 }
 
 /* Block level elements
@@ -68,5 +68,5 @@ h1, h2, h3, h4, h5, h6 {
 /* Code and Pre elements */
 pre,
 code {
-  font-family: $font-family-code;
+  font-family: $code--font-family;
 }

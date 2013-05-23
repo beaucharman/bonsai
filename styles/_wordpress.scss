@@ -140,107 +140,107 @@ blockquote.right {
 #commentform input[type="text"],
 #commentform input[type="url"],
 #commentform input[type="email"] {
-	width: 150px;
+  width: 150px;
 }
 ol.commentlist {
-	list-style: none;
-	margin-bottom: 1.75em;
+  list-style: none;
+  margin-bottom: 1.75em;
 }
 
 ol.commentlist li {
-	clear:both;
-	margin-bottom:0.75;
+  clear:both;
+  margin-bottom:0.75;
 }
 ol.commentlist li:before,
 ol.commentlist li:after {
-	content: "";
-	display: table;
+  content: "";
+  display: table;
 }
 ol.commentlist li:after {
-	clear: both;
+  clear: both;
 }
 ol.commentlist li {
-	zoom: 1;
+  zoom: 1;
 }
 ol.commentlist li p {
-	margin:0;
+  margin:0;
 }
 ol.commentlist li div {
-	margin-bottom:0.352em;
+  margin-bottom:0.352em;
 }
-ol.commentlist li.alt {	 }
+ol.commentlist li.alt {   }
 ol.commentlist li.bypostauthor {  }
-ol.commentlist li.byuser {	}
+ol.commentlist li.byuser {  }
 ol.commentlist li.comment-author-admin {  }
 ol.commentlist li.comment {
-	margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
-ol.commentlist li.comment div.comment-author {	}
+ol.commentlist li.comment div.comment-author {  }
 ol.commentlist li.comment div.comment-vcard {
-	float:left;
-	width:10%;
+  float:left;
+  width:10%;
 }
 ol.commentlist li.comment div.comment-body {
-	float:left;
-	width:90%;
+  float:left;
+  width:90%;
 }
 ol.commentlist li.comment div.comment-vcard img.avatar {
-	padding:4px;
-	border: 1px solid #e1e1e1;
-	background-color: #f1f1f1;
-	padding: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	max-width: 100%;
-	max-height: 100%;
+  padding:4px;
+  border: 1px solid #e1e1e1;
+  background-color: #f1f1f1;
+  padding: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  max-width: 100%;
+  max-height: 100%;
 }
 ol.commentlist li.comment div.comment-meta {
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
 ol.commentlist li.comment div.comment-meta a {
-	color: #999;
+  color: #999;
 }
 ol.commentlist li.comment p {
 }
-ol.commentlist li.comment ul {	}
+ol.commentlist li.comment ul {  }
 ol.commentlist li.comment div.reply {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 ol.commentlist li.comment div.reply a {
-	font-weight: 700;
+  font-weight: 700;
 }
 ol.commentlist li.comment ul.children {
-	list-style: none;
-	margin: 12px 0 0;
+  list-style: none;
+  margin: 12px 0 0;
 }
-ol.commentlist li.comment ul.children li {	}
-ol.commentlist li.comment ul.children li.alt {	}
-ol.commentlist li.comment ul.children li.bypostauthor {	 }
+ol.commentlist li.comment ul.children li {  }
+ol.commentlist li.comment ul.children li.alt {  }
+ol.commentlist li.comment ul.children li.bypostauthor {   }
 ol.commentlist li.comment ul.children li.byuser {  }
-ol.commentlist li.comment ul.children li.comment {	}
-ol.commentlist li.comment ul.children li.comment-author-admin {	 }
+ol.commentlist li.comment ul.children li.comment {  }
+ol.commentlist li.comment ul.children li.comment-author-admin {   }
 ol.commentlist li.comment ul.children li.depth-2 {
-	margin: 0 0 0.75em 32px;
-	padding: 0 0 0.75em 32px;
+  margin: 0 0 0.75em 32px;
+  padding: 0 0 0.75em 32px;
 }
 ol.commentlist li.comment ul.children li.depth-3 {
-	margin: 0 0 0.75em 32px;
-	padding: 0 0 0.75em 32px;
+  margin: 0 0 0.75em 32px;
+  padding: 0 0 0.75em 32px;
 }
 ol.commentlist li.comment ul.children li.depth-4 {
-	margin: 0 0 0.75em 32px;
-	padding: 0 0 0.75em 32px;
+  margin: 0 0 0.75em 32px;
+  padding: 0 0 0.75em 32px;
 }
 ol.commentlist li.comment ul.children li.depth-5 {
-	margin: 0 0 0.75em 32px;
-	padding: 0 0 0.75em 32px;
+  margin: 0 0 0.75em 32px;
+  padding: 0 0 0.75em 32px;
 }
-ol.commentlist li.comment ul.children li.odd {	}
+ol.commentlist li.comment ul.children li.odd {  }
 ol.commentlist li.even {  }
-ol.commentlist li.odd {	 }
-ol.commentlist li.parent { 	}
-ol.commentlist li.thread-alt {	}
-ol.commentlist li.thread-even {	 }
-ol.commentlist li.thread-odd {	}
+ol.commentlist li.odd {   }
+ol.commentlist li.parent {   }
+ol.commentlist li.thread-alt {  }
+ol.commentlist li.thread-even {   }
+ol.commentlist li.thread-odd {  }
 #respond label span { display:none; }

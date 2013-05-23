@@ -63,7 +63,7 @@ Type and font styles, and related element styles. Can also include font declarat
 ### Wordpress styles
 `styles/_wordpress.scss`
 
-WordPress related styles, and shortcode styles.	Default WordPress editor styles selectors are	found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
+WordPress related styles, and shortcode styles.  Default WordPress editor styles selectors are  found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 
 ## WordPress Theme Development
 If using this with a WordPress theme, uncomment the `@import 'includes/wp-theme-declaration';` line in the `main.scss` file, and then add the appropriate information to that file. The `wp-theme-declaration.scss` file just contains:

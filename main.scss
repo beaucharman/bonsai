@@ -13,9 +13,9 @@
 
 // Sass variables, mixins and functions
 // ------------------------------------------------------------------------ /
-@import 'options/variables',
-        'options/mixins',
-        'options/functions';
+@import 'options/variables';
+@import 'options/mixins';
+@import 'options/functions';
 
 // @import 'includes/wp-theme-declaration';
 
@@ -23,16 +23,16 @@
 
   // Base styles
   // ------------------------------------------------------------------------ /
-  @import 'styles/tabularasa',
-          'styles/global',
-          'styles/layout',
-          'styles/typography';
+  @import 'styles/tabularasa';
+  @import 'styles/global';
+  @import 'styles/layout';
+  @import 'styles/typography';
 
   // Helpers, forms, components and WordPress related styles
   // ------------------------------------------------------------------------ /
-  @import 'styles/components',
-          'styles/controls',
-          'styles/helpers';
+  @import 'styles/components';
+  @import 'styles/controls';
+  @import 'styles/helpers';
 
   // Project specific styles
   // ------------------------------------------------------------------------ /
