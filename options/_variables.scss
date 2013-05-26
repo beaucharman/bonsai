@@ -9,9 +9,9 @@
 // @license   MIT license
 //
 // {identifier}--{property}--{unique}
-// identifier: base, headings, brand, alert
-// property:   css selector, color, font-weight
-// unique:     primary, h1, small, 50, display
+// element, selector or module: base, headings, alert
+// property:                    css selector, color, font-weight
+// indendifier or value:        primary, small, 50, display
 // ======================================================================== /
 
 // Brand Color
@@ -54,9 +54,9 @@ $base--border-radius: 4px;
 
 // Breakpoints
 // ======================================================================== /
-$narrow-disply:  480px;
-$medium-disply: 720px;
-$wide-disply:  1140px;
+$display--narrow:  480px;
+$display--medium: 720px;
+$display--wide:  1140px;
 
 // Grid
 $grid--columns:            12;
