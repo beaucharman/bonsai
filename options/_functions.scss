@@ -22,6 +22,6 @@
 // @param  {float} $lineheight | float value
 // @return {em}    em unit value
 // ======================================================================== //
-@function rhythm($fontsize, $lineheight: 1.4) {
+@function rhythm($fontsize, $lineheight: $base--line-height) {
   @return ($lineheight + 0em) / $fontsize + 0em;
 }

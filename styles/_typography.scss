@@ -33,44 +33,67 @@ body {
    ======================================================================== */
 h1, .alpha {
   font-size: $h1--font-size;
-  margin: rhythm($h1--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h1--font-size, $base--line-height);
+  margin: rhythm($h1--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h1--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h1--font-size);
   }
 }
+
 h2, .beta {
   font-size: $h2--font-size;
-  margin: rhythm($h2--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h2--font-size, $base--line-height);
+  margin: rhythm($h2--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h2--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h2--font-size);
   }
 }
+
 h3, .gamma {
   font-size: $h3--font-size;
-  margin: rhythm($h3--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h3--font-size, $base--line-height);
+  margin: rhythm($h3--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h3--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h3--font-size);
   }
 }
+
 h4, .delta {
   font-size: $h4--font-size;
-  margin: rhythm($h4--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h4--font-size, $base--line-height);
+  margin: rhythm($h4--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h4--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h4--font-size);
   }
 }
+
 h5, .epsilon {
   font-size: $h5--font-size;
-  margin: rhythm($h5--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h5--font-size, $base--line-height);
+  margin: rhythm($h5--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h5--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h5--font-size);
   }
 }
+
 h6, .zeta {
   font-size: $h6--font-size;
-  margin: rhythm($h6--font-size, $base--line-height) 0;
-  &.shallow {
-    margin-bottom: rhythm($h6--font-size, $base--line-height);
+  margin: rhythm($h6--font-size) 0;
+  &.roof {
+    margin-top: rhythm(-$h6--font-size);
+  }
+  &.floor {
+    margin-bottom: rhythm(-$h6--font-size);
   }
 }
 
@@ -78,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headings--font-family;
   font-weight: $headings--font-weight;
   line-height: $headings--line-height;
+  &.flush {
+    margin-top: 0;
+    mzrgin-bottom: 0;
+  }
 }
 
 /* Block level elements

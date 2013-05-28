@@ -71,7 +71,7 @@ $base--pixel-value: 16px;
 // Grid
 $grid--columns:            12;
 $grid--column-padding:     1.5em; // Left and right inner padding
-$grid--float-breakpoint:   $medium-disply;
+$grid--float-breakpoint:   $display--medium;
 
 // Vertical margin
 $base--margin--vertical: 1.5em;
@@ -102,7 +102,7 @@ $base--font-size--mini:  $base--font-size * 0.75;
 // Font characteristics
 $base--font-family: $base--font-family--sans-serif;
 $base--font-weight: 400;
-$base--line-height: 1.4;
+$base--line-height: 1.6;
 
 // Miscellaneous type properties
 $code--font-family: $base--font-family--monospace;
