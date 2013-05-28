@@ -34,26 +34,44 @@ body {
 h1, .alpha {
   font-size: $h1--font-size;
   margin: rhythm($h1--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h1--font-size, $base--line-height);
+  }
 }
 h2, .beta {
   font-size: $h2--font-size;
   margin: rhythm($h2--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h2--font-size, $base--line-height);
+  }
 }
 h3, .gamma {
   font-size: $h3--font-size;
   margin: rhythm($h3--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h3--font-size, $base--line-height);
+  }
 }
 h4, .delta {
   font-size: $h4--font-size;
   margin: rhythm($h4--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h4--font-size, $base--line-height);
+  }
 }
 h5, .epsilon {
   font-size: $h5--font-size;
   margin: rhythm($h5--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h5--font-size, $base--line-height);
+  }
 }
 h6, .zeta {
   font-size: $h6--font-size;
   margin: rhythm($h6--font-size, $base--line-height) 0;
+  &.shallow {
+    margin-bottom: rhythm($h6--font-size, $base--line-height);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
