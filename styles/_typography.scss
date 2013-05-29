@@ -41,15 +41,19 @@ $headings:
 
 @each $heading in $headings {
 
-  #{nth($heading, 1)}, .#{nth($heading, 3)} {
+  #{nth($heading, 1)},
+  .#{nth($heading, 3)} {
     font-size: #{nth($heading, 2)};
-    margin: rhythm(#{nth($heading, 2)}) 0;
-    &.roof {
-      margin-top: rhythm(-#{nth($heading, 2)});
-    }
-    &.floor {
-      margin-bottom: rhythm(-#{nth($heading, 2)});
-    }
+    margin: rhythm(nth($heading, 2)) 0;
+  }
+  #{nth($heading, 1)}--roof,
+  #{nth($heading, 3)}--roof {
+    margin-top: rhythm(-(nth($heading, 2)));
+  }
+
+  #{nth($heading, 1)}--floor,
+  #{nth($heading, 3)}--floor {
+    margin-bottom: rhythm(-(nth($heading, 2)));
   }
 }
 
@@ -70,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bottom {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Block level elements
