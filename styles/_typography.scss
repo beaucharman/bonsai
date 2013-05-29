@@ -46,13 +46,13 @@ $headings:
     font-size: #{nth($heading, 2)};
     margin: rhythm(nth($heading, 2)) 0;
   }
-  #{nth($heading, 1)}--roof,
-  #{nth($heading, 3)}--roof {
+  .#{nth($heading, 1)}--roof,
+  .#{nth($heading, 3)}--roof {
     margin-top: rhythm(-(nth($heading, 2)));
   }
 
-  #{nth($heading, 1)}--floor,
-  #{nth($heading, 3)}--floor {
+  .#{nth($heading, 1)}--floor,
+  .#{nth($heading, 3)}--floor {
     margin-bottom: rhythm(-(nth($heading, 2)));
   }
 }
