@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>
+      HTML Project Kickstarter
+    </title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+<!-- just-my-type -->
+  <style>
+    .jmt-section-heading {
+      font-size: 14px;
+      color: #000;
+      padding: 6px 10px;
+      margin: 6px 0;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+      background-color: #f8f8f8;
+    }
+  </style>
+
+  <div class="page-wrap">
+
+    <h1>Sass Directory</h1>
+    <p class="epsilon">A Sass directory with smart &amp; simple initial styles, and room to grow.</p>
+
+    <p><a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a></p>
+
+    <p>The following example markup that demonstrates the out of the box styles of this Sass directory, are from the <a href="https://github.com/beaucharman/just-my-type" title="just my type repo link">Just My Type repository</a>.
+
+    <p>Tag references from the awesome <a href="https://developer.mozilla.org" title="Visit https://developer.mozilla.org" alt="external">MDN</a>. Images from <a href="http://lorempixel.com" title="Visit http://lorempixel.com" rel="external">Lorempixel</a>.</p>
+
+    <p>A pretty wicked tool to use during and after CSS development is Harry Roberts' <a href="https://github.com/csswizardry/inuit.css/blob/master/generic/_debug.scss" title="Visit https://github.com/csswizardry/inuit.css/blob/master/generic/_debug.scss" rel="external">debug.scss</a>, which is a part of the <a href="https://github.com/csswizardry/inuit.css" title="Visit https://github.com/csswizardry/inuit.css" rel="external">Inuit CSS framework</a>.</p>
+
+    <h4 class="toc">Table of contents</h4>
+    <ol>
+      <li><a href="#headings">Headings</a>
+        <ol>
+          <li><a href="#heading-levels">Heading levels</a></li>
+          <li><a href="#multiple-line-headings">Headings spanning multiple lines</a></li>
+          <li><a href="#headings-with-paragraphs">Headings with paragraphs</a></li>
+        </ol>
+      </li>
+
+      <li><a href="#block-level">Block level elements</a>
+        <ol>
+          <li><a href="#paragraph">Paragraph</a></li>
+          <li><a href="#blockquote">Blockquote</a></li>
+          <li><a href="#address">Address</a></li>
+          <li><a href="#pre">Preformatted Text</a></li>
+          <li><a href="#lists">Lists</a>
+            <ol>
+              <li><a href="#ul">Unordered list</a></li>
+              <li><a href="#ol">Ordered list</a></li>
+              <li><a href="#dl">Definition list</a></li>
+              <li><a href="#nested-ul">Nested unordered list</a></li>
+              <li><a href="#nested-ol">Nested ordered list</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+
+      <li><a href="#text-level">Text Level Elements</a>
+        <ol>
+          <li><a href="#abbr">Abbreviation</a></li>
+          <li><a href="#a">Anchor</a></li>
+          <li><a href="#cite">Citation</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#dfn">Definition</a></li>
+          <li><a href="#ins">Delete</a></li>
+          <li><a href="#em">Emphasis</a></li>
+          <li><a href="#ins">Insert</a></li>
+          <li><a href="#kbd">Keyboard</a></li>
+          <li><a href="#q">Quotation</a></li>
+          <li><a href="#samp">Sample Text Element</a></li>
+          <li><a href="#small">Small</a></li>
+          <li><a href="#strong">Strong</a></li>
+          <li><a href="#sup">Subscript</a></li>
+          <li><a href="#sup">Superscript</a></li>
+          <li><a href="#var">Variable</a></li>
+        </ol>
+      </li>
+
+      <li><a href="#controls">Controls</a>
+        <ol>
+          <li><a href="#input">Input</a></li>
+          <li><a href="#radio">Radio</a></li>
+          <li><a href="#checkbox">Checkbox</a></li>
+          <li><a href="#select">Select</a></li>
+          <li><a href="#textarea">Textarea</a></li>
+          <li><a href="#fieldset">Fieldset</a></li>
+          <li><a href="#button">Button</a></li>
+        </ol>
+      </li>
+
+      <li><a href="#presentational">Presentational Elements</a>
+        <ol>
+          <li><a href="#figure">Figure and Figure Caption</a></li>
+          <li><a href="#hr">Horizontal Rule</a></li>
+          <li><a href="#details">Details and Summary</a></li>
+          <li><a href="#table">Table</a></li>
+        </ol>
+      </li>
+    </ol>
+
+    <div class="jmt-section-heading" id="headings"><small>1</small> Headings</div>
+
+    <div class="jmt-section-heading" id="heading-levels"><small>1.1</small> Heading levels
+      <code>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</code></div>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <div class="jmt-section-heading" id="multiple-line-headings"><small>1.2</small> Headings spanning multiple lines</div>
+
+    <h1>Heading 1 wolf pour-over intelligentsia actually cupidatat</h1>
+    <h2>Heading 2 wolf pour-over intelligentsia actually cupidatat</h2>
+    <h3>Heading 3 wolf pour-over intelligentsia actually cupidatat</h3>
+    <h4>Heading 4 wolf pour-over intelligentsia actually cupidatat</h4>
+    <h5>Heading 5 wolf pour-over intelligentsia actually cupidatat Qui brunch officia scenester twee elit</h5>
+    <h6>Heading 6 wolf pour-over intelligentsia actually cupidatat Qui brunch officia scenester twee elit cosby sweater sriracha</h6>
+
+    <div class="jmt-section-heading" id="headings-with-paragraphs"><small>1.3</small> Headings with paragraphs</div>
+
+    <h1>Heading 1</h1>
+    <p>Nihil pork belly deserunt godard marfa, post-ironic incididunt. Non est direct trade readymade et, ad cliche salvia. Salvia sapiente yr, retro assumenda placeat ugh duis. PBR ex beard voluptate sint before they sold out, ullamco pariatur. Selvage cardigan labore tattooed. </p>
+
+    <h2>Heading 2</h2>
+    <p>Cardigan non artisan, adipisicing wayfarers master cleanse sunt raw denim bushwick ennui fixie. Flexitarian ea helvetica, master cleanse officia viral sustainable thundercats.</p>
+
+    <h3 class="floor">Heading 3</h3>
+    <p>Aenean id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor non. Nullam accumsan ultrices aliquet. In dictum lacinia tellus et imperdiet. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue.</p>
+
+    <h4>Heading 4</h4>
+    <p>Placeat cray aliquip aliqua, wayfarers mcsweeney's salvia deep v scenester elit. Cillum narwhal consectetur, umami sustainable hashtag cardigan eu. In non tumblr id ea marfa. Blog viral flexitarian, deserunt lomo godard banjo excepteur.</p>
+
+    <h5>Heading 5</h5>
+    <p>Ut malesuada fermentum pulvinar. Mauris vulputate semper malesuada. Fusce quis varius purus. Aenean id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor non. Nullam accumsan ultrices aliquet. In dictum lacinia tellus et imperdiet. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue.</p>
+
+    <h6 class="roof">Heading 6</h6>
+    <p>Pinterest kogi food truck, butcher iphone cosby sweater sriracha. Qui brunch officia scenester twee elit, est ethnic ullamco. Wolf pour-over intelligentsia actually cupidatat, pop-up locavore photo booth.</p>
+
+    <div class="jmt-section-heading" id="block-level"><small>2</small> Block level elements</div>
+
+    <div class="jmt-section-heading" id="paragraph"><small>2.1</small> Paragraphs <code>&lt;p&gt;</code></div>
+    <p>Nihil pork belly deserunt godard marfa, post-ironic incididunt. Non est direct trade readymade et, ad cliche salvia. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. Salvia sapiente yr, retro assumenda placeat ugh duis. PBR ex beard voluptate sint before they sold out, ullamco pariatur. Selvage cardigan labore tattooed. Wolf pour-over intelligentsia actually cupidatat, pop-up locavore photo booth.</p>
+
+    <p>Ut malesuada fermentum pulvinar. Mauris vulputate semper malesuada. Fusce quis varius purus. Aenean id justo ipsum. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. Quisque convallis hendrerit est, ut dictum metus porttitor non. Nullam accumsan ultrices aliquet. Lacinia tellus et imperdiet. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue.</p>
+
+    <p>In dictum lacinia tellus et imperdiet. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. Salvia sapiente yr, retro assumenda placeat ugh duis. PBR ex beard voluptate sint before they sold out, ullamco pariatur. Selvage cardigan labore tattooed. Wolf pour-over intelligentsia actually cupidatat, pop-up locavore photo booth.</p>
+
+    <div class="jmt-section-heading" id="blockquote"><small>2.2</small> Blockquote <code>&lt;blockquote&gt;</code></div>
+    <blockquote cite="http://en.wikipedia.org/wiki/Blockquote"><p> Blockquote with a cite attribute. In dictum lacinia tellus et imperdiet. In dictum lacinia tellus et imperdiet. Fusce odio ante, eleifend retro assumenda placeat ugh duis eget lacinia sed, elementum nec augue.Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. <cite>Citing a source here.</cite></p></blockquote>
+
+    <div class="jmt-section-heading" id="address"><small>2.3</small> Address <code>&lt;address&gt;</code></div>
+    <address>
+    Unit 1 / 23 Some Street<br>
+    Cooks Hill, Newcastle<br>
+    Australia, 2300
+    </address>
+
+    <div class="jmt-section-heading" id="pre"><small>2.4</small> Preformated Text <code>&lt;pre&gt;</code></div>
+    <pre>
+
+    var toQueryString = function(obj) {
+      var str = '';
+      var ln;
+      for (var pro in obj) {
+        str += pro + '=' + obj[pro] + '&';
+      }
+      ln = str.length;
+      return str.slice(0, ln - 1);
+    };
+
+    </pre>
+
+    <div class="jmt-section-heading" id="lists"><small>2.5</small> Lists</div>
+
+    <div class="jmt-section-heading" id="ul"><small>2.5.1</small> Unordered list</div>
+    <ul>
+      <li>Fusce odio ante, eleifend eget lacinia sed, elementum nec augue. Fusce odio ante, eleifend eget lacinia sed, elementum nec augue.</li>
+      <li>Blog viral flexitarian ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor non.</li>
+      <li>Aenean id justo ipsum. Quisque convallis hendrerit est, blog viral flexitarian ut dictum metus porttitor non.</li>
+      <li>Quisque convallis hendrerit est,Blog viral flexitarian ut dictum metus porttitor non.</li>
+      <li>Aenean id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor non.</li>
+    </ul>
+
+    <div class="jmt-section-heading" id="ol"><small>2.5.2</small> Ordered list</div>
+    <ol>
+      <li>First enean id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor nonid justo ipsum convallis hendrerit.</li>
+      <li>Second enean id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor nonid justo ipsum hendrerit est.</li>
+      <li>Third id justo ipsum. Quisque convallis hendrerit est, ut dictum metus porttitor nonid justo ipsum hendrerit est</li>
+      <li>Fourth Quisque convallis hendrerit est, ut dictum metus porttitor nonid justo ipsum hendrerit convallis est.</li>
+    </ol>
+
+    <div class="jmt-section-heading" id="dl"><small>2.5.3</small> Definition list</div>
+    <dl>
+      <dt>Definition list term or title</dt>
+        <dd>This is a definition list division.</dd>
+      <dt>Assumenda</dt>
+        <dd>n dictum lacinia tellus et imperdiet. In dictum lacinia tellus et imperdiet. Fusce odio ante, eleifend retro assumenda placeat ugh duis eget lacinia sed, elementum nec augue</dd>
+      <dt>Typewriter</dt>
+        <dd> Austin mlkshk nisi. Typewriter dolor mlkshk, art party craft beer helvetica single-origin coffee. Commodo DIY cosby sweater marfa vegan. Fugiat vero freegan keytar photo booth, eu butcher ennui dolor four loko craft beer 8-bit consectetur delectus. Excepteur aliquip ugh retro bicycle rights, put a bird on it twee swag.</dd>
+      <dt>Consequat</dt>
+        <dd>Consequat food truck cupidatat, messenger bag chillwave banjo lomo before they sold out mcsweeney's literally. Keffiyeh accusamus vice seitan +1, hella odd future ethical brunch. Small batch williamsburg letterpress ullamco, biodiesel godard eu.</dd>
+    </dl>
+
+    <div class="jmt-section-heading" id="nested-ul"><small>2.5.4</small> Nested unordered list</div>
+    <ul>
+      <li>Unordered list level 1 item</li>
+      <li>Unordered list level 1 item
+        <ul>
+          <li>Unordered list level 2 item</li>
+          <li>Unordered list level 2 item
+            <ul>
+              <li>Unordered list level 3 item</li>
+              <li>Unordered list level 3 item</li>
+              <li>Unordered list level 3 item</li>
+            </ul>
+          </li>
+          <li>Unordered list level 2 item</li>
+        </ul>
+      </li>
+      <li>Unordered list level 1 item</li>
+     </ul>
+    <div class="jmt-section-heading" id="nested-ol"><small>2.5.5</small> Nested ordered list</div>
+    <ol>
+      <li>Ordered list level 1 item</li>
+      <li>Ordered list level 1 item
+        <ol>
+          <li>Ordered list level 2 item</li>
+          <li>Ordered list level 2 item
+            <ol>
+              <li>Ordered list level 3 item</li>
+              <li>Ordered list level 3 item</li>
+              <li>Ordered list level 3 item</li>
+            </ol>
+          </li>
+          <li>Ordered list level 2 item</li>
+        </ol>
+      </li>
+      <li>Ordered list level 1 item</li>
+    </ol>
+
+    <div class="jmt-section-heading" id="text-level"><small>3</small> Text Level Elements</div>
+
+    <div class="jmt-section-heading" id="abbr"><small>3.11</small> Abbreviation <code>&lt;abbr&gt;</code></div>
+    <p>The HTML &lt;abbr&gt; element represents an abbreviation and optionally provides a full description for it. If present, the title attribute must contain this full description and nothing else</p>
+    <p>Sample: <abbr title="doctor">dr</abbr></p>
+
+    <div class="jmt-section-heading" id="a"><small>3.1</small> Anchor <code>&lt;a&gt;</code></div>
+    <p>The HTML &lt;a&gt; element defines a hyperlink, the named target destination for a hyperlink, or both.</p>
+    <p>Sample:</p>
+    <p><a href="#">Anchor</a></p>
+    <p><a href="#" class="link">Anchor [class="link"]</a></p>
+    <p><a href="#" class="visited">Anchor [class="visited"]</a></p>
+    <p><a href="#" class="hover">Anchor [class="hover"]</a></p>
+    <p><a href="#" class="active">Anchor [class="active"]</a></p>
+    <p>An achor wapped around an image:</p>
+    <p><a href="#"><img src="http://lorempixel.com/200/100/" width="200" height="100" title="lorempixel image"></a></p>
+
+    <div class="jmt-section-heading" id="cite"><small>3.5</small> Citation <code>&lt;cite&gt;</code></div>
+    <p>The HTML &lt;cite&gt; element contains the title of a work, such as a book, song, movie, TV show, sculpture, etc.</p>
+    <p>Sample: <cite>This is quotation source</cite></p>
+
+    <div class="jmt-section-heading" id="code"><small>3.7</small> Code <code>&lt;code&gt;</code></div>
+    <p>The HTML &lt;code&gt; element represents a fragment of computer code. By default, it is displayed in the browser's default monospace font.</p>
+    <p>Sample: <code>document.write("Hello world");</code></p>
+
+    <div class="jmt-section-heading" id="dfn"><small>3.6</small> Definition <code>&lt;dfn&gt;</code></div>
+    <p>The HTML &lt;dfn&gt; element represents the defining instance of a term.</p>
+    <p>Sample: <dfn>This is definition</dfn></p>
+
+    <div class="jmt-section-heading" id="em"><small>3.2</small> Emphasis <code>&lt;em&gt;</code></div>
+    <p>The HTML &lt;em&gt; element marks text that has stress emphasis. The &lt;em&gt; element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
+    <p>Sample: <em>This is emphasied text</em>.</p>
+
+    <div class="jmt-section-heading" id="ins"><small>3.14</small> Insert and Delete <code>&lt;ins&gt; &lt;del&gt;</code></div>
+    <p>The HTML &lt;ins&gt; element represents a range of text that has been added to a document.</p>
+    <p>The HTML &lt;del&gt; element represents a range of text that has been deleted from a document. This element is often (but need not be) rendered with strike-through text.</p>
+    <p>Sample:</p>
+    <p><ins datetime="20013-04-25T08:15:30+02:00" title="Added new information according to suggestions">This information was just added.</ins><br>
+    <del>While this information is no longer valid.</del></p>
+
+    <div class="jmt-section-heading" id="kbd"><small>3.9</small> Keyboard <code>&lt;kbd&gt;</code></div>
+    <p>The HTML &lt;kbd&gt; Element represents user input and produces an inline element displayed in the browser's default monotype font.</p>
+    <p>Sample: press <kbd>Command + Q</kbd> to close this window. <kbd>ESC</kbd></p>
+
+    <div class="jmt-section-heading" id="q"><small>3.12</small> Quotation <code>&lt;q&gt;</code></div>
+    <p>The HTML &lt;q&gt; element indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks, for long quotations use <a href="#blockquote">&lt;blockquote&gt;</a> element.</p>
+    <p>Sample: <q>This is sample quotation</q></p>
+
+    <div class="jmt-section-heading" id="samp"><small>3.8</small> Sample Text Element <code>&lt;samp&gt;</code></div>
+    <p>The HTML &lt;samp&gt; produces an inline element displayed in the browser's default monotype font (Lucida Console). This element was intended to identify sample output from a computer program.</p>
+    <p>Sample: <samp>Error: no such file or directory</samp></p>
+
+    <div class="jmt-section-heading" id="small"><small>3.4</small> Small <code>&lt;small&gt;</code></div>
+    <p>The HTML &lt;small&gt; element makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.  In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.</p>
+    <p>Sample: <small>Small</small></p>
+
+    <div class="jmt-section-heading" id="strong"><small>3.3</small> Strong <code>&lt;strong&gt;</code></div>
+    <p>The HTML &lt;strong&gt; element gives text strong importance, and is typically displayed in bold.</p>
+    <p>Sample: <strong>This is text with stronger emphasis</strong></p>
+
+    <div class="jmt-section-heading" id="sup"><small>3.13</small> Subscript and Superscript <code>&lt;sub&gt; &lt;sup&gt;</code></div>
+    <p>The HTML &lt;sub&gt; element defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.</p>
+    <p>The HTML &lt;sup&gt; element defines a span of text that should be displayed, for typographic reasons, higher, and often smaller, than the main span of text.</p>
+    <p>Sample:</p>
+    <p>H<sub>2</sub>O</p>
+    <p>E = mc<sup>2</sup></p>
+    <p>The 14<sup>th</sup> of January</p>
+
+    <div class="jmt-section-heading" id="var"><small>3.10</small> Variable <code>&lt;var&gt;</code></div>
+    <p>The HTML &lt;var&gt; element represents a variable in a mathematical expression or a programming context.</p>
+    <p>Sample: <var>counter</var></p>
+
+    <div class="jmt-section-heading" id="controls"><small>4</small> Controls</div>
+
+    <div class="jmt-section-heading" id="input"><small>4.1</small> Input <code>&lt;input&gt;</code></div>
+    <p><label for="text-input">Text input</label><br>
+      <input id="text-input" type="text"></p>
+
+    <div class="jmt-section-heading" id="radio"><small>4.2</small> Radio <code>&lt;input type="radio"&gt; &lt;label&gt;</code></div>
+    <p>A style of <code>cursor: pointer;</code> will help identify a label as a clickable region.</p>
+    <p>
+      <label for="radio-1"> <input type="radio" id="radio-1" name="radio" value="1"> Radio Button One</label><br>
+      <label for="radio-2"> <input type="radio" id="radio-2" name="radio" value="2"> Radio Button Two</label><br>
+      <label for="radio-3"> <input type="radio" id="radio-3" name="radio" value="3"> Radio Button Three</label><br>
+    </p>
+
+    <div class="jmt-section-heading" id="checkbox"><small>4.3</small> Checkbox <code>&lt;input type="checkbox"&gt; &lt;label&gt;</code></div>
+    <p>
+      <label for="checkbox-1"> <input type="checkbox" id="checkbox-1" name="checkbox" value="1"> Checkbox One</label><br>
+      <label for="checkbox-2"> <input type="checkbox" id="checkbox-2" name="checkbox" value="2"> Checkbox Two</label><br>
+      <label for="checkbox-3"> <input type="checkbox" id="checkbox-3" name="checkbox" value="3"> Checkbox Three</label><br>
+    </p>
+
+    <div class="jmt-section-heading" id="select"><small>4.4</small> Select <code>&lt;select&gt; &lt;label&gt;</code></div>
+    <p>
+    <label for="select-i">Select
+      <select id="select-i">
+        <optgroup label="Options">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option>
+        </optgroup>
+      </select>
+    </label>
+    </p>
+
+    <div class="jmt-section-heading" id="textarea"><small>4.5</small> Textarea <code>&lt;textarea&gt; &lt;label&gt;</code></div>
+    <p>
+    <label for="textarea-i">Textarea</label><br>
+    <textarea id="textarea-i"></textarea>
+    </p>
+
+    <div class="jmt-section-heading" id="fieldset"><small>4.6</small> Fieldset <code>&lt;fieldset&gt;</code></div>
+    <fieldset>
+    <legend>Form legend</legend>
+    <p>This is the content inside the fieldset</p>
+    </fieldset>
+
+    <div class="jmt-section-heading" id="button"><small>4.7</small> Button <code>&lt;button&gt;</code></div>
+    <button>This is a button</button>
+
+    <div class="jmt-section-heading" id="presentational"><small>5</small> Presentational Elements</div>
+
+    <div class="jmt-section-heading" id="figure"><small>5.1</small> Figure and Fig Caption <code>&lt;figure&gt; &lt;figcaption&gt;</code></div>
+    <figure>
+    <img src="http://lorempixel.com/g/400/200/" width="400" height="200" alt="lorempixel"><br>
+    <figcaption>A lorempixel image form lorempixel.com ficaption</figcaption>
+    </figure>
+
+    <div class="jmt-section-heading" id="hr"><small>5.2</small> Horizontal Rule <code>&lt;hr&gt;</code></div>
+    <hr>
+
+    <div class="jmt-section-heading" id="details"><small>5.3</small> Details and Summary <code>&lt;details&gt; &lt;summary&gt;</code></div>
+    <details>
+      <summary>Article Summary</summary>
+      <p>Article Details</p>
+    </details>
+
+    <div class="jmt-section-heading" id="table"><small>5.4</small> Table <code>&lt;table&gt; &lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt;</code></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Table header &lt;th&gt;</th>
+          <th>Table header &lt;th&gt;</th>
+          <th>Table header &lt;th&gt;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table data &lt;td&gt;</td>
+          <td>Table data &lt;td&gt;</td>
+          <td>Table data &lt;td&gt;</td>
+        </tr>
+      <tbody>
+      <tfoot>
+        <tr>
+          <td>Table footer &lt;td&gt;</td>
+          <td>Table footer &lt;td&gt;</td>
+          <td>Table footer &lt;td&gt;</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <!-- /.just-my-type -->
+
+  </body>
+</html>
