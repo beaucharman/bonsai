@@ -2,7 +2,7 @@
 
 > A Sass directory with simple & smart initial styles, and room to grow.
 
-[Check out what this project renders as](http://beaucharman.github.io/sass-directory).
+[View the example output of the Sass directory](http://beaucharman.github.io/sass-directory).
 
 ## Todo (Roadmap)
 
