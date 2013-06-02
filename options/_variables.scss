@@ -22,59 +22,59 @@
 
 // Brand Color
 // ======================================================================== /
-$brand-color--primary:   #999;
-$brand-color--secondary: #777;
-$brand-color--ternary:   #555;
+$brand-color--primary:          #999;
+$brand-color--secondary:        #777;
+$brand-color--ternary:          #555;
 
 // Display Color
 // ======================================================================== /
-$foreground-color: #ddd;
-$background-color: #fff;
+$foreground-color:              #ddd;
+$background-color:              #fff;
 
 // Grayscale
-$black-10: darken(#fff, 10%);
-$black-20: darken(#fff, 20%);
-$black-30: darken(#fff, 30%);
-$black-40: darken(#fff, 40%);
-$black-50: darken(#fff, 50%);
-$black-60: darken(#fff, 60%);
-$black-70: darken(#fff, 70%);
-$black-80: darken(#fff, 80%);
-$black-90: darken(#fff, 90%);
+$black-10:                      darken(#fff, 10%);
+$black-20:                      darken(#fff, 20%);
+$black-30:                      darken(#fff, 30%);
+$black-40:                      darken(#fff, 40%);
+$black-50:                      darken(#fff, 50%);
+$black-60:                      darken(#fff, 60%);
+$black-70:                      darken(#fff, 70%);
+$black-80:                      darken(#fff, 80%);
+$black-90:                      darken(#fff, 90%);
 
 // limit grey shades for simplicity of design
-$light-grey:  #ddd;
-$medium-grey: #555;
-$dark-grey:   #222;
+$grey--light:                   #ddd;
+$grey--medium:                  #555;
+$grey--dark:                    #222;
 
 // Alert / notification colors
-$alert--primary: #428bca;
-$alert--success: #5cb85c;
-$alert--warning: #f0ad4e;
-$alert--danger:  #d9534f;
-$alert--info:    #5bc0de;
+$alert--primary:                #428bca;
+$alert--success:                #5cb85c;
+$alert--warning:                #f0ad4e;
+$alert--danger:                 #d9534f;
+$alert--info:                   #5bc0de;
 
 // ========================================================================
 // Shapes and Layout
 // ======================================================================== /
-$base--border-radius: 4px;
+$base--border-radius:           4px;
 
 // Breakpoints
 // ======================================================================== /
-$display--narrow:  480px;
-$display--medium: 720px;
-$display--wide:  1140px;
+$display--narrow:               480px;
+$display--medium:               720px;
+$display--wide:                 1140px;
 
 // Base Pixel Value
-$base--pixel-value: 16px;
+$base--pixel-value:             16px;
 
 // Grid
-$grid--columns:          12;
-$grid--column-padding:   1.5em; // Left and right inner padding
-$grid--float-breakpoint: $display--medium;
+$grid--columns:                 12;
+$grid--column-padding:          1.5em; // Left and right inner padding
+$grid--float-breakpoint:        $display--medium;
 
 // Vertical margin
-$base--margin--vertical: 1.5em;
+$base--margin--vertical:        1.5em;
 
 // ========================================================================
 // Typography
@@ -86,37 +86,37 @@ $base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sa
 $base--font-family--monospace:  Consolas, monaco, monospace;
 
 // Text
-$base--text-color: #111;
+$base--text-color:              #111;
 
 // Links
-$base--link-color:         #ed6347;
-$base--link-color--hover:  darken($base--link-color, 15%);
-$base--link-color--active: lighten($base--link-color, 15%);;
+$base--link-color:              #ed6347;
+$base--link-color--hover:       darken($base--link-color, 15%);
+$base--link-color--active:      lighten($base--link-color, 15%);;
 
 // Font size variations
-$base--font-size:        $base--pixel-value;
-$base--font-size--large: $base--font-size * 1.25;
-$base--font-size--small: $base--font-size * 0.85;
-$base--font-size--mini:  $base--font-size * 0.75;
+$base--font-size:               $base--pixel-value;
+$base--font-size--large:        $base--font-size * 1.25;
+$base--font-size--small:        $base--font-size * 0.85;
+$base--font-size--mini:         $base--font-size * 0.75;
 
 // Font characteristics
-$base--font-family: $base--font-family--sans-serif;
-$base--font-weight: 400;
-$base--line-height: 1.6;
+$base--font-family:             $base--font-family--sans-serif;
+$base--font-weight:             400;
+$base--line-height:             1.6;
 
 // Miscellaneous type properties
-$code--font-family: $base--font-family--monospace;
+$code--font-family:             $base--font-family--monospace;
 
 // Headings
 // ======================================================================== /
-$h1--font-size: 3.4em;
-$h2--font-size: 2.8em;
-$h3--font-size: 2.2em;
-$h4--font-size: 1.8em;
-$h5--font-size: 1.4em;
-$h6--font-size: 1em;
+$h1--font-size:                 3.4em; // h1, alpha
+$h2--font-size:                 2.8em; // h2, beta
+$h3--font-size:                 2.2em; // h3, gamma
+$h4--font-size:                 1.8em; // h4, delta
+$h5--font-size:                 1.4em; // h5, epsilon
+$h6--font-size:                 1em;   // h6, zeta
 
 // Heading characteristics
-$headings--font-family: $base--font-family--serif;
-$headings--font-weight: 500;
-$headings--line-height: 1.2;
+$headings--font-family:         $base--font-family--serif;
+$headings--font-weight:         500;
+$headings--line-height:         1.2;

@@ -19,18 +19,8 @@
 
 /* Entry Container styles
    ======================================================================== */
-.entry:before,
-.entry:after {
-  content: " ";
-  display: table;
-}
-
-.entry:after {
-  clear: both;
-}
-
 .entry {
-  *zoom: 1;
+  @extend: %clearfix;
 }
 
 /* Alignment styles
@@ -70,6 +60,9 @@ blockquote.right {
   float: right;
 }
 
+/**
+ * Styles added through the style select editor filter
+ */
 .lead {
   font-size: 1.5em;
 }
@@ -85,7 +78,7 @@ blockquote.right {
 
 .muted {  }
 
-/* Image and Gallery tyles
+/* Image and Gallery styles
    ======================================================================== */
 .hentry img {
   max-width: 100%;
@@ -124,7 +117,8 @@ blockquote.right {
 /* Columns
    ======================================================================== */
 .article-column {
-  margin-right:4%; float:left;
+  margin-right:4%;
+  float:left;
   &.one-fourth { width:22%; }
   &.one-third { width:30.66%; }
   &.one-half { width:44%; }

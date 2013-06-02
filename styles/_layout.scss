@@ -15,10 +15,10 @@
    Layout
    ======================================================================== */
 
-/* Center aligned container
+/* Center aligned page wrap
    ======================================================================== */
-.container {
+.page-wrap {
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.5em;
   max-width: $display--medium;
 }

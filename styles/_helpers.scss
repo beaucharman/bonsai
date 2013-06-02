@@ -74,11 +74,11 @@
 // todo
 
 /**
- * Clearfix | @extend .clearfix;
+ * Clearfix | @extend %clearfix;
  * ========================================================================
  * Thank you http://nicolasgallagher.com/micro-clearfix-hack/
  * ======================================================================== */
-.clearfix {
+%clearfix {
   *zoom: 1;
   &:before,
   &:after {
