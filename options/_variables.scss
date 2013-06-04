@@ -56,7 +56,12 @@ $alert--info:                   #5bc0de;
 // ========================================================================
 // Shapes and Layout
 // ======================================================================== /
+
+// base border radius 
 $base--border-radius:           4px;
+
+// global box sizing: border box
+$global--border-box-sizing:     true;
 
 // Breakpoints
 // ======================================================================== /
