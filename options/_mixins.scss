@@ -24,6 +24,13 @@
   background-color: rgba($color, $opacity);
 }
 
+// Box sizing - border box, out of the... box
+@mixin box-sizing($value: border-box) { 
+  -webkit-box-sizing: $value; 
+     -moz-box-sizing: $value; 
+          box-sizing: $value; 
+}
+
 //
 // Grid system
 // ======================================================================== /
