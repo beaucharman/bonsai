@@ -24,13 +24,6 @@
   background-color: rgba($color, $opacity);
 }
 
-// Box sizing - border box, out of the... box
-@mixin box-sizing($value: border-box) { 
-  -webkit-box-sizing: $value; 
-     -moz-box-sizing: $value; 
-          box-sizing: $value; 
-}
-
 //
 // Grid system
 // ======================================================================== /
@@ -69,7 +62,7 @@
 // ======================================================================== /
 
 // Box sizing
-@mixin box-sizing($box-model) {
+@mixin box-sizing($box-model: border-box) {
   -webkit-box-sizing: $box-model; // Safari <= 5
      -moz-box-sizing: $box-model; // Firefox <= 19
           box-sizing: $box-model;

@@ -57,7 +57,7 @@ $alert--info:                   #5bc0de;
 // Shapes and Layout
 // ======================================================================== /
 
-// base border radius 
+// base border radius
 $base--border-radius:           4px;
 
 // global box sizing: border box
@@ -75,7 +75,12 @@ $base--pixel-value:             16px;
 // Grid
 $grid--columns:                 12;
 $grid--column-padding:          1.5em; // Left and right inner padding
+
+// Set the point in which columns collapse
 $grid--float-breakpoint:        $display--medium;
+
+// Set the page wrap's max width
+$base--max-width:               $display--wide;
 
 // Vertical margin
 $base--margin--vertical:        1.5em;
