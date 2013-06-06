@@ -1,114 +1,593 @@
-/*
-Syntax error: Mixin box-sizing is missing argument $box-model.
-        on line 18 of styles/_layout.scss, in `box-sizing'
-        from line 18 of styles/_layout.scss
-        from line 27 of main.scss
+@media screen {
+  /* ========================================================================
+     Tabula Rasa
+     ======================================================================== */
+  /* HTML5 display definitions
+     ======================================================================== */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  nav,
+  section,
+  summary {
+    display: block; }
 
-13: 
-14: // Sass variables, mixins and functions
-15: // ======================================================================== /
-16: @import 'options/variables';
-17: @import 'options/mixins';
-18: @import 'options/functions';
-19: // @import 'includes/wp-theme-declaration';
-20: 
-21: @media screen {
-22: 
-23:   // Base styles
+  audio,
+  canvas,
+  video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
 
-Backtrace:
-styles/_layout.scss:18:in `box-sizing'
-styles/_layout.scss:18
-main.scss:27
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:57:in `perform_arguments'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:50:in `zip'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:50:in `perform_arguments'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:261:in `visit_mixin'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:318:in `visit_rule'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:203:in `visit_if'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:225:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:360:in `visit_media'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:341:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:299:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:95:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `initialize'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `new'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:307:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:444:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:307:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/sass:8
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Mixin box-sizing is missing argument $box-model.\A         on line 18 of styles/_layout.scss, in `box-sizing'\A         from line 18 of styles/_layout.scss\A         from line 27 of main.scss\A \A 13: \A 14: // Sass variables, mixins and functions\A 15: // ======================================================================== /\A 16: @import 'options/variables';\A 17: @import 'options/mixins';\A 18: @import 'options/functions';\A 19: // @import 'includes/wp-theme-declaration';\A 20: \A 21: @media screen {\A 22: \A 23:   // Base styles"; }
+  audio:not([controls]) {
+    display: none;
+    height: 0; }
+
+  [hidden] {
+    display: none; }
+
+  /* Base
+     ======================================================================== */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; }
+
+  html,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: sans-serif; }
+
+  body {
+    margin: 0; }
+
+  /* Links
+     ======================================================================== */
+  a:focus {
+    outline: thin dotted; }
+
+  a:active,
+  a:hover {
+    outline: 0; }
+
+  /* Typography
+     ======================================================================== */
+  abbr[title] {
+    border-bottom: 1px dotted; }
+
+  b,
+  strong {
+    font-weight: bold; }
+
+  blockquote {
+    margin: 1em 40px; }
+
+  dfn {
+    font-style: italic; }
+
+  mark {
+    background: #ff0;
+    color: #000; }
+
+  p,
+  pre {
+    margin: 1em 0; }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em; }
+
+  pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word; }
+
+  q {
+    quotes: none; }
+
+  q:before,
+  q:after {
+    content: '';
+    content: none; }
+
+  small {
+    font-size: 80%; }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+
+  sup {
+    top: -0.5em; }
+
+  sub {
+    bottom: -0.25em; }
+
+  /* Lists
+     ======================================================================== */
+  dl,
+  menu,
+  ol,
+  ul {
+    margin: 1em 0; }
+
+  dd {
+    margin: 0 0 0 40px; }
+
+  menu,
+  ol,
+  ul {
+    padding: 0 0 0 40px; }
+
+  nav ul,
+  nav ol {
+    list-style: none;
+    list-style-image: none; }
+
+  /* Embedded content
+     ======================================================================== */
+  img {
+    border: 0;
+    -ms-interpolation-mode: bicubic; }
+
+  svg:not(:root) {
+    overflow: hidden; }
+
+  /* Figures
+     ======================================================================== */
+  figure {
+    margin: 0; }
+
+  /* Forms
+     ======================================================================== */
+  form {
+    margin: 0; }
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+
+  legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px; }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle; }
+
+  button,
+  input {
+    line-height: normal; }
+
+  button,
+  html input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible; }
+
+  button[disabled],
+  input[disabled] {
+    cursor: default; }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px; }
+
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+  textarea {
+    overflow: auto;
+    vertical-align: top; }
+
+  /* Tables
+     ======================================================================== */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+  /* ========================================================================
+     Global
+     ======================================================================== */
+  html,
+  button,
+  input,
+  select,
+  textarea {
+    color: #222; }
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; }
+
+  /* ========================================================================
+     Block level elements
+     ======================================================================== */
+  p,
+  blockquote,
+  address,
+  ul,
+  ol,
+  dl {
+    margin: 1.5em 0; }
+
+  blockquote {
+    padding-left: 1.75em;
+    margin: 0; }
+
+  /* Lists
+     ======================================================================== */
+  /* Definition lists */
+  dl dd {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.5em; }
+  dl dt {
+    font-weight: 600; }
+
+  /* Ordered and unordered lists */
+  ul, ol {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-left: 1.75em; }
+
+  li {
+    line-height: 1.6;
+    margin-bottom: 0.5em; }
+
+  /* Tables
+     ======================================================================== */
+  table {
+    width: 100%; }
+
+  /* ========================================================================
+     Text level elements
+     ======================================================================== */
+  /* ========================================================================
+     Block level elements
+     ======================================================================== */
+  /* Images
+     ======================================================================== */
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto; }
+
+  iframe {
+    display: block; }
+
+  /* Global border box sizing
+     ======================================================================== */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* ========================================================================
+     Layout
+     ======================================================================== */
+  /**
+   * Center aligned page wrap
+   */
+  .page-wrap {
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 720px; }
+
+  /* ========================================================================
+     Typography
+     ======================================================================== */
+  /* Global
+     ======================================================================== */
+  html {
+    font-size: 100%; }
+
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif; }
+
+  /**
+   * Headings
+   *
+   * --raise and --drop are similar to the vertical push and pull.
+   * They take the calculated top and bottom margin respectively and
+   * apply that same margin, but the negative equivalent. So, if the vertical
+   * rhythm is 22px, then a heading h2 with the class .h2--drop applied to it
+   * will have margin-bottom: -22px; applied to it to force it to be flush with
+   * proceeding elements. Negating vertical margin, but maintaining line height.
+   * ======================================================================== */
+  /**
+   * Various headings and size alias.
+   */
+  /**
+   * Heading, and size alias vertical rhythm declaration.
+   */
+  h1,
+  .alpha {
+    font-size: 3.4em;
+    margin: 0.47059em 0; }
+
+  .h1--raise,
+  .alpha--raise {
+    margin-top: -0.47059em; }
+
+  .h1--drop,
+  .alpha--drop {
+    margin-bottom: -0.47059em; }
+
+  h2,
+  .beta {
+    font-size: 2.8em;
+    margin: 0.57143em 0; }
+
+  .h2--raise,
+  .beta--raise {
+    margin-top: -0.57143em; }
+
+  .h2--drop,
+  .beta--drop {
+    margin-bottom: -0.57143em; }
+
+  h3,
+  .gamma {
+    font-size: 2.2em;
+    margin: 0.72727em 0; }
+
+  .h3--raise,
+  .gamma--raise {
+    margin-top: -0.72727em; }
+
+  .h3--drop,
+  .gamma--drop {
+    margin-bottom: -0.72727em; }
+
+  h4,
+  .delta {
+    font-size: 1.8em;
+    margin: 0.88889em 0; }
+
+  .h4--raise,
+  .delta--raise {
+    margin-top: -0.88889em; }
+
+  .h4--drop,
+  .delta--drop {
+    margin-bottom: -0.88889em; }
+
+  h5,
+  .epsilon {
+    font-size: 1.4em;
+    margin: 1.14286em 0; }
+
+  .h5--raise,
+  .epsilon--raise {
+    margin-top: -1.14286em; }
+
+  .h5--drop,
+  .epsilon--drop {
+    margin-bottom: -1.14286em; }
+
+  h6,
+  .zeta {
+    font-size: 1em;
+    margin: 1.6em 0; }
+
+  .h6--raise,
+  .zeta--raise {
+    margin-top: -1.6em; }
+
+  .h6--drop,
+  .zeta--drop {
+    margin-bottom: -1.6em; }
+
+  /**
+   * Styles that apply to all headings for consistency.
+   */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Serif", Lucida, Georgia, serif;
+    font-weight: 500;
+    line-height: 1.2; }
+
+  /* Block level elements
+     ======================================================================== */
+  /**
+   * Code and Pre elements.
+   */
+  pre,
+  code {
+    font-family: Consolas, monaco, monospace; }
+
+  /* Miscellaneous
+     ======================================================================== */
+  /**
+   * Vertical rhythm helpers.
+   */
+  .flush {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+  .flush--ceil {
+    margin-top: 0; }
+
+  .flush--floor {
+    margin-bottom: 0; }
+
+  /* ========================================================================
+     Components
+     ======================================================================== */
+  /* ========================================================================
+     Controls
+     ======================================================================== */
+  textarea {
+    resize: vertical; }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0; }
+
+  /* ========================================================================
+     Helpers
+     ======================================================================== */
+  .chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0; }
+
+  .ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px; }
+
+  .ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
+
+  .hidden {
+    display: none !important;
+    visibility: hidden; }
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+  .invisible {
+    visibility: hidden; }
+
+  /**
+   * Notifications and Alerts
+   */
+  /**
+   * Clearfix | @extend %clearfix;
+   * ========================================================================
+   * Thank you http://nicolasgallagher.com/micro-clearfix-hack/
+   * ======================================================================== */
+  /* ========================================================================
+     Project
+     ======================================================================== */
+  body {
+    background-color: white;
+    color: #111111; } }
+/* ========================================================================
+   Print
+   ======================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " [" attr(href) "]"; }
+
+  abbr[title]:after {
+    content: " [" attr(title) "]"; }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
