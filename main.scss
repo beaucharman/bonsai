@@ -22,23 +22,23 @@
 
   // Base styles
   // ======================================================================== /
-  @import 'styles/tabularasa';
-  @import 'styles/global';
-  @import 'styles/layout';
-  @import 'styles/typography';
+  @import 'stylesheets/tabularasa';
+  @import 'stylesheets/global';
+  @import 'stylesheets/layout';
+  @import 'stylesheets/typography';
 
   // Helpers, forms, components and WordPress related styles
   // ======================================================================== /
-  @import 'styles/components';
-  @import 'styles/controls';
-  @import 'styles/helpers';
+  @import 'stylesheets/components';
+  @import 'stylesheets/controls';
+  @import 'stylesheets/helpers';
 
   // Project specific styles
   // ======================================================================== /
-  @import 'styles/project';
+  @import 'stylesheets/project';
   // @import 'styles/wordpress';
 }
 
 // Print styles
 // ======================================================================== /
-@import 'styles/print';
+@import 'stylesheets/print';
