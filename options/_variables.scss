@@ -79,7 +79,7 @@ $grid--column-padding:          1.5em; // Left and right inner padding
 // Set the point in which columns collapse
 $grid--float-breakpoint:        $display--medium;
 
-// Set the page wrap's max width
+// Set the page wrap"s max width
 $base--max-width:               $display--wide;
 
 // Vertical margin
@@ -88,16 +88,17 @@ $base--margin--vertical:        1.5em;
 // Media
 // ======================================================================== /
 
-// Image location path
-$base--image-path:              'relative/path/to/images/from/main.css/';
+// Image location path (omit trailing slash)
+$base--image-directory-path:    "relative/path/to/images/from/main.css";
+$images:                        $base--image-directory-path // alias
 
 // ========================================================================
 // Typography
 // ======================================================================== /
 
 // Font Families
-$base--font-family--serif:      'Lucida Serif', Lucida, Georgia, serif;
-$base--font-family--sans-serif: 'Helvetica Neue', Helvetica, 'Lucida Grande', sans-serif;
+$base--font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
+$base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 $base--font-family--monospace:  Consolas, monaco, monospace;
 
 // Text
