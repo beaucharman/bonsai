@@ -90,7 +90,7 @@ $base--margin--vertical:        1.5em;
 
 // Image location path (omit trailing slash)
 $base--image-directory-path:    "relative/path/to/images/from/main.css";
-$images:                        $base--image-directory-path // alias
+$images:                        $base--image-directory-path; // alias
 
 // ========================================================================
 // Typography
