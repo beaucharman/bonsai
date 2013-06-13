@@ -4,6 +4,22 @@
 
 [View the example output of this Sass directory](http://beaucharman.github.io/sass-directory).
 
+## Notes
+
+**[Normalize](https://github.com/necolas/normalize.css)**
+
+Normalize creates an invaluable blank slate for which to begin building application styles.
+
+It is inlcuded in the `stylesheets/_tabularasa.scss` file, however the newest version can be obtained via the [GitHub project page](https://github.com/necolas/normalize.css), or via Bower:
+
+bower install --save normalize-css
+
+**[Bourbon](http://bourbon.io/)**
+
+Bourbon is a really awesome, lightweight and non opinionated / uncluttered mixin library.
+
+This can be installed and then included in the Sass Directory via the [GitHub project page](https://github.com/thoughtbot/bourbon).
+
 ## Todo (Roadmap)
 
 - Consider testing options (https://github.com/csswizardry/inuit.css)
