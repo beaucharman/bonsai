@@ -99,3 +99,14 @@ code {
 .flush--floor {
   margin-bottom: 0;
 }
+
+/**
+ * Base drop and raise hepers.
+ */
+.base--raise {
+  margin-top: $base--margin--vertical;
+}
+
+.base--drop {
+  margin-bottom: $base--margin--vertical;
+}

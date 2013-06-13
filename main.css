@@ -277,13 +277,14 @@
 
   /* Ordered and unordered lists */
   ul, ol {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
     padding-left: 1.75em; }
 
   li {
     line-height: 1.6;
     margin-bottom: 0.5em; }
+
+  li:last-child {
+    margin-bottom: 0; }
 
   /* Tables
      ======================================================================== */
@@ -340,16 +341,13 @@
   /**
    * Headings
    *
-   * --raise and --drop are similar to the vertical push and pull.
+   * --raise and --drop are similar to the horizontal push and pull idea.
    * They take the calculated top and bottom margin respectively and
    * apply that same margin, but the negative equivalent. So, if the vertical
    * rhythm is 22px, then a heading h2 with the class .h2--drop applied to it
    * will have margin-bottom: -22px; applied to it to force it to be flush with
    * proceeding elements. Negating vertical margin, but maintaining line height.
    * ======================================================================== */
-  /**
-   * Various headings and size alias.
-   */
   /**
    * Heading, and size alias vertical rhythm declaration.
    */
@@ -463,6 +461,15 @@
   .flush--floor {
     margin-bottom: 0; }
 
+  /**
+   * Base drop and raise hepers.
+   */
+  .base--raise {
+    margin-top: 1.5em; }
+
+  .base--drop {
+    margin-bottom: 1.5em; }
+
   /* ========================================================================
      Components
      ======================================================================== */
@@ -528,6 +535,36 @@
   /**
    * Notifications and Alerts
    */
+  /* Base alter styling */
+  .alert {
+    border-radius: 3px;
+    color: #555555;
+    font-size: 1em;
+    border: 1px solid #aaaaaa;
+    background-color: #dddddd;
+    padding: 1.5em;
+    font-weight: 400;
+    margin: 1.5em 0;
+    text-shadow: 0 1px 0 #fff; }
+
+  /**
+   * Alert Variations style declarations
+   */
+  .alert--success {
+    color: #449d44;
+    border: 1px solid #9cd49c;
+    background-color: #ceeace; }
+
+  .alert--danger {
+    color: #c9302c;
+    border: 1px solid #e99d9a;
+    background-color: #f6d6d5; }
+
+  .alert--info {
+    color: #31b0d5;
+    border: 1px solid #a7dded;
+    background-color: #e3f4f9; }
+
   /**
    * Clearfix | @extend %clearfix;
    * ========================================================================
