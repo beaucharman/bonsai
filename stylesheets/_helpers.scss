@@ -71,7 +71,35 @@
 /**
  * Notifications and Alerts
  */
-// todo
+
+/* Base alter styling */
+.alert {
+  border-radius: 3px;
+  color: #555;
+  font-size: 1em;
+  border: 1px solid #bbb;
+  background-color: #ddd;
+  padding: 0.75em 1em;
+  font-weight: 400;
+  margin: 1.5em 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/**
+ * Alert Variations styles
+ */
+$alerts:
+  success $alert--color--success,
+  danger $alert--color--danger,
+  info $alert--color--info;
+
+@each $alert in $alerts {
+  .alert--#{nth($alerts, 1)} {
+    color: darken(nth($heading, 2), 10%);
+    border: 1px solid lighten(nth($heading, 2), 18%);
+    background-color: lighten(nth($heading, 2), 32%);
+  }
+}
 
 /**
  * Clearfix | @extend %clearfix;
