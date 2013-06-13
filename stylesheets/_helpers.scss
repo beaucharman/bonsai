@@ -86,13 +86,8 @@
 }
 
 /**
- * Alert Variations styles
+ * Alert Variations style declarations
  */
-$alerts:
-  success $alert--color--success,
-  danger $alert--color--danger,
-  info $alert--color--info;
-
 @each $alert in $alerts {
   .alert--#{nth($alerts, 1)} {
     color: darken(nth($heading, 2), 10%);

@@ -31,24 +31,13 @@ body {
 /**
  * Headings
  *
- * --raise and --drop are similar to the vertical push and pull.
+ * --raise and --drop are similar to the horizontal push and pull idea.
  * They take the calculated top and bottom margin respectively and
  * apply that same margin, but the negative equivalent. So, if the vertical
  * rhythm is 22px, then a heading h2 with the class .h2--drop applied to it
  * will have margin-bottom: -22px; applied to it to force it to be flush with
  * proceeding elements. Negating vertical margin, but maintaining line height.
  * ======================================================================== */
-
-/**
- * Various headings and size alias.
- */
-$headings:
-  h1 $h1--font-size alpha,
-  h2 $h2--font-size beta,
-  h3 $h3--font-size gamma,
-  h4 $h4--font-size delta,
-  h5 $h5--font-size epsilon,
-  h6 $h6--font-size zeta;
 
 /**
  * Heading, and size alias vertical rhythm declaration.

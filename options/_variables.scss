@@ -53,6 +53,11 @@ $alert--color--warning:         #f0ad4e;
 $alert--color--danger:          #d9534f;
 $alert--color--info:            #5bc0de;
 
+//Alert Variations styles
+$alerts:                        success $alert--color--success,
+                                danger $alert--color--danger,
+                                info $alert--color--info;
+
 // ========================================================================
 // Shapes and Layout
 // ======================================================================== /
@@ -131,6 +136,14 @@ $h3--font-size:                 2.2em; // h3, gamma
 $h4--font-size:                 1.8em; // h4, delta
 $h5--font-size:                 1.4em; // h5, epsilon
 $h6--font-size:                 1em;   // h6, zeta
+
+// Various headings and size alias.
+$headings:                      h1 $h1--font-size alpha,
+                                h2 $h2--font-size beta,
+                                h3 $h3--font-size gamma,
+                                h4 $h4--font-size delta,
+                                h5 $h5--font-size epsilon,
+                                h6 $h6--font-size zeta;
 
 // Heading characteristics
 $headings--font-family:         $base--font-family--serif;
