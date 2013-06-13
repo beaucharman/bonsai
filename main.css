@@ -323,7 +323,7 @@
   .page-wrap {
     margin: 0 auto;
     padding: 1.5em;
-    max-width: 720px; }
+    max-width: 1140px; }
 
   /* ========================================================================
      Typography
@@ -499,12 +499,11 @@
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px; }
-
-  .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%; }
+    .ir:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 100%; }
 
   .hidden {
     display: none !important;
@@ -539,7 +538,6 @@
   .alert {
     border-radius: 3px;
     color: #555555;
-    font-size: 1em;
     border: 1px solid #aaaaaa;
     background-color: #dddddd;
     padding: 1.5em;

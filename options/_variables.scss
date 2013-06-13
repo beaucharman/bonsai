@@ -65,7 +65,7 @@ $alerts:                        success $alert--color--success,
 // ======================================================================== /
 
 // base border radius
-$base--border-radius:           4px;
+$base--border-radius:           3px;
 
 // global box sizing: border box
 $global--border-box-sizing:     true;
@@ -91,6 +91,9 @@ $base--max-width:               $display--wide;
 
 // Vertical margin
 $base--margin--vertical:        1.5em;
+
+// Consistent padding
+$base--padding:                 $base--margin--vertical;
 
 // Media
 // ======================================================================== /
