@@ -25,3 +25,15 @@
 @function rhythm($fontsize, $lineheight: $base--line-height) {
   @return ($lineheight + 0em) / $fontsize + 0em;
 }
+
+// Image URL
+// ========================================================================
+// image-url()
+// @version 1.0 | June 13th 2013
+// @author  Beau Charman | @beaucharman | http://www.beaucharman.me
+// @param  {string} $image
+// @param  {string} $path
+// ======================================================================== //
+@function image-url($image, $path: $base--image-directory-path) {
+  @return url('#{$path}/#{$image}');
+}
