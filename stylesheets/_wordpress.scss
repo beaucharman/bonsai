@@ -49,22 +49,6 @@
   clear: both;
 }
 
-blockquote.left {
-  margin-right: 20px;
-  text-align: right;
-  margin-left: 0;
-  width: 33%;
-  float: left;
-}
-
-blockquote.right {
-  margin-left: 20px;
-  text-align: left;
-  margin-right: 0;
-  width: 33%;
-  float: right;
-}
-
 /**
  * Styles added through the style select editor filter
  */
@@ -111,27 +95,6 @@ blockquote.right {
 .wp-smiley {
   margin: 0 !important;
   max-height: 1em;
-}
-
-/**
- * Shortcode styles
- * ========================================================================
- * Specific to the lt3 theme
- */
-
-/* Columns
-   ======================================================================== */
-.article-column {
-  margin-right:4%;
-  float:left;
-  &.one-fourth { width:22%; }
-  &.one-third { width:30.66%; }
-  &.one-half { width:44%; }
-  &.two-thirds { width:65.32%; }
-  &.last-column {
-    margin-right:0 !important;
-    clear:right;
-  }
 }
 
 /* Comment styles
