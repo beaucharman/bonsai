@@ -537,9 +537,9 @@
   /* Base alter styling */
   .alert {
     border-radius: 3px;
-    color: #555555;
-    border: 1px solid #aaaaaa;
-    background-color: #dddddd;
+    color: #222222;
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
     padding: 1.5em;
     font-weight: 400;
     margin: 1.5em 0;
