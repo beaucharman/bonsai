@@ -39,9 +39,14 @@ body {
  * proceeding elements. Negating vertical margin, but maintaining line height.
  * ======================================================================== */
 
-/**
- * Heading, and size alias vertical rhythm declaration.
- */
+//
+// Heading, and size alias vertical rhythm declaration.
+// ========================================================================
+// Creates heading size groups that contain, sementic heading tag style,
+// a related size class selector, and helper classes.
+// For example:
+// h1, .alpha, .h1--raise, .alpha--raise, .h1--drop, .alpha--drop
+//
 @each $heading in $headings {
 
   #{nth($heading, 1)},
@@ -59,6 +64,11 @@ body {
   .#{nth($heading, 3)}--drop {
     margin-bottom: rhythm(-(nth($heading, 2)));
   }
+
+  .#{nth($heading, 1)}--lower,
+  .#{nth($heading, 3)}--lower {
+    margin-bottom: rhythm(-(nth($heading, 2))) / 2;
+  }
 }
 
 /**
@@ -72,6 +82,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Block level elements
    ======================================================================== */
+
+p,
+blockquote,
+address,
+ul,
+ol,
+dl {
+  margin: $base--margin--vertical 0;
+}
 
 /**
  * Code and Pre elements.
@@ -98,15 +117,4 @@ code {
 
 .flush--floor {
   margin-bottom: 0;
-}
-
-/**
- * Base drop and raise hepers.
- */
-.base--raise {
-  margin-top: $base--margin--vertical;
-}
-
-.base--drop {
-  margin-bottom: $base--margin--vertical;
 }

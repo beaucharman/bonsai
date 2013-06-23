@@ -28,7 +28,7 @@
     }
   </style>
 
-  <div class="page-wrap">
+  <div class="page-wrap container">
 
     <h1>Sass Directory</h1>
     <p class="epsilon">A Sass directory with smart &amp; simple initial styles, and room to grow.</p>
@@ -175,14 +175,12 @@
     <div class="jmt-section-heading" id="pre"><small>2.4</small> Preformated Text <code>&lt;pre&gt;</code></div>
     <pre>
 
-    var toQueryString = function(obj) {
+    var toQueryString = function (obj) {
       var str = '';
-      var ln;
       for (var pro in obj) {
         str += pro + '=' + obj[pro] + '&';
       }
-      ln = str.length;
-      return str.slice(0, ln - 1);
+      return str.slice(0, str.length - 1);
     };
 
     </pre>
@@ -374,33 +372,33 @@
     </fieldset>
 
     <div class="jmt-section-heading" id="button"><small>4.7</small> Button <code>&lt;button&gt;</code></div>
-    <button>This is a button</button>
+    <button class="btn">This is a button</button>
 
     <div class="jmt-section-heading" id="feedback"><small>0.0</small> Feedback Elements</div>
 
     <div class="alert">
-      <h4 class="flush--ceil">.alert</h4>
+      <h5 class="h5--lower flush--ceil">.alert</h5>
       <p class="flush--floor">
         Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
       </p>
     </div>
 
     <div class="alert alert--success">
-      <h4 class="flush--ceil">.alert.alert--success</h4>
+      <h5 class="h5--lower flush--ceil">.alert.alert--success</h5>
       <p class="flush--floor">
         Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
       </p>
     </div>
 
     <div class="alert alert--danger">
-      <h4 class="flush--ceil">.alert.alert--danger</h4>
+      <h5 class="h5--lower flush--ceil">.alert.alert--danger</h5>
       <p class="flush--floor">
         Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
       </p>
     </div>
 
     <div class="alert alert--info">
-      <h4 class="flush--ceil">.alert.alert--info</h4>
+      <h5 class="h5--lower flush--ceil">.alert.alert--info</h5>
       <p class="flush--floor">
         Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
       </p>

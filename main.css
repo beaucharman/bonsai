@@ -253,14 +253,6 @@
   /* ========================================================================
      Block level elements
      ======================================================================== */
-  p,
-  blockquote,
-  address,
-  ul,
-  ol,
-  dl {
-    margin: 1.5em 0; }
-
   blockquote {
     padding-left: 1.75em;
     margin: 0; }
@@ -318,13 +310,19 @@
      Layout
      ======================================================================== */
   /**
-   * Center aligned page wrap
+   * Page wrap
    */
-  .page-wrap {
+  /**
+   * Container - center aligned
+   */
+  .container {
     margin: 0 auto;
     padding: 1.5em;
     max-width: 1140px; }
 
+  /**
+   * Rows
+   */
   /* ========================================================================
      Typography
      ======================================================================== */
@@ -348,9 +346,6 @@
    * will have margin-bottom: -22px; applied to it to force it to be flush with
    * proceeding elements. Negating vertical margin, but maintaining line height.
    * ======================================================================== */
-  /**
-   * Heading, and size alias vertical rhythm declaration.
-   */
   h1,
   .alpha {
     font-size: 3.4em;
@@ -363,6 +358,10 @@
   .h1--drop,
   .alpha--drop {
     margin-bottom: -0.47059em; }
+
+  .h1--lower,
+  .alpha--lower {
+    margin-bottom: -0.23529em; }
 
   h2,
   .beta {
@@ -377,6 +376,10 @@
   .beta--drop {
     margin-bottom: -0.57143em; }
 
+  .h2--lower,
+  .beta--lower {
+    margin-bottom: -0.28571em; }
+
   h3,
   .gamma {
     font-size: 2.2em;
@@ -389,6 +392,10 @@
   .h3--drop,
   .gamma--drop {
     margin-bottom: -0.72727em; }
+
+  .h3--lower,
+  .gamma--lower {
+    margin-bottom: -0.36364em; }
 
   h4,
   .delta {
@@ -403,6 +410,10 @@
   .delta--drop {
     margin-bottom: -0.88889em; }
 
+  .h4--lower,
+  .delta--lower {
+    margin-bottom: -0.44444em; }
+
   h5,
   .epsilon {
     font-size: 1.4em;
@@ -415,6 +426,10 @@
   .h5--drop,
   .epsilon--drop {
     margin-bottom: -1.14286em; }
+
+  .h5--lower,
+  .epsilon--lower {
+    margin-bottom: -0.57143em; }
 
   h6,
   .zeta {
@@ -429,6 +444,10 @@
   .zeta--drop {
     margin-bottom: -1.6em; }
 
+  .h6--lower,
+  .zeta--lower {
+    margin-bottom: -0.8em; }
+
   /**
    * Styles that apply to all headings for consistency.
    */
@@ -439,6 +458,14 @@
 
   /* Block level elements
      ======================================================================== */
+  p,
+  blockquote,
+  address,
+  ul,
+  ol,
+  dl {
+    margin: 1.5em 0; }
+
   /**
    * Code and Pre elements.
    */
@@ -460,15 +487,6 @@
 
   .flush--floor {
     margin-bottom: 0; }
-
-  /**
-   * Base drop and raise hepers.
-   */
-  .base--raise {
-    margin-top: 1.5em; }
-
-  .base--drop {
-    margin-bottom: 1.5em; }
 
   /* ========================================================================
      Components
@@ -550,18 +568,18 @@
    */
   .alert--success {
     color: #449d44;
-    border: 1px solid #9cd49c;
-    background-color: #ceeace; }
+    border: 1px solid #b5dfb5;
+    background-color: #d5edd5; }
 
   .alert--danger {
     color: #c9302c;
-    border: 1px solid #e99d9a;
-    background-color: #f6d6d5; }
+    border: 1px solid #f0b9b8;
+    background-color: #f8dede; }
 
   .alert--info {
     color: #31b0d5;
-    border: 1px solid #a7dded;
-    background-color: #e3f4f9; }
+    border: 1px solid #c5e9f3;
+    background-color: #ebf7fb; }
 
   /**
    * Clearfix | @extend %clearfix;
@@ -573,7 +591,20 @@
      ======================================================================== */
   body {
     background-color: white;
-    color: #111111; } }
+    color: black; }
+
+  /**
+   * Anchors
+   */
+  a, a:link, a:visited {
+    text-decoration: underline;
+    color: #ed6347; }
+
+  a:hover {
+    color: #d33515; }
+
+  a:active {
+    color: #f49e8d; } }
 /* ========================================================================
    Print
    ======================================================================== */

@@ -45,14 +45,6 @@ hr {
 /* ========================================================================
    Block level elements
    ======================================================================== */
-p,
-blockquote,
-address,
-ul,
-ol,
-dl {
-  margin: $base--margin--vertical 0;
-}
 
 blockquote {
   padding-left: 1.75em;

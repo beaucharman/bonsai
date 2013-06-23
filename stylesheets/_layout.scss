@@ -24,10 +24,22 @@
    ======================================================================== */
 
 /**
- * Center aligned page wrap
+ * Page wrap
  */
-.page-wrap {
+.page-wrap {  }
+
+/**
+ * Container - center aligned
+ */
+.container {
   margin: 0 auto;
   padding: 1.5em;
   max-width: $base--max-width;
+}
+
+/**
+ * Rows
+ */
+%row {
+  @include make-row;
 }

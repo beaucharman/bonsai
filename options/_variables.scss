@@ -27,7 +27,7 @@ $brand-color--ternary:          #555;
 
 // Display Color
 // ======================================================================== /
-$foreground-color:              #ddd;
+$foreground-color:              #000;
 $background-color:              #fff;
 
 // Grayscale
@@ -46,7 +46,11 @@ $grey--lightest:                #eee;
 $grey--light:                   #bbb;
 $grey--medium:                  #888;
 $grey--dark:                    #555;
-$grey--darkest:                  #222;
+$grey--darkest:                 #222;
+
+// User feedback
+// and control colors
+$base--link-color--primary:     #ed6347;
 
 // Alert / notification colors
 $alert--color--primary:         #428bca;
@@ -55,7 +59,7 @@ $alert--color--warning:         #f0ad4e;
 $alert--color--danger:          #d9534f;
 $alert--color--info:            #5bc0de;
 
-//Alert Variations styles
+//Alert variation styles
 $alerts:                        success $alert--color--success,
                                 danger $alert--color--danger,
                                 info $alert--color--info;
@@ -112,10 +116,10 @@ $base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sa
 $base--font-family--monospace:  Consolas, monaco, monospace;
 
 // Text
-$base--text-color:              #111;
+$base--text-color:              $foreground-color;
 
 // Links
-$base--link-color:              #ed6347;
+$base--link-color:              $base--link-color--primary;
 $base--link-color--hover:       darken($base--link-color, 15%);
 $base--link-color--active:      lighten($base--link-color, 15%);
 
