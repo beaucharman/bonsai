@@ -19,13 +19,13 @@
 // Color
 // ======================================================================== /
 
-// Brand Color
+// Brand color
 // ======================================================================== /
 $brand-color--primary:          #999;
 $brand-color--secondary:        #777;
 $brand-color--ternary:          #555;
 
-// Display Color
+// Display color
 // ======================================================================== /
 $foreground-color:              #000;
 $background-color:              #fff;
@@ -60,13 +60,13 @@ $alert--color--warning:         #f0ad4e;
 $alert--color--danger:          #d9534f;
 $alert--color--info:            #5bc0de;
 
-//Alert variation styles
+// Alert variation styles
 $alerts:                        success $alert--color--success,
                                 danger $alert--color--danger,
                                 info $alert--color--info;
 
 // ========================================================================
-// Shapes and Layout
+// Shapes and layout
 // ======================================================================== /
 
 // base border radius
@@ -82,7 +82,7 @@ $display--narrow:               480px;
 $display--medium:               720px;
 $display--wide:                 1140px;
 
-// Base Pixel Value
+// Base pixel value
 $base--pixel-value:             16px;
 
 // Grid
@@ -115,7 +115,7 @@ $images:                        $base--image-directory-path; // alias
 // Typography
 // ======================================================================== /
 
-// Font Families
+// Font families
 $base--font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
 $base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 $base--font-family--monospace:  Consolas, monaco, monospace;
