@@ -2,11 +2,11 @@
 // Variables
 // ========================================================================
 // _variables.scss
-// @version 1.0 | 19th Feb, 2013
-// @packege sass-directory
-// @author  Beau Charman | @beaucharman | http://www.beaucharman.me
-// @link    https://github.com/beaucharman/sass-directory
-// @license MIT license
+// @version   2.0 | June 30th 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/sass-directory
+// @license   MIT license
 //
 // Variable construction
 // {identifier}--{property}--{unique}
@@ -41,7 +41,7 @@ $black-70:                      darken(#fff, 70%);
 $black-80:                      darken(#fff, 80%);
 $black-90:                      darken(#fff, 90%);
 
-// limit grey shades for 
+// limit grey shades for
 // simplicity of design
 $grey--lightest:                #eee;
 $grey--light:                   #bbb;
@@ -72,7 +72,7 @@ $alerts:                        success $alert--color--success,
 // base border radius
 $base--border-radius:           3px;
 
-// global 
+// global
 // box sizing: border box
 $global--border-box-sizing:     true;
 
@@ -89,11 +89,11 @@ $base--pixel-value:             16px;
 $grid--columns:                 12;
 $grid--column-padding:          1.5em; // Left and right inner padding
 
-// Set the point in which 
+// Set the point in which
 // columns collapse
 $grid--float-breakpoint:        $display--medium;
 
-// Set the page wrap's 
+// Set the page wrap's
 // max width
 $base--max-width:               $display--wide;
 
@@ -106,7 +106,7 @@ $base--padding:                 $base--margin--vertical;
 // Media
 // ======================================================================== /
 
-// Image location path 
+// Image location path
 // (omit trailing slash)
 $base--image-directory-path:    "relative/path/to/images/from/main.css";
 $images:                        $base--image-directory-path; // alias
@@ -139,7 +139,7 @@ $base--font-family:             $base--font-family--sans-serif;
 $base--font-weight:             400;
 $base--line-height:             1.6;
 
-// Miscellaneous type 
+// Miscellaneous type
 // properties
 $code--font-family:             $base--font-family--monospace;
 
@@ -152,7 +152,7 @@ $h4--font-size:                 1.8em; // h4, delta
 $h5--font-size:                 1.4em; // h5, epsilon
 $h6--font-size:                 1em;   // h6, zeta
 
-// Various headings and 
+// Various headings and
 // size alias.
 $headings:                      h1 $h1--font-size alpha,
                                 h2 $h2--font-size beta,

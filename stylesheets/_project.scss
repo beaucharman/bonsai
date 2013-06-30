@@ -2,7 +2,7 @@
 // Project
 // ========================================================================
 // _project.scss
-// @version   1.0 | 19th Feb, 2013
+// @version   2.0 | June 30th 2013
 // @packege   sass-directory
 // @author    Beau Charman | @beaucharman | http://www.beaucharman.me
 // @link      https://github.com/beaucharman/sass-directory
@@ -17,20 +17,4 @@
 body {
   background-color: $background-color;
   color: $base--text-color;
-}
-
-/**
- * Anchors
- */
-a, a:link, a:visited {
-  text-decoration: underline;
-  color: $base--link-color;
-}
-
-a:hover {
-  color: $base--link-color--hover;
-}
-
-a:active {
-  color: $base--link-color--active;
 }
