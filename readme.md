@@ -29,7 +29,9 @@ This can be installed and then included in the Sass Directory via the [GitHub pr
 `main.scss`
 
 ### Includes
+
 **WordPress theme declaration**
+
 `includes/_wp-theme-declaration.scss`
 
 Other files in this directory could include debugging tools (such as the debug.scss from http://inuitcss.com/), vendor style, etc.
@@ -37,61 +39,74 @@ Other files in this directory could include debugging tools (such as the debug.s
 ### Options
 
 **Sass Functions**
+
 `options/_functions.scss`
 
 **Mixins**
+
 `options/_mixins.scss`
 
 **Sass Variables**
+
 `options/_variables.scss`
 
-### Styles
+### Stylesheets
 
 **Component styles**
-`styles/_components.scss`
+
+`stylesheets/_components.scss`
 
 Any self contained blocks of code or Javascript plugin related styles, for example: galleries and light boxes.
 
 **Control styles**
-`styles/_controls.scss`
+
+`stylesheets/_controls.scss`
 
 For forms and their related controls. Can also include base and project specific styles related to buttons and clickable, interactive controls.
 
 **Global styles**
-`styles/_global.scss`
+
+`stylesheets/_global.scss`
 
 Base / global / elements styles, core boilerplate styles. This can include inline and block level elements, and thier basic styles.
 
 **Helper styles**
-`styles/_helpers.scss`
+
+`stylesheets/_helpers.scss`
 
 Any modulated styles that help with cross browser compatibility and user feedback. thanks to http://html5boilerplate.com/
 
 **Layout styles**
-`styles/_layout.scss`
+
+`stylesheets/_layout.scss`
 
 Grid layouts and any global layout styles.
 
 **Print Styles**
-`styles/_print.scss`
+
+`stylesheets/_print.scss`
 
 **Project styles**
-`styles/_project.scss`
+
+`stylesheets/_project.scss`
 
 Project related styles, pages specific and branding styles etc...
 
 **Tabula Rasa**
-`styles/_tabularasa.scss`
+
+`stylesheets/_tabularasa.scss`
 
 The normalize styles, or other reset stylesheets. Taken from normalize.css, git.io/normalize, and http://html5boilerplate.com/, thank you :)
 
 **Typography styles**
-`styles/_typography.scss`
+
+`stylesheets/_typography.scss`
 
 Type and font styles, and related element styles. Can also include font declarations.
 
 **Wordpress styles**
-`styles/_wordpress.scss`
+
+`stylesheets/_wordpress.scss`
 
 WordPress related styles, and shortcode styles. A reference for default WordPress editor styles and selectors: here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 
