@@ -21,8 +21,8 @@
 
 // Brand color
 // ======================================================================== /
-$brand-color--primary:          #999;
-$brand-color--secondary:        #777;
+$brand-color--primary:          #4f83cf;
+$brand-color--secondary:        #ef6240;
 $brand-color--ternary:          #555;
 
 // Display color
@@ -51,7 +51,7 @@ $grey--darkest:                 #222;
 
 // User feedback
 // and control colors
-$base--link-color--primary:     #ed6347;
+$base--link-color--primary:     $brand-color--secondary;
 
 // Alert / notification colors
 $alert--color--primary:         #428bca;
