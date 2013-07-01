@@ -21,147 +21,147 @@
 
 // Brand color
 // ======================================================================== /
-$brand-color--primary:          #4f83cf;
-$brand-color--secondary:        #ef6240;
-$brand-color--ternary:          #555;
+$brand-color--primary:           #4f83cf;
+$brand-color--secondary:         #ef6240;
+$brand-color--ternary:           #555;
 
 // Display color
 // ======================================================================== /
-$foreground-color:              #000;
-$background-color:              #fff;
+$foreground-color:               #000;
+$background-color:               #fff;
 
 // Grayscale
-$black-10:                      darken(#fff, 10%);
-$black-20:                      darken(#fff, 20%);
-$black-30:                      darken(#fff, 30%);
-$black-40:                      darken(#fff, 40%);
-$black-50:                      darken(#fff, 50%);
-$black-60:                      darken(#fff, 60%);
-$black-70:                      darken(#fff, 70%);
-$black-80:                      darken(#fff, 80%);
-$black-90:                      darken(#fff, 90%);
+$black-10:                       darken(#fff, 10%);
+$black-20:                       darken(#fff, 20%);
+$black-30:                       darken(#fff, 30%);
+$black-40:                       darken(#fff, 40%);
+$black-50:                       darken(#fff, 50%);
+$black-60:                       darken(#fff, 60%);
+$black-70:                       darken(#fff, 70%);
+$black-80:                       darken(#fff, 80%);
+$black-90:                       darken(#fff, 90%);
 
 // limit grey shades for
 // simplicity of design
-$grey--lightest:                #eee;
-$grey--light:                   #bbb;
-$grey--medium:                  #888;
-$grey--dark:                    #555;
-$grey--darkest:                 #222;
+$grey--lightest:                 #eee;
+$grey--light:                    #bbb;
+$grey--medium:                   #888;
+$grey--dark:                     #555;
+$grey--darkest:                  #222;
 
 // User feedback
 // and control colors
-$base--link-color--primary:     $brand-color--secondary;
+$base--link-color--primary:      $brand-color--secondary;
 
 // Alert / notification colors
-$alert--color--primary:         #428bca;
-$alert--color--success:         #5cb85c;
-$alert--color--warning:         #f0ad4e;
-$alert--color--danger:          #d9534f;
-$alert--color--info:            #5bc0de;
+$alert--color--primary:          #428bca;
+$alert--color--success:          #5cb85c;
+$alert--color--warning:          #f0ad4e;
+$alert--color--danger:           #d9534f;
+$alert--color--info:             #5bc0de;
 
 // Alert variation styles
-$alerts:                        success $alert--color--success,
-                                danger $alert--color--danger,
-                                info $alert--color--info;
+$alerts:                         success $alert--color--success,
+                                 danger $alert--color--danger,
+                                 info $alert--color--info;
 
 // ========================================================================
 // Shapes and layout
 // ======================================================================== /
 
 // base border radius
-$base--border-radius:           3px;
+$base--border-radius:            3px;
 
 // global
 // box sizing: border box
-$global--border-box-sizing:     true;
+$global--border-box-sizing:      true;
 
 // Breakpoints
 // ======================================================================== /
-$display--narrow:               480px;
-$display--medium:               720px;
-$display--wide:                 1140px;
+$display--narrow:                480px;
+$display--medium:                720px;
+$display--wide:                  1140px;
 
 // Base pixel value
-$base--pixel-value:             16px;
+$base--pixel-value:              16px;
 
 // Grid
-$grid--columns:                 12;
-$grid--column-padding:          1.5em; // Left and right inner padding
+$grid--columns:                  12;
+$grid--column-padding:           1.5em; // Left and right inner padding
 
 // Set the point in which
 // columns collapse
-$grid--float-breakpoint:        $display--medium;
+$grid--float-breakpoint:         $display--medium;
 
 // Set the page wrap's
 // max width
-$base--max-width:               $display--wide;
+$base--max-width:                $display--wide;
 
 // Vertical margin
-$base--margin--vertical:        1.5em;
+$base--margin--vertical:         1.5em;
 
 // Consistent padding
-$base--padding:                 $base--margin--vertical / 2;
+$base--padding:                  $base--margin--vertical / 2;
 
 // Media
 // ======================================================================== /
 
 // Image location path
 // (omit trailing slash)
-$base--image-directory-path:    "relative/path/to/images/from/main/css";
-$images:                        $base--image-directory-path; // alias
+$base--image-directory-path:     "relative/path/to/images/from/main/css";
+$images:                         $base--image-directory-path; // alias
 
 // ========================================================================
 // Typography
 // ======================================================================== /
 
 // Font families
-$base--font-family--serif:      "Lucida Serif", Lucida, Georgia, serif;
-$base--font-family--sans-serif: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$base--font-family--monospace:  Consolas, monaco, monospace;
+$base--font-family--serif:       "Lucida Serif", Lucida, Georgia, serif;
+$base--font-family--sans-serif:  "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+$base--font-family--monospace:   Consolas, monaco, monospace;
 
 // Text
-$base--text-color:              $foreground-color;
+$base--text-color:               $foreground-color;
 
 // Links
-$base--link-color:              $base--link-color--primary;
-$base--link-color--hover:       darken($base--link-color, 15%);
-$base--link-color--active:      lighten($base--link-color, 15%);
+$base--link-color:               $base--link-color--primary;
+$base--link-color--hover:        darken($base--link-color, 15%);
+$base--link-color--active:       lighten($base--link-color, 15%);
 
 // Font size variations
-$base--font-size:               $base--pixel-value;
-$base--font-size--large:        $base--font-size * 1.25;
-$base--font-size--small:        $base--font-size * 0.85;
-$base--font-size--mini:         $base--font-size * 0.75;
+$base--font-size:                $base--pixel-value;
+$base--font-size--large:         $base--font-size * 1.25;
+$base--font-size--small:         $base--font-size * 0.85;
+$base--font-size--mini:          $base--font-size * 0.75;
 
 // Font characteristics
-$base--font-family:             $base--font-family--sans-serif;
-$base--font-weight:             400;
-$base--line-height:             1.6;
+$base--font-family:              $base--font-family--sans-serif;
+$base--font-weight:              400;
+$base--line-height:              1.6;
 
 // Miscellaneous type
 // properties
-$code--font-family:             $base--font-family--monospace;
+$code--font-family:              $base--font-family--monospace;
 
 // Headings
 // ======================================================================== /
-$h1--font-size:                 3.4em; // h1, alpha
-$h2--font-size:                 2.8em; // h2, beta
-$h3--font-size:                 2.2em; // h3, gamma
-$h4--font-size:                 1.8em; // h4, delta
-$h5--font-size:                 1.4em; // h5, epsilon
-$h6--font-size:                 1em;   // h6, zeta
+$h1--font-size:                  3.4em; // h1, alpha
+$h2--font-size:                  2.8em; // h2, beta
+$h3--font-size:                  2.2em; // h3, gamma
+$h4--font-size:                  1.8em; // h4, delta
+$h5--font-size:                  1.4em; // h5, epsilon
+$h6--font-size:                  1em;   // h6, zeta
 
 // Various headings and
 // size alias.
-$headings:                      h1 $h1--font-size alpha,
-                                h2 $h2--font-size beta,
-                                h3 $h3--font-size gamma,
-                                h4 $h4--font-size delta,
-                                h5 $h5--font-size epsilon,
-                                h6 $h6--font-size zeta;
+$headings:                       h1 $h1--font-size alpha,
+                                 h2 $h2--font-size beta,
+                                 h3 $h3--font-size gamma,
+                                 h4 $h4--font-size delta,
+                                 h5 $h5--font-size epsilon,
+                                 h6 $h6--font-size zeta;
 
 // Heading characteristics
-$headings--font-family:         $base--font-family--serif;
-$headings--font-weight:         500;
-$headings--line-height:         1.2;
+$headings--font-family:          $base--font-family--serif;
+$headings--font-weight:          500;
+$headings--line-height:          1.2;
