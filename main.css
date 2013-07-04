@@ -290,13 +290,13 @@
      ======================================================================== */
   a, a:link, a:visited {
     text-decoration: underline;
-    color: #ed6347; }
+    color: #ef6240; }
 
   a:hover {
-    color: #d33515; }
+    color: #d13712; }
 
   a:active {
-    color: #f49e8d; }
+    color: #f59c87; }
 
   /* ========================================================================
      Block level elements
@@ -335,6 +335,29 @@
   /**
    * Rows
    */
+  .row {
+    margin-left: -1.5em;
+    margin-right: -1.5em; }
+    .row:before, .row:after {
+      content: " ";
+      display: table; }
+    .row:after {
+      clear: both; }
+
+  .grid--8 {
+    min-height: 1px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .grid--6 {
+    min-height: 1px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   /* ========================================================================
      Typography
      ======================================================================== */
@@ -570,7 +593,7 @@
     color: #222222;
     border: 1px solid #bbbbbb;
     background-color: #eeeeee;
-    padding: 1.5em;
+    padding: 0.75em;
     font-weight: 400;
     margin: 1.5em 0;
     text-shadow: 0 1px 0 #fff; }
@@ -604,6 +627,20 @@
   body {
     background-color: white;
     color: black; } }
+  @media screen and (min-width: 720px) {
+    .grid--8 {
+      float: left;
+      width: 66.66667%; } }
+
+  @media screen and (min-width: 720px) {
+    .grid--6 {
+      float: left;
+      width: 50%; } }
+
+@media screen and (min-width: 720px) {
+  .grid--offset--2 {
+    margin-left: 16.66667%; } }
+
 /* ========================================================================
    Print
    ======================================================================== */

@@ -40,6 +40,20 @@
 /**
  * Rows
  */
-%row {
+.row {
   @include make-row;
+}
+
+.grid--8 {
+  @include make-column(8);
+}
+
+
+.grid--6 {
+  @include make-column(6);
+}
+
+
+.grid--offset--2 {
+  @include make-column-offset(2);
 }
