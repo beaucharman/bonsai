@@ -111,8 +111,9 @@ $base--padding:                  $base--margin--vertical / 2;
 $base--image-directory-path:     "relative/path/to/images/from/main/css";
 $images:                         $base--image-directory-path; // alias
 
-$base--font-directory-path:    "library/fonts";
-$fonts:                        $base--font-directory-path; // alias
+// Font source location
+$base--font-directory-path:      "relative/path/to/fonts/from/main/css";
+$fonts:                          $base--font-directory-path; // alias
 
 // ========================================================================
 // Typography
