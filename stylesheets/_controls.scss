@@ -16,6 +16,23 @@
    Controls
    ======================================================================== */
 
+/* Anchors
+   ======================================================================== */
+a, a:link, a:visited {
+  text-decoration: underline;
+  color: $base--link-color;
+}
+
+a:hover {
+  color: $base--link-color--hover;
+}
+
+a:active {
+  color: $base--link-color--active;
+}
+
+/* Form Elements
+ ======================================================================== */
 textarea {
   resize: vertical;
 }

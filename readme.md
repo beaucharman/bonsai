@@ -10,7 +10,9 @@
 
 Normalize creates an invaluable blank slate for which to begin building application styles.
 
-It is inlcuded in the `stylesheets/_tabularasa.scss` file, however the newest version can be obtained via the [Bower GitHub project page](https://github.com/necolas/normalize.css), or via Bower:
+**Current version, Normalize.css v2.1.2**
+
+Normalize.css is inlcuded in the `stylesheets/_tabularasa.scss` file, however the newest version can be obtained via [Normalize's GitHub project page](https://github.com/necolas/normalize.css), or via Bower:
 
 `bower install --save normalize-css`
 
@@ -18,7 +20,7 @@ It is inlcuded in the `stylesheets/_tabularasa.scss` file, however the newest ve
 
 Bourbon is a really awesome, lightweight and non opinionated / uncluttered mixin library.
 
-This can be installed and then included in the Sass Directory via the [GitHub project page](https://github.com/thoughtbot/bourbon).
+This can be installed and then included in the Sass Directory via [Bourbon's GitHub project page](https://github.com/thoughtbot/bourbon).
 
 ## Todo (Roadmap)
 
