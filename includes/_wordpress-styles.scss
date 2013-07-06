@@ -1,7 +1,7 @@
 //
-// WordPress
+// WordPress Styles
 // ========================================================================
-// _wordpress.scss
+// _wordpress-styles.scss
 // @version   2.0 | June 30th 2013
 // @packege   sass-directory
 // @author    Beau Charman | @beaucharman | http://www.beaucharman.me
@@ -13,18 +13,15 @@
 // found here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 // ======================================================================== /
 
+
+
 /* ========================================================================
    WordPress
    ======================================================================== */
 
-/* Entry Container styles
-   ======================================================================== */
-.entry {
-  @extend %clearfix;
-}
-
 /* Alignment styles
    ======================================================================== */
+
 .alignleft,
 .alignright {
   margin-bottom: 1.5em;
@@ -32,13 +29,11 @@
 
 .alignleft {
   margin-right: 1.5em;
-  display: inline;
   float: left;
 }
 
 .alignright {
   margin-left: 1.5em;
-  display: inline;
   float: right;
 }
 
@@ -49,27 +44,40 @@
   clear: both;
 }
 
+
+
 /**
  * Styles added through the style select editor filter
  */
+
 .lead {
   font-size: 1.5em;
 }
 
 .disclaimer {
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: #555;
 }
 
-.warning {  }
+.warning {
+  color: red;
+  border-bottom: 1px dotted red;
+}
 
-.notice {  }
+.notice {
+  font-style: italic;
+}
 
-.muted {  }
+.muted {
+  color: #aaa;
+}
+
+
 
 /* Image and Gallery styles
    ======================================================================== */
-.hentry img {
+
+.entry img {
   max-width: 100%;
   height: auto;
 }
@@ -86,7 +94,7 @@
   margin: 0;
 }
 
-.wp-caption p.wp-caption-text {
+.wp-caption-text {
   line-height: 1.5;
   font-size: 10px;
   margin: 0;
@@ -97,8 +105,11 @@
   max-height: 1em;
 }
 
+
+
 /* Comment styles
    ======================================================================== */
+
 #commentform input[type="text"],
 #commentform input[type="url"],
 #commentform input[type="email"] {

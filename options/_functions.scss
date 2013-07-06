@@ -12,6 +12,23 @@
 //  http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
 // ======================================================================== /
 
+//
+// Image URL
+// ========================================================================
+// image-url()
+// @version 1.0 | July 7th 2013
+// @author  Beau Charman | @beaucharman | http://www.beaucharman.me
+// @param  {string} $px-value
+// @param  {string} $base-value
+// ======================================================================== //
+@function em($px-value, $base-value: $base--pixel-value) {
+
+    @return ($px-value / $base-value) * 1em;
+
+}
+
+
+//
 // Rhythm
 // ========================================================================
 // rhythm()
@@ -22,10 +39,16 @@
 // @param  {float} $lineheight | float value
 // @return {em}    em unit value
 // ======================================================================== //
+
 @function rhythm($fontsize, $lineheight: $base--line-height) {
+
   @return ($lineheight + 0em) / $fontsize + 0em;
+
 }
 
+
+
+//
 // Image URL
 // ========================================================================
 // image-url()
@@ -34,6 +57,9 @@
 // @param  {string} $image
 // @param  {string} $path
 // ======================================================================== //
+
 @function image-url($image, $path: $base--image-directory-path) {
+
   @return url('#{$path}/#{$image}');
+
 }

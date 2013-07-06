@@ -9,6 +9,8 @@
 // @license   MIT license
 // ======================================================================== /
 
+
+
 //
 // Breakpoints
 // ========================================================================
@@ -18,6 +20,8 @@
   @media screen and (min-width: $point) { @content; }
 }
 
+
+
 //
 // Background RGBA
 // ======================================================================== /
@@ -26,6 +30,8 @@
   background-color: $color;
   background-color: rgba($color, $opacity);
 }
+
+
 
 //
 // Grid system
@@ -59,18 +65,28 @@
   }
 }
 
+
+
 //
 // Mixins: vendor prefixes
 // ======================================================================== /
 
+
+
+//
 // Box sizing
+//
 @mixin box-sizing($box-model: border-box) {
   -webkit-box-sizing: $box-model; // Safari <= 5
      -moz-box-sizing: $box-model; // Firefox <= 19
           box-sizing: $box-model;
 }
 
+
+
+//
 // Single side border-radius
+//
 @mixin border-top-radius($radius) {
   border-top-right-radius: $radius;
   border-top-left-radius: $radius;
@@ -88,13 +104,21 @@
   border-top-left-radius: $radius;
 }
 
+
+
+//
 // Drop shadows
+//
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
           box-shadow: $shadow;
 }
 
+
+
+//
 // Transitions
+//
 @mixin transition($transition) {
   -webkit-transition: $transition;
      -moz-transition: $transition;
@@ -114,7 +138,11 @@
           transition-duration: $transition-duration;
 }
 
+
+
+//
 // Transformations
+//
 @mixin rotate($degrees) {
   -webkit-transform: rotate($degrees);
      -moz-transform: rotate($degrees);
@@ -151,6 +179,9 @@
           transform: translate3d($x, $y, $z);
 }
 
+
+
+//
 // Backface visibility
 //
 // Prevent browsers from flickering when using CSS 3D transforms.
@@ -162,6 +193,9 @@
           backface-visibility: $visibility;
 }
 
+
+
+//
 // User select
 //
 // For selecting text on the page
@@ -173,14 +207,21 @@
           user-select: $select;
 }
 
+
+//
 // Opacity
+//
 @mixin opacity($opacity) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;
   filter: "alpha(opacity=#{$opacity-ie})"; // IE8
 }
 
+
+
+//
 // Placeholder text
+//
 @mixin placeholder($color: $input-color-placeholder) {
   :-moz-placeholder            { color: $color; } // Firefox 4-18
   ::-moz-placeholder           { color: $color; } // Firefox 19+
@@ -188,13 +229,21 @@
   ::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
 }
 
+
+
+//
 // Resize anything
+//
 @mixin resizable($direction) {
   resize: $direction; // Options: horizontal, vertical, both
   overflow: auto; // Safari fix
 }
 
+
+
+//
 // CSS3 Content Columns
+//
 @mixin content-columns($width, $count, $gap) {
   -webkit-column-width: $width;
      -moz-column-width: $width;
@@ -207,7 +256,11 @@
           column-gap: $gap;
 }
 
+
+
+//
 // Optional hyphenation
+//
 @mixin hyphens($mode: auto) {
   word-wrap: break-word;
   -webkit-hyphens: $mode;
@@ -217,7 +270,11 @@
           hyphens: $mode;
 }
 
+
+
+//
 // Gradients
+//
 @mixin gradient-horizontal($startColor: #555, $endColor: #333) {
   background-color: $endColor;
   background-image: -moz-linear-gradient(left, $startColor, $endColor); // FF 3.6+
@@ -228,6 +285,7 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=1); // IE9 and down
 }
+
 @mixin gradient-vertical($startColor: #555, $endColor: #333) {
   background-color: $endColor;
   background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
@@ -238,6 +296,7 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down
 }
+
 @mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg) {
   background-color: $endColor;
   background-repeat: repeat-x;
@@ -246,6 +305,7 @@
   background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
   background-image: linear-gradient($deg, $startColor, $endColor); // Standard, IE10
 }
+
 @mixin gradient-horizontal-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) {
   background-color: mix($midColor, $endColor, 80%);
   background-image: -webkit-gradient(left, linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
@@ -256,6 +316,7 @@
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
+
 @mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) {
   background-color: mix($midColor, $endColor, 80%);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
@@ -266,6 +327,7 @@
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
+
 @mixin gradient-radial($innerColor: #555, $outerColor: #333) {
   background-color: $outerColor;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
@@ -274,6 +336,7 @@
   background-image: -o-radial-gradient(circle, $innerColor, $outerColor);
   background-repeat: no-repeat;
 }
+
 @mixin gradient-striped($color: #555, $angle: 45deg) {
   background-color: $color;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
@@ -283,6 +346,9 @@
   background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }
 
+
+
+//
 // Reset filters for IE
 //
 // Useful for when you want to remove a gradient from an element.
@@ -290,10 +356,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
+
+
 //
 // Mixins: utilities
 // ======================================================================== /
 
+//
 // Clearfix
 //
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
@@ -316,14 +385,22 @@
   }
 }
 
+
+
+//
 // Center-align a block level element
+//
 @mixin center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+
+//
 // Sizing shortcuts
+//
 @mixin size($width, $height) {
   width: $width;
   height: $height;
@@ -332,6 +409,9 @@
   @include size($size, $size);
 }
 
+
+
+//
 // Text overflow
 //
 // Requires inline-block or block for proper styling
@@ -341,6 +421,9 @@
   white-space: nowrap;
 }
 
+
+
+//
 // Retina images
 //
 // Retina background-image support with non-retina fall back

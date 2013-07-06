@@ -13,9 +13,12 @@
 // thanks to http://html5boilerplate.com/
 // ======================================================================== /
 
+
+
 /* ========================================================================
    Helpers
    ======================================================================== */
+
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -68,9 +71,10 @@
     visibility: hidden;
 }
 
-/**
- * Notifications and Alerts
- */
+
+
+/* Notifications and alerts
+   ======================================================================== */
 
 /* Base alter styling */
 .alert {
@@ -80,7 +84,7 @@
   background-color: $grey--lightest;
   padding: $base--padding;
   font-weight: 400;
-  margin: $base--margin--vertical 0;
+  margin: $base--vertical-rhythm 0;
   text-shadow: 0 1px 0 #fff;
 }
 
@@ -95,11 +99,16 @@
   }
 }
 
-/**
- * Clearfix | @extend %clearfix;
- * ========================================================================
- * Thank you http://nicolasgallagher.com/micro-clearfix-hack/
- * ======================================================================== */
+
+
+// Visual and layout helpers
+// ======================================================================== /
+
+//
+// Clearfix | @extend %clearfix;
+// ========================================================================
+// Thank you http://nicolasgallagher.com/micro-clearfix-hack/
+//
 %clearfix {
   *zoom: 1;
   &:before,

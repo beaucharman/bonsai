@@ -15,16 +15,22 @@
 // indendifier or value:        primary, small, 50, display
 // ======================================================================== /
 
+
+
 // ========================================================================
 // Color
 // ======================================================================== /
 
+//
 // Brand color
 // ======================================================================== /
 $brand-color--primary:           #4f83cf;
 $brand-color--secondary:         #ef6240;
 $brand-color--ternary:           #555;
 
+
+
+//
 // Display color
 // ======================================================================== /
 $foreground-color:               #000;
@@ -53,6 +59,9 @@ $grey--darkest:                  #222;
 // and control colors
 $base--link-color--primary:      $brand-color--secondary;
 
+// Selection color
+$base--selection--color:         #b3d4fc;
+
 // Alert / notification colors
 $alert--color--primary:          #428bca;
 $alert--color--success:          #5cb85c;
@@ -65,6 +74,8 @@ $alerts:                         success $alert--color--success,
                                  danger $alert--color--danger,
                                  info $alert--color--info;
 
+
+
 // ========================================================================
 // Shapes and layout
 // ======================================================================== /
@@ -76,8 +87,8 @@ $base--border-radius:            3px;
 // box sizing: border box
 $global--border-box-sizing:      true;
 
+
 // Breakpoints
-// ======================================================================== /
 $display--narrow:                480px;
 $display--medium:                720px;
 $display--wide:                  1140px;
@@ -97,11 +108,13 @@ $grid--float-breakpoint:         $display--medium;
 // max width
 $base--max-width:                $display--wide;
 
-// Vertical margin
-$base--margin--vertical:         1.5em;
+// Vertical rhythm
+$base--vertical-rhythm:          1.5em;
 
 // Consistent padding
-$base--padding:                  $base--margin--vertical / 2;
+$base--padding:                  $base--vertical-rhythm / 2;
+
+
 
 // Media
 // ======================================================================== /
@@ -114,6 +127,8 @@ $images:                         $base--image-directory-path; // alias
 // Font source location
 $base--font-directory-path:      "relative/path/to/fonts/from/main/css";
 $fonts:                          $base--font-directory-path; // alias
+
+
 
 // ========================================================================
 // Typography
@@ -138,14 +153,23 @@ $base--font-size--large:         $base--font-size * 1.25;
 $base--font-size--small:         $base--font-size * 0.85;
 $base--font-size--mini:          $base--font-size * 0.75;
 
+// Font weights
+$font-weight--lightest:          100;
+$font-weight--light:             300;
+$font-weight--normal:            400;
+$font-weight--bold:              500;
+$font-weight--boldest:           700;
+
 // Font characteristics
 $base--font-family:              $base--font-family--sans-serif;
-$base--font-weight:              400;
+$base--font-weight:              $font-weight--normal;
 $base--line-height:              1.6;
 
 // Miscellaneous type
 // properties
 $code--font-family:              $base--font-family--monospace;
+
+
 
 // Headings
 // ======================================================================== /
@@ -167,5 +191,5 @@ $headings:                       h1 $h1--font-size alpha,
 
 // Heading characteristics
 $headings--font-family:          $base--font-family--serif;
-$headings--font-weight:          500;
+$headings--font-weight:          $font-weight--boldest;
 $headings--line-height:          1.2;

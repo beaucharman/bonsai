@@ -363,8 +363,8 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 1px solid #eeeeee;
+    margin: 1.5em 0;
     padding: 0; }
 
   /* ========================================================================
@@ -389,7 +389,9 @@
 
   /* Lists
      ======================================================================== */
-  /* Definition lists */
+  /**
+   * Definition lists
+   */
   dl dd {
     padding-left: 0;
     margin-left: 0;
@@ -397,7 +399,9 @@
   dl dt {
     font-weight: 600; }
 
-  /* Ordered and unordered lists */
+  /**
+   * Ordered and unordered lists
+   */
   ul, ol {
     padding-left: 1.75em; }
 
@@ -446,13 +450,26 @@
     .row:after {
       clear: both; }
 
-  .grid--8 {
+  /**
+   * Common column declarations
+   */
+  /* 4 colums */
+  .grid--3 {
     min-height: 1px;
     padding-left: 1.5em;
     padding-right: 1.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+  /* 3 colums */
+  .grid--4 {
+    min-height: 1px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* 2 columns */
   .grid--6 {
     min-height: 1px;
     padding-left: 1.5em;
@@ -460,6 +477,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+  /* Todo */
   /* ========================================================================
      Typography
      ======================================================================== */
@@ -590,8 +608,16 @@
    */
   h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Serif", Lucida, Georgia, serif;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2; }
+
+  /**
+   * Styles for related sub headings
+   */
+  .sub-heading {
+    color: #bbbbbb;
+    font-style: italic;
+    font-weight: 300; }
 
   /* Block level elements
      ======================================================================== */
@@ -602,6 +628,13 @@
   ol,
   dl {
     margin: 1.5em 0; }
+
+  /**
+   * Lead elements, paragraphs maybe?
+   */
+  .lead {
+    font-size: 1.25em;
+    font-weight: 500; }
 
   /**
    * Code and Pre elements.
@@ -643,7 +676,7 @@
   a:active {
     color: #f59c87; }
 
-  /* Form Elements
+  /* Form elements
    ======================================================================== */
   textarea {
     resize: vertical; }
@@ -700,9 +733,8 @@
   .invisible {
     visibility: hidden; }
 
-  /**
-   * Notifications and Alerts
-   */
+  /* Notifications and alerts
+     ======================================================================== */
   /* Base alter styling */
   .alert {
     border-radius: 3px;
@@ -732,11 +764,6 @@
     border: 1px solid #d2eef6;
     background-color: #ebf7fb; }
 
-  /**
-   * Clearfix | @extend %clearfix;
-   * ========================================================================
-   * Thank you http://nicolasgallagher.com/micro-clearfix-hack/
-   * ======================================================================== */
   /* ========================================================================
      Project
      ======================================================================== */
@@ -744,9 +771,14 @@
     background-color: white;
     color: black; } }
   @media screen and (min-width: 720px) {
-    .grid--8 {
+    .grid--3 {
       float: left;
-      width: 66.66667%; } }
+      width: 25%; } }
+
+  @media screen and (min-width: 720px) {
+    .grid--4 {
+      float: left;
+      width: 33.33333%; } }
 
   @media screen and (min-width: 720px) {
     .grid--6 {
@@ -754,8 +786,8 @@
       width: 50%; } }
 
 @media screen and (min-width: 720px) {
-  .grid--offset--2 {
-    margin-left: 16.66667%; } }
+  .grid--offset--3 {
+    margin-left: 25%; } }
 
 /* ========================================================================
    Print

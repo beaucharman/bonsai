@@ -11,6 +11,8 @@
 // Grid layouts and any global layout styles.
 // ======================================================================== /
 
+
+
 /* Global border box sizing
    ======================================================================== */
 @if $global--border-box-sizing {
@@ -18,6 +20,8 @@
     @include box-sizing();
   }
 }
+
+
 
 /* ========================================================================
    Layout
@@ -28,6 +32,8 @@
  */
 .page-wrap {  }
 
+
+
 /**
  * Container - center aligned
  */
@@ -37,6 +43,8 @@
   max-width: $base--max-width;
 }
 
+
+
 /**
  * Rows
  */
@@ -44,16 +52,28 @@
   @include make-row;
 }
 
-.grid--8 {
-  @include make-column(8);
+
+
+/**
+ * Common column declarations
+ */
+
+/* 4 colums */
+.grid--3 {
+  @include make-column(3);
 }
 
+/* 3 colums */
+.grid--4 {
+  @include make-column(4);
+}
 
+/* 2 columns */
 .grid--6 {
   @include make-column(6);
 }
 
-
-.grid--offset--2 {
-  @include make-column-offset(2);
+/* Todo */
+.grid--offset--3 {
+  @include make-column-offset(3);
 }

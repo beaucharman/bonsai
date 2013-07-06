@@ -12,9 +12,12 @@
 // This can include inline and block level elements, and thier basic styles.
 // ======================================================================== /
 
+
+
 /* ========================================================================
    Global
    ======================================================================== */
+
 html,
 button,
 input,
@@ -24,12 +27,12 @@ textarea {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: $base--selection--color;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: $base--selection--color;
   text-shadow: none;
 }
 
@@ -37,10 +40,12 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px solid $grey--lightest;
+  margin: $base--vertical-rhythm 0;
   padding: 0;
 }
+
+
 
 /* ========================================================================
    Text level elements
@@ -55,6 +60,8 @@ img {
   height: auto;
 }
 
+
+
 /* ========================================================================
    Block level elements
    ======================================================================== */
@@ -68,10 +75,14 @@ iframe {
   display: block;
 }
 
+
+
 /* Lists
    ======================================================================== */
 
-/* Definition lists */
+/**
+ * Definition lists
+ */
 dl {
   dd {
     padding-left: 0;
@@ -83,17 +94,25 @@ dl {
   }
 }
 
-/* Ordered and unordered lists */
+
+
+/**
+ * Ordered and unordered lists
+ */
 ul, ol {
   padding-left: 1.75em;
 }
+
 li {
   line-height: 1.6;
   margin-bottom: 0.5em;
 }
+
 li:last-child {
   margin-bottom: 0;
 }
+
+
 
 /* Tables
    ======================================================================== */

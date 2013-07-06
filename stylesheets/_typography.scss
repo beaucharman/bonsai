@@ -12,6 +12,8 @@
 // Can also include font declarations.
 // ======================================================================== /
 
+
+
 /* ========================================================================
    Typography
    ======================================================================== */
@@ -27,6 +29,8 @@ body {
   line-height: $base--line-height;
   font-family: $base--font-family;
 }
+
+
 
 /**
  * Headings
@@ -80,6 +84,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $headings--line-height;
 }
 
+/**
+ * Styles for related sub headings
+ */
+.sub-heading {
+  color: $grey--light;
+  font-style: italic;
+  font-weight: $font-weight--light;
+}
+
+
+
 /* Block level elements
    ======================================================================== */
 
@@ -89,7 +104,15 @@ address,
 ul,
 ol,
 dl {
-  margin: $base--margin--vertical 0;
+  margin: $base--vertical-rhythm 0;
+}
+
+/**
+ * Lead elements, paragraphs maybe?
+ */
+.lead {
+  font-size: em($base--font-size--large);
+  font-weight: $font-weight--bold;
 }
 
 /**
@@ -99,6 +122,8 @@ pre,
 code {
   font-family: $code--font-family;
 }
+
+
 
 /* Miscellaneous
    ======================================================================== */
