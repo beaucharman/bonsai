@@ -66,9 +66,21 @@ img {
    Block level elements
    ======================================================================== */
 
+/**
+ * Blockquotes
+ */
 blockquote {
   padding-left: 1.75em;
+  border-left: 0.25em solid $brand--color--primary;
   margin: 0;
+}
+
+.blockquote--pull-left {
+  margin-left: -3em;
+}
+
+.blockquote--pull-right {
+  margin-right: -3em;
 }
 
 iframe {
