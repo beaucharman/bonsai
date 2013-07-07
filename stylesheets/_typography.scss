@@ -30,27 +30,32 @@ body {
   font-family: $base--font-family;
 }
 
+html,
+button,
+input,
+select,
+textarea {
+  color: $base--text-color;
+}
 
 
-/**
- * Headings
- *
- * --raise and --drop are similar to the horizontal push and pull idea.
- * They take the calculated top and bottom margin respectively and
- * apply that same margin, but the negative equivalent. So, if the vertical
- * rhythm is 22px, then a heading h2 with the class .h2--drop applied to it
- * will have margin-bottom: -22px; applied to it to force it to be flush with
- * proceeding elements. Negating vertical margin, but maintaining line height.
- * ======================================================================== */
 
 //
-// Heading, and size alias vertical rhythm declaration.
+// Headings
 // ========================================================================
+// Heading, and size alias vertical rhythm declaration.
 // Creates heading size groups that contain, sementic heading tag style,
 // a related size class selector, and helper classes.
 // For example:
 // h1, .alpha, .h1--raise, .alpha--raise, .h1--drop, .alpha--drop
 //
+// --raise and --drop are similar to the horizontal push and pull idea.
+// They take the calculated top and bottom margin respectively and
+// apply that same margin, but the negative equivalent. So, if the vertical
+// rhythm is 22px, then a heading h2 with the class .h2--drop applied to it
+// will have margin-bottom: -22px; applied to it to force it to be flush with
+// proceeding elements (with top margin). Negating vertical margin,
+// but maintaining line height.
 @each $heading in $headings {
 
   #{nth($heading, 1)},
@@ -116,11 +121,22 @@ dl {
 }
 
 /**
+ * Logical block of content, elements.
+ * Give a little bit of breath after a block
+ * of related content.
+ */
+.related-content {
+  margin-bottom: $base--vertical-rhythm * 2;
+}
+
+/**
  * Code and Pre elements.
  */
 pre,
-code {
+code,
+.code {
   font-family: $code--font-family;
+  font-size: $base--font-size--small;
 }
 
 

@@ -41,6 +41,15 @@
   }
 }
 
+
+
+/* Visibility and Accessibility
+   ======================================================================== */
+
+.clear {
+  clear: both;
+}
+
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -76,15 +85,15 @@
 /* Notifications and alerts
    ======================================================================== */
 
-/* Base alter styling */
+/* Base alert styling */
 .alert {
-  border-radius: $base--border-radius;
-  color: $grey--darkest;
-  border: 1px solid $grey--light;
   background-color: $grey--lightest;
   padding: $base--padding;
-  font-weight: 400;
+  border-radius: $base--border-radius;
+  border: 1px solid $grey--light;
   margin: $base--vertical-rhythm 0;
+  font-weight: 400;
+  color: $grey--darkest;
   text-shadow: 0 1px 0 #fff;
 }
 

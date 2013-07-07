@@ -18,14 +18,6 @@
    Global
    ======================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
 ::-moz-selection {
   background: $base--selection--color;
   text-shadow: none;
@@ -40,7 +32,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $grey--lightest;
+  border-top: 1px solid $grey--light;
   margin: $base--vertical-rhythm 0;
   padding: 0;
 }
@@ -69,20 +61,73 @@ img {
 /**
  * Blockquotes
  */
-blockquote {
-  padding-left: 1.75em;
-  border-left: 0.25em solid $brand--color--primary;
+.blockquote {
+  font-style: italic;
+  font-size: em($base--font-size--large);
+  border-left: 0.5em solid $brand-color--primary;
+  padding-left: $base--padding;
   margin: 0;
 }
 
+/**
+ * Blockquote variations
+ */
 .blockquote--pull-left {
-  margin-left: -3em;
+  margin-right: $base--padding;
+  @include breakpoint($display--medium) {
+    float: left;
+  }
 }
 
 .blockquote--pull-right {
-  margin-right: -3em;
+  margin-left: $base--padding;
+  padding-left: 0;
+  padding-right: $base--padding;
+  border-left: none;
+  border-right: 0.5em solid $brand-color--primary;
+  @include breakpoint($display--medium) {
+    float: right;
+  }
 }
 
+.blockquote--pull-left,
+.blockquote--pull-right {
+  @extend .flush--ceil;
+  @include breakpoint($display--medium) {
+    width: 40%;
+    margin-bottom: $base--padding;
+  }
+}
+
+
+
+/**
+ * Source code
+ */
+pre,
+code,
+.code {
+  overflow: auto;
+  background-color: $grey--lightest;
+  padding: 0.1em 0.5em;
+  border: solid 1px $grey--light;
+  border-radius: $base--border-radius;
+}
+
+code,
+.code {
+  white-space: nowrap;
+}
+
+pre {
+  white-space: pre;
+}
+
+
+
+/**
+ * Miscellaneous elements
+ */
 iframe {
   display: block;
 }

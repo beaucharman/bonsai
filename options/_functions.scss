@@ -40,7 +40,7 @@
 // @return {em}    em unit value
 // ======================================================================== //
 
-@function rhythm($fontsize, $lineheight: $base--line-height) {
+@function rhythm($fontsize, $lineheight: 1.5) {
 
   @return ($lineheight + 0em) / $fontsize + 0em;
 

@@ -89,8 +89,9 @@ $global--border-box-sizing:      true;
 
 
 // Breakpoints
-$display--narrow:                480px;
-$display--medium:                720px;
+$display--narrow:                520px;
+$display--medium:                780px;
+$display--generic:               960px;
 $display--wide:                  1140px;
 
 // Base pixel value
@@ -112,7 +113,7 @@ $base--max-width:                $display--wide;
 $base--vertical-rhythm:          1.5em;
 
 // Consistent padding
-$base--padding:                  $base--vertical-rhythm / 2;
+$base--padding:                  $base--vertical-rhythm;
 
 
 
@@ -163,7 +164,7 @@ $font-weight--boldest:           700;
 // Font characteristics
 $base--font-family:              $base--font-family--sans-serif;
 $base--font-weight:              $font-weight--normal;
-$base--line-height:              1.6;
+$base--line-height:              1.5;
 
 // Miscellaneous type
 // properties
@@ -173,8 +174,8 @@ $code--font-family:              $base--font-family--monospace;
 
 // Headings
 // ======================================================================== /
-$h1--font-size:                  3.4em; // h1, alpha
-$h2--font-size:                  2.8em; // h2, beta
+$h1--font-size:                  3em; // h1, alpha
+$h2--font-size:                  2.6em; // h2, beta
 $h3--font-size:                  2.2em; // h3, gamma
 $h4--font-size:                  1.8em; // h4, delta
 $h5--font-size:                  1.4em; // h5, epsilon

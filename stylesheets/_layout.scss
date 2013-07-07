@@ -73,7 +73,21 @@
   @include make-column(6);
 }
 
+/* 2 3rds column */
+.grid--8 {
+  @include make-column(8);
+}
+
+/* 3/4 column */
+.grid--9 {
+  @include make-column(9);
+}
+
 /* Todo */
 .grid--offset--3 {
   @include make-column-offset(3);
+}
+
+.grid--offset--2 {
+  @include make-column-offset(2);
 }
