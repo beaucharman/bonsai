@@ -525,7 +525,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  /* Todo */
+  /**
+   * Common offset declarations
+   */
   /* ========================================================================
      Typography
      ======================================================================== */
@@ -546,107 +548,179 @@
   textarea {
     color: black; }
 
+  /**
+   * h1, .alpha
+   */
   h1,
   .alpha {
     font-size: 3em;
     margin: 0.5em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h1--raise,
   .alpha--raise {
     margin-top: -0.5em; }
 
-  .h1--drop,
-  .alpha--drop {
-    margin-bottom: -0.5em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h1--lower,
   .alpha--lower {
     margin-bottom: -0.25em; }
 
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h1--drop,
+  .alpha--drop {
+    margin-bottom: -0.5em; }
+
+  /**
+   * h1, .alpha
+   */
   h2,
   .beta {
     font-size: 2.6em;
     margin: 0.57692em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h2--raise,
   .beta--raise {
     margin-top: -0.57692em; }
 
-  .h2--drop,
-  .beta--drop {
-    margin-bottom: -0.57692em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h2--lower,
   .beta--lower {
     margin-bottom: -0.28846em; }
 
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h2--drop,
+  .beta--drop {
+    margin-bottom: -0.57692em; }
+
+  /**
+   * h1, .alpha
+   */
   h3,
   .gamma {
     font-size: 2.2em;
     margin: 0.68182em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h3--raise,
   .gamma--raise {
     margin-top: -0.68182em; }
 
-  .h3--drop,
-  .gamma--drop {
-    margin-bottom: -0.68182em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h3--lower,
   .gamma--lower {
     margin-bottom: -0.34091em; }
 
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h3--drop,
+  .gamma--drop {
+    margin-bottom: -0.68182em; }
+
+  /**
+   * h1, .alpha
+   */
   h4,
   .delta {
     font-size: 1.8em;
     margin: 0.83333em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h4--raise,
   .delta--raise {
     margin-top: -0.83333em; }
 
-  .h4--drop,
-  .delta--drop {
-    margin-bottom: -0.83333em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h4--lower,
   .delta--lower {
     margin-bottom: -0.41667em; }
 
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h4--drop,
+  .delta--drop {
+    margin-bottom: -0.83333em; }
+
+  /**
+   * h1, .alpha
+   */
   h5,
   .epsilon {
     font-size: 1.4em;
     margin: 1.07143em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h5--raise,
   .epsilon--raise {
     margin-top: -1.07143em; }
 
-  .h5--drop,
-  .epsilon--drop {
-    margin-bottom: -1.07143em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h5--lower,
   .epsilon--lower {
     margin-bottom: -0.53571em; }
 
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h5--drop,
+  .epsilon--drop {
+    margin-bottom: -1.07143em; }
+
+  /**
+   * h1, .alpha
+   */
   h6,
   .zeta {
     font-size: 1em;
     margin: 1.5em 0; }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .h6--raise,
   .zeta--raise {
     margin-top: -1.5em; }
 
-  .h6--drop,
-  .zeta--drop {
-    margin-bottom: -1.5em; }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .h6--lower,
   .zeta--lower {
     margin-bottom: -0.75em; }
+
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .h6--drop,
+  .zeta--drop {
+    margin-bottom: -1.5em; }
 
   /**
    * Styles that apply to all headings for consistency.

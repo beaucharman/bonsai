@@ -56,27 +56,41 @@ textarea {
 // will have margin-bottom: -22px; applied to it to force it to be flush with
 // proceeding elements (with top margin). Negating vertical margin,
 // but maintaining line height.
+//
+
 @each $heading in $headings {
 
+  /**
+   * h1, .alpha
+   */
   #{nth($heading, 1)},
   .#{nth($heading, 3)} {
     font-size: #{nth($heading, 2)};
     margin: rhythm(nth($heading, 2)) 0;
   }
 
+  /**
+   * .h1--raise, .alpha--raise
+   */
   .#{nth($heading, 1)}--raise,
   .#{nth($heading, 3)}--raise {
     margin-top: rhythm(-(nth($heading, 2)));
   }
 
-  .#{nth($heading, 1)}--drop,
-  .#{nth($heading, 3)}--drop {
-    margin-bottom: rhythm(-(nth($heading, 2)));
-  }
-
+  /**
+   * .h1--lower, .alpha--lower
+   */
   .#{nth($heading, 1)}--lower,
   .#{nth($heading, 3)}--lower {
     margin-bottom: rhythm(-(nth($heading, 2))) / 2;
+  }
+
+  /**
+   * .h1--drop, .alpha--drop
+   */
+  .#{nth($heading, 1)}--drop,
+  .#{nth($heading, 3)}--drop {
+    margin-bottom: rhythm(-(nth($heading, 2)));
   }
 }
 

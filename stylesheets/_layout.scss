@@ -83,7 +83,9 @@
   @include make-column(9);
 }
 
-/* Todo */
+/**
+ * Common offset declarations
+ */
 .grid--offset--3 {
   @include make-column-offset(3);
 }
