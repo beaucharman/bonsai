@@ -36,6 +36,10 @@ This can be installed and then included in the Sass Directory via [Bourbon's Git
 
 `includes/_wp-theme-declaration.scss`
 
+**Wordpress styles**
+
+`includes/_wordpress-styles.scss`
+
 Other files in this directory could include debugging tools (such as the debug.scss from http://inuitcss.com/), vendor style, etc.
 
 ### Options
@@ -105,12 +109,6 @@ The normalize styles, or other reset stylesheets. Taken from normalize.css, git.
 `stylesheets/_typography.scss`
 
 Type and font styles, and related element styles. Can also include font declarations.
-
-**Wordpress styles**
-
-`stylesheets/_wordpress.scss`
-
-WordPress related styles, and shortcode styles. A reference for default WordPress editor styles and selectors: here http://digwp.com/2010/05/default-wordpress-css-styles-hooks/
 
 ## WordPress Theme Development
 If using this with a WordPress theme, un-comment the `@import 'includes/wp-theme-declaration';` and `@import 'styles/wordpress';` lines in the `main.scss` file, and then add the appropriate information to those files. The `wp-theme-declaration.scss` file just contains:
