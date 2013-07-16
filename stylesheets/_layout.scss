@@ -60,7 +60,7 @@
 .column {
   float: left;
   width: 100%;
-   // Prevent columns from collapsing when empty
+  // Prevent columns from collapsing when empty
   min-height: 1px;
   // Set inner padding as gutters instead of margin
   padding-left: $grid--column-padding;
@@ -68,7 +68,6 @@
   // Proper box-model (padding doesn't add to width)
   @include box-sizing(border-box);
 }
-
 
 
 
