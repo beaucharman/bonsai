@@ -34,6 +34,17 @@
 
 
 //
+// Box sizing
+//
+@mixin box-sizing($box-model: border-box) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+
+
+//
 // Grid system
 // ======================================================================== /
 @mixin make-row {
@@ -44,28 +55,20 @@
   @include clearfix;
 }
 
-@mixin make-column($columns, $collapse: true, $degrade: false ) {
-  
-  @if ($collapse) {
+// @param  {integer} $columns
+// @param  {boolean} $collapse | column auto collapses
+@mixin make-column($columns, $collapse: true ) {
+  // Calculate width based on number of columns available
+  @if ($collapse == true) {
     @media (min-width: $grid--float-breakpoint) {
-      float: left;
-      // Calculate width based on number of columns available
       width: percentage($columns / $grid--columns);
     }
   } @else {
-    float: left;
-    // Calculate width based on number of columns available
     width: percentage($columns / $grid--columns);
   }
-  // Prevent columns from collapsing when empty
-  min-height: 1px;
-  // Set inner padding as gutters instead of margin
-  padding-left: $grid--column-padding;
-  padding-right: $grid--column-padding;
-  // Proper box-model (padding doesn't add to width)
-  @include box-sizing(border-box);
 }
 
+// @param  {integer} $columns
 @mixin make-column-offset($columns) {
   @media (min-width: $grid--float-breakpoint) {
     margin-left: percentage($columns / $grid--columns);
@@ -77,19 +80,6 @@
 //
 // Mixins: vendor prefixes
 // ======================================================================== /
-
-
-
-//
-// Box sizing
-//
-@mixin box-sizing($box-model: border-box) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
-}
-
-
 
 //
 // Single side border-radius

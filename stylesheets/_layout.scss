@@ -55,27 +55,45 @@
 
 
 /**
+ * Column
+ */
+.column {
+  float: left;
+  width: 100%;
+   // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left: $grid--column-padding;
+  padding-right: $grid--column-padding;
+  // Proper box-model (padding doesn't add to width)
+  @include box-sizing(border-box);
+}
+
+
+
+
+/**
  * Common column declarations.
- * These are examples column class selectors, 
+ * These are examples column class selectors,
  * given there is a 12 column system in play
  */
 
-/* 4 colums */
+/* 4 colums | 1 fourth */
 .grid--3 {
   @include make-column(3);
 }
 
-/* 3 colums */
+/* 3 colums | 1 third */
 .grid--4 {
   @include make-column(4);
 }
 
-/* 2 columns */
+/* 2 columns | 1 half */
 .grid--6 {
   @include make-column(6);
 }
 
-/* 2 3rds column */
+/* 2 thirds column */
 .grid--8 {
   @include make-column(8);
 }
@@ -83,6 +101,11 @@
 /* 3/4 column */
 .grid--9 {
   @include make-column(9);
+}
+
+/* Full width column */
+.grid--12 {
+  @include make-column(12);
 }
 
 /**
@@ -94,4 +117,19 @@
 
 .grid--offset--2 {
   @include make-column-offset(2);
+}
+
+/**
+ * Collapsible grid
+ */
+.grid--collapsible--12-6-3 {
+  @include make-column(12, false);
+
+  @include breakpoint($display--narrow) {
+    @include make-column(6, false);
+  }
+
+  @include breakpoint($display--medium) {
+    @include make-column(3, false);
+  }
 }
