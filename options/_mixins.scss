@@ -57,7 +57,7 @@
 
 // @param  {integer} $columns
 // @param  {boolean} $collapse | column auto collapses
-@mixin make-column($columns, $collapse: true ) {
+@mixin make-column($columns, $collapse: true) {
   // Calculate width based on number of columns available
   @if ($collapse == true) {
     @media (min-width: $grid--float-breakpoint) {
