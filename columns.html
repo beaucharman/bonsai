@@ -95,18 +95,18 @@
 
     </div>
 
-    <h2>Collapsable Grid</h2>
+    <h2>Cascading Grid</h2>
     <p class="blockquote">
       You set the breakpoints and their related column widths, kiddo!
     </p>
 
     <p>
-      Each of these bad boys has a class of <code>column</code> and <code>grid--collapsible--12-6-3</code>, which means the collapse point is not left to the global break point. You can set own collapse pattern (with a mobile first approach), in this case, 12 cols at "mobile", 2 cols (6 of 12) at "tablet" and 4 cols (3 of 12) at full width / desktop.
+      Each of these bad boys has a class of <code>column</code> and <code>grid--cascade--12-6-3</code>, which means the collapse point is not left to the global break point. You can set own cascade pattern (with a mobile first approach), in this case, 12 cols at "mobile", 2 cols (6 of 12) at "tablet" and 4 cols (3 of 12) at full width / desktop.
     </p>
 
 
       <details>
-        <summary>SCSS code</summary>
+        <summary>SCSS example</summary>
         <pre>/**
  * Collapsible grid
  */
@@ -126,25 +126,25 @@
 
     <div class="row">
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
@@ -153,25 +153,25 @@
     </div>
 
    <div class="row">
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
       </div>
 
-      <div class="column grid--collapsible--12-6-3">
+      <div class="column grid--cascade--12-6-3">
         <div class="grid-content">
           &nbsp;
         </div>
@@ -183,6 +183,21 @@
     <p class="blockquote">
       Totally meta.
     </p>
+
+    <p>
+      This one is simple: just add a new row container within a column to kick off a nested column pattern
+    </p>
+
+    <details>
+      <summary>HTML Example</summary>
+      <pre>
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column grid--9&quot;&gt;
+    Parent
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;column grid--6&quot;&gt;
+          Child</pre>
+    </details>
 
     <div class="row">
       <div class="column grid--3">

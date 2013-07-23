@@ -505,14 +505,22 @@
   /* 2 columns | 1 half */
   /* 2 thirds column */
   /* 3/4 column */
+  /* 5/6 column */
   /* Full width column */
   /**
    * Common offset declarations
    */
   /**
-   * Collapsible grid
+   * Cascading grid
+   * ====================================
+   * The following SCSS example shows the type of pattern that can be constructed
+   * to define a collapsible and cascading grid structure.
+   * The class name should illustrate that it is a cascading grid,
+   * and should define what grid form the element will take at each given breakpoint,
+   * (Mobile first, from left to right). Give a second parameter of false to override
+   * auto collapsing.
    */
-  .grid--collapsible--12-6-3 {
+  .grid--cascade--12-6-3 {
     width: 100%; }
   /* ========================================================================
      Typography
@@ -963,10 +971,10 @@
     margin-left: 75%; } }
 
   @media screen and (min-width: 520px) {
-    .grid--collapsible--12-6-3 {
+    .grid--cascade--12-6-3 {
       width: 50%; } }
   @media screen and (min-width: 780px) {
-    .grid--collapsible--12-6-3 {
+    .grid--cascade--12-6-3 {
       width: 25%; } }
 
 /* ========================================================================

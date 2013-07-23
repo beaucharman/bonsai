@@ -102,6 +102,7 @@
   @include make-column(9);
 }
 
+/* 5/6 column */
 .grid--10 {
   @include make-column(10);
 }
@@ -144,9 +145,16 @@
 
 
 /**
- * Collapsible grid
+ * Cascading grid
+ * ====================================
+ * The following SCSS example shows the type of pattern that can be constructed
+ * to define a collapsible and cascading grid structure.
+ * The class name should illustrate that it is a cascading grid,
+ * and should define what grid form the element will take at each given breakpoint,
+ * (Mobile first, from left to right). Give a second parameter of false to override
+ * auto collapsing.
  */
-.grid--collapsible--12-6-3 {
+.grid--cascade--12-6-3 {
   @include make-column(12, false);
 
   @include breakpoint($display--narrow) {
