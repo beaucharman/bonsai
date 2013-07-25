@@ -78,6 +78,11 @@
  * given there is a 12 column system in play.
  */
 
+/* 1/6 */
+.grid--2 {
+  @include make-column(2);
+}
+
 /* 4 colums | 1 fourth */
 .grid--3 {
   @include make-column(3);
@@ -86,6 +91,11 @@
 /* 3 colums | 1 third */
 .grid--4 {
   @include make-column(4);
+}
+
+/*5/12 */
+.grid--5 {
+  @include make-column(5);
 }
 
 /* 2 columns | 1 half */

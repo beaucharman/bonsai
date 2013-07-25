@@ -90,8 +90,6 @@
 
       <h3>Rows</h3>
 
-      <p>About Rows</p>
-
       <details>
         <summary>SCSS source</summary>
           <div class="row">
@@ -100,10 +98,13 @@
               <strong>_mixins.scss</strong>
 
 <pre>@mixin make-row {
-  // Negative margin the row out to align the content of columns
+  // Negative margin the row out
+  // to align the content of columns
   margin-left: -$grid--column-padding;
   margin-right: -$grid--column-padding;
-  @include clearfix; // Then clear the floated columns
+
+  // Then clear the floated columns
+  @include clearfix;
 }</pre>
           </div>
           <div class="column grid--4">
@@ -154,10 +155,17 @@
 <pre>.column {
   float: left;
   width: 100%;
-  min-height: 1px; // Prevent columns from collapsing when empty
-  padding-left: $grid--column-padding; // Set inner padding as gutters instead of margin
+  // Prevent columns
+  // from collapsing when empty
+  min-height: 1px;
+
+  // Set inner padding as gutters
+  // instead of margin
+  padding-left: $grid--column-padding;
   padding-right: $grid--column-padding;
-  @include box-sizing(border-box); // Proper box-model (padding doesn't add to width)
+
+  // Proper box-model (padding doesn't add to width)
+  @include box-sizing(border-box);
 }</pre>
 
           </div>
@@ -192,12 +200,13 @@
 
         <div class="row">
 
-          <div class="column grid--4">
+          <div class="column grid--5">
 
             <strong>_mixins.scss</strong>
 
 <pre>@mixin make-column($columns, $collapse: true) {
-  // Calculate width based on number of columns available
+  // Calculate width based
+  // on number of columns available
   @if ($collapse == true) {
     @media (min-width: $grid--float-breakpoint) {
       width: percentage($columns / $grid--columns);
@@ -209,7 +218,7 @@
 
           </div>
 
-          <div class="column grid--4">
+          <div class="column grid--3">
 
             <strong>_layout.scss</strong>
 
@@ -367,7 +376,7 @@
 
       <div class="row">
 
-        <div class="column grid--static--6">
+        <div class="column grid--6">
 
           <p class="flush--ceil">
             Each of these bad boys has a class of <code>column</code> and <code>grid--cascade--12-6-3</code>, which means the collapse point is not left to the global break point.
@@ -378,7 +387,7 @@
 
         </div>
 
-        <div class="column grid--static--6">
+        <div class="column grid--6">
           <details>
             <summary>SCSS example</summary>
 
@@ -468,7 +477,7 @@
         <div class="column grid--static--6">
 
           <p class="flush--ceil">
-            This one is simple: just add a new row container within a column to kick off a nested column pattern
+            This one is simple: just add a new row container within a column to kick off a nested column pattern.
           </p>
 
         </div>
@@ -615,7 +624,7 @@
 
     </section>
 
-    <p><em>fin</em> | Made with &lt;3 by <a href="http://www.twitter.com/beaucharman" title="Beau on Twitter">Beau Charman</a> | <a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a></p>
+    <p>Made with &lt;3 by <a href="http://www.twitter.com/beaucharman" title="Beau on Twitter">Beau Charman</a> | <a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a> | <a href="index.html">Home</a></p>
 
   </div>
 

@@ -508,8 +508,10 @@
    * These are example column class selectors,
    * given there is a 12 column system in play.
    */
+  /* 1/6 */
   /* 4 colums | 1 fourth */
   /* 3 colums | 1 third */
+  /*5/12 */
   /* 2 columns | 1 half */
   /* 2 thirds column */
   /* 3/4 column */
@@ -980,12 +982,20 @@
     margin-bottom: 1.5em; } }
 
 @media screen and (min-width: 780px) {
+  .grid--2 {
+    width: 16.66667%; } }
+
+@media screen and (min-width: 780px) {
   .grid--3 {
     width: 25%; } }
 
 @media screen and (min-width: 780px) {
   .grid--4 {
     width: 33.33333%; } }
+
+@media screen and (min-width: 780px) {
+  .grid--5 {
+    width: 41.66667%; } }
 
 @media screen and (min-width: 780px) {
   .grid--6 {
