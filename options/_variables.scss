@@ -80,6 +80,9 @@ $alerts:                         success $alert--color--success,
 // Shapes and layout
 // ======================================================================== /
 
+// Base pixel value
+$base--pixel-value:              16px;
+
 // base border radius
 $base--border-radius:            3px;
 
@@ -94,12 +97,20 @@ $display--medium:                780px;
 $display--generic:               960px;
 $display--wide:                  1140px;
 
-// Base pixel value
-$base--pixel-value:              16px;
+// Consistent spacing
+$base--spacing:                  1.5em;
+
+// Vertical rhythm
+$base--vertical-rhythm:          $base--spacing;
+
+// Consistent margin and
+// padding values
+$base--margin:                   $base--spacing;
+$base--padding:                  $base--spacing / 2;
 
 // Grid
 $grid--columns:                  12;
-$grid--column-padding:           0.75em; // Left and right inner padding
+$grid--column-padding:           $base--padding; // Left and right inner padding
 
 // Set the point in which
 // columns collapse
@@ -108,12 +119,6 @@ $grid--float-breakpoint:         $display--medium;
 // Set the page wrap's
 // max width
 $base--max-width:                $display--wide;
-
-// Vertical rhythm
-$base--vertical-rhythm:          1.5em;
-
-// Consistent padding
-$base--padding:                  $base--vertical-rhythm;
 
 
 

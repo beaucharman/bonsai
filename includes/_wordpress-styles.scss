@@ -24,16 +24,16 @@
 
 .alignleft,
 .alignright {
-  margin-bottom: 1.5em;
+  margin-bottom: $base--spacing;
 }
 
 .alignleft {
-  margin-right: 1.5em;
+  margin-right: $base--spacing;
   float: left;
 }
 
 .alignright {
-  margin-left: 1.5em;
+  margin-left: $base--spacing;
   float: right;
 }
 
@@ -51,17 +51,17 @@
  */
 
 .lead {
-  font-size: 1.5em;
+  font-size: em($base--font-size--large);
 }
 
 .disclaimer {
-  font-size: 0.85em;
+  font-size: em($base--font-size--small);
   color: #555;
 }
 
 .warning {
-  color: red;
-  border-bottom: 1px dotted red;
+  color: $alert--color--danger;
+  border-bottom: 1px dotted $alert--color--danger;
 }
 
 .notice {
@@ -77,13 +77,8 @@
 /* Image and Gallery styles
    ======================================================================== */
 
-.entry img {
-  max-width: 100%;
-  height: auto;
-}
-
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin-bottom: $base--spacing;
   text-align: center;
   padding-top: 5px;
 }
@@ -95,7 +90,7 @@
 }
 
 .wp-caption-text {
-  line-height: 1.5;
+  line-height: $base--line-height;
   font-size: 10px;
   margin: 0;
 }

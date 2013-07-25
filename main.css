@@ -370,6 +370,9 @@
     max-width: 100%;
     height: auto; }
 
+  .img--full-width {
+    width: 100%; }
+
   /* ========================================================================
      Block level elements
      ======================================================================== */
@@ -434,7 +437,8 @@
   /**
    * Ordered and unordered lists
    */
-  ul, ol {
+  ul,
+  ol {
     padding-left: 1.75em; }
 
   li {
@@ -495,8 +499,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+  .column--vertical-space {
+    margin-bottom: 1.5em; }
+
   /**
    * Common column declarations.
+   * ========================================================================
    * These are example column class selectors,
    * given there is a 12 column system in play.
    */
@@ -509,7 +517,19 @@
   /* Full width column */
   /**
    * Common offset declarations
+   * ========================================================================
+   * Used in conjunction with .grid--#, and will add the allocated amount of
+   * columns of space to the left of the current column.
    */
+  /**
+   * Satic columns
+   * ====================================
+   * Static columns won't collapse at the
+   * allocated $grid--float-breakpoint
+   */
+  .grid--static--6 {
+    width: 50%; }
+
   /**
    * Cascading grid
    * ====================================
@@ -541,6 +561,18 @@
   select,
   textarea {
     color: black; }
+
+  p,
+  blockquote,
+  address,
+  ul,
+  ol,
+  dl,
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 1em; }
 
   /**
    * h1, .alpha
@@ -755,7 +787,7 @@
    * of related content.
    */
   .related-content {
-    margin-bottom: 3em; }
+    margin-bottom: 4.5em; }
 
   /**
    * Code and Pre elements.
@@ -764,7 +796,7 @@
   code,
   .code {
     font-family: Consolas, monaco, monospace;
-    font-size: 13.6px; }
+    font-size: 0.85em; }
 
   /* Miscellaneous
      ======================================================================== */
@@ -790,7 +822,8 @@
      ======================================================================== */
   /* Anchors
      ======================================================================== */
-  a, a:link, a:visited {
+  a, a:link,
+  a:visited {
     text-decoration: underline;
     color: #ef6240; }
 
@@ -810,11 +843,23 @@
     margin: 0;
     padding: 0; }
 
+  /* Other Controls
+   ======================================================================== */
   /**
    * Details / Summary
    */
-  summary {
-    cursor: default; }
+  details {
+    border-radius: 3px;
+    border-bottom: 1px solid #275291; }
+    details summary {
+      cursor: default;
+      background-color: #4f83cf;
+      padding: 0.5em;
+      border: 1px solid #275291;
+      border-bottom: 0;
+      color: #fff;
+      border-radius: 3px 3px 0 0;
+      text-shadow: 0 -1px 0 #275291; }
 
   /* ========================================================================
      Helpers
@@ -829,8 +874,8 @@
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px; }
+    *text-indent: -9999px;
+    /* IE 6/7 fallback */ }
     .ir:before {
       content: "";
       display: block;
@@ -839,14 +884,11 @@
 
   /* Visibility and Accessibility
      ======================================================================== */
-  .clear {
-    clear: both; }
-
   .hidden {
     display: none !important;
     visibility: hidden; }
 
-  .visuallyhidden {
+  .visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -856,8 +898,8 @@
     position: absolute;
     width: 1px; }
 
-  .visuallyhidden.focusable:active,
-  .visuallyhidden.focusable:focus {
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -867,6 +909,25 @@
 
   .invisible {
     visibility: hidden; }
+
+  /* Position and Layout
+     ======================================================================== */
+  .clear {
+    clear: both; }
+
+  .float-left {
+    .float: left; }
+
+  .float-right {
+    .float: right; }
+
+  .horizontal-list {
+    list-style-type: none; }
+    .horizontal-list li {
+      float: left;
+      margin-right: 1.5em; }
+      .horizontal-list li:last-child {
+        margin-right: 0; }
 
   /* Notifications and alerts
      ======================================================================== */

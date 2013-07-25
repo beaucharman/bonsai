@@ -52,6 +52,10 @@ img {
   height: auto;
 }
 
+.img--full-width {
+  width: 100%;
+}
+
 
 
 /* ========================================================================
@@ -65,7 +69,7 @@ img {
   font-style: italic;
   font-size: em($base--font-size--large);
   border-left: 0.5em solid $brand-color--primary;
-  padding-left: $base--padding;
+  padding-left: $base--spacing;
   margin: 0;
 }
 
@@ -73,16 +77,16 @@ img {
  * Blockquote variations
  */
 .blockquote--pull-left {
-  margin-right: $base--padding;
+  margin-right: $base--spacing;
   @include breakpoint($display--medium) {
     float: left;
   }
 }
 
 .blockquote--pull-right {
-  margin-left: $base--padding;
+  margin-left: $base--spacing;
   padding-left: 0;
-  padding-right: $base--padding;
+  padding-right: $base--spacing;
   border-left: none;
   border-right: 0.5em solid $brand-color--primary;
   @include breakpoint($display--medium) {
@@ -95,7 +99,7 @@ img {
   @extend .flush--ceil;
   @include breakpoint($display--medium) {
     width: 40%;
-    margin-bottom: $base--padding;
+    margin-bottom: $base--spacing;
   }
 }
 
@@ -141,11 +145,13 @@ iframe {
  * Definition lists
  */
 dl {
+
   dd {
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 0.5em;
   }
+
   dt {
     font-weight: 600;
   }
@@ -156,7 +162,8 @@ dl {
 /**
  * Ordered and unordered lists
  */
-ul, ol {
+ul,
+ol {
   padding-left: 1.75em;
 }
 

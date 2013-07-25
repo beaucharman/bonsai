@@ -51,8 +51,7 @@
   // Negative margin the row out to align the content of columns
   margin-left: -$grid--column-padding;
   margin-right: -$grid--column-padding;
-  // Then clear the floated columns
-  @include clearfix;
+  @include clearfix; // Then clear the floated columns
 }
 
 // @param  {integer} $columns

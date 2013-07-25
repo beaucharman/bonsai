@@ -30,8 +30,7 @@
   background-color: transparent;
   border: 0;
   overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px;
+  *text-indent: -9999px; /* IE 6/7 fallback */
 
   &:before {
     content: "";
@@ -46,16 +45,12 @@
 /* Visibility and Accessibility
    ======================================================================== */
 
-.clear {
-  clear: both;
-}
-
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-.visuallyhidden {
+.visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -66,8 +61,8 @@
   width: 1px;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -82,13 +77,42 @@
 
 
 
+/* Position and Layout
+   ======================================================================== */
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  .float: left;
+}
+
+.float-right {
+  .float: right;
+}
+
+.horizontal-list {
+  list-style-type: none;
+
+  li {
+    float: left;
+    margin-right: $base--spacing;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
 /* Notifications and alerts
    ======================================================================== */
 
 /* Base alert styling */
 .alert {
   background-color: $grey--lightest;
-  padding: $base--padding;
+  padding: $base--spacing;
   border-radius: $base--border-radius;
   border: 1px solid $grey--light;
   margin: $base--vertical-rhythm 0;
@@ -120,11 +144,13 @@
 //
 %clearfix {
   *zoom: 1;
+
   &:before,
   &:after {
     content: " ";
     display: table;
   }
+
   &:after {
     clear: both;
   }

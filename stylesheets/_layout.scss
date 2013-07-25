@@ -60,19 +60,20 @@
 .column {
   float: left;
   width: 100%;
-  // Prevent columns from collapsing when empty
-  min-height: 1px;
-  // Set inner padding as gutters instead of margin
-  padding-left: $grid--column-padding;
+  min-height: 1px; // Prevent columns from collapsing when empty
+  padding-left: $grid--column-padding; // Set inner padding as gutters instead of margin
   padding-right: $grid--column-padding;
-  // Proper box-model (padding doesn't add to width)
-  @include box-sizing(border-box);
+  @include box-sizing(border-box); // Proper box-model (padding doesn't add to width)
 }
 
+.column--vertical-space {
+  margin-bottom: $base--spacing;
+}
 
 
 /**
  * Common column declarations.
+ * ========================================================================
  * These are example column class selectors,
  * given there is a 12 column system in play.
  */
@@ -116,8 +117,10 @@
 
 /**
  * Common offset declarations
+ * ========================================================================
+ * Used in conjunction with .grid--#, and will add the allocated amount of
+ * columns of space to the left of the current column.
  */
-
 .grid--offset--2 {
   @include make-column-offset(2);
 }
@@ -142,6 +145,17 @@
   @include make-column-offset(9);
 }
 
+
+
+/**
+ * Satic columns
+ * ====================================
+ * Static columns won't collapse at the
+ * allocated $grid--float-breakpoint
+ */
+.grid--static--6 {
+  @include make-column(6, false);
+}
 
 
 /**
