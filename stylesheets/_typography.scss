@@ -36,9 +36,20 @@ input,
 select,
 textarea {
   color: $base--text-color;
+} 
+
+p,
+blockquote,
+address,
+ul,
+ol,
+dl,
+button,
+input,
+select,
+textarea {
+  font-size: 1em;
 }
-
-
 
 //
 // Headings
@@ -150,7 +161,7 @@ pre,
 code,
 .code {
   font-family: $code--font-family;
-  font-size: $base--font-size--small;
+  font-size: em($base--font-size--small);
 }
 
 
