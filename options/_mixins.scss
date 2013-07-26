@@ -177,6 +177,19 @@
 
 
 
+
+//
+// Animation
+//
+@mixin animation($animation) {
+  -webkit-animation: $animation; /* Safari 4+ */
+     -moz-animation: $animation; /* Fx 5+ */
+       -o-animation: $animation; /* Opera 12+ */
+          animation: $animation;
+}
+
+
+
 //
 // Backface visibility
 //
