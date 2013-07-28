@@ -174,8 +174,22 @@
 @mixin animation($animation) {
   -webkit-animation: $animation; /* Safari 4+ */
      -moz-animation: $animation; /* Fx 5+ */
+      -ms-animation: $animation; /* IE */
        -o-animation: $animation; /* Opera 12+ */
           animation: $animation;
+}
+
+
+
+//
+// Keyframes
+//
+@mixin keyframes($handle) {
+  @-webkit-keyframes $handle { @content }
+     @-moz-keyframes $handle { @content }
+      @-ms-keyframes $handle { @content }
+       @-o-keyframes $handle { @content }
+          @keyframes $handle { @content }
 }
 
 
