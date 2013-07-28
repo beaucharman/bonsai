@@ -36,7 +36,7 @@
 //
 // Box sizing
 //
-@mixin box-sizing($box-model: border-box) {
+@mixin box-sizing($box_model: border-box) {
   -webkit-box-sizing: $box-model; // Safari <= 5
      -moz-box-sizing: $box-model; // Firefox <= 19
           box-sizing: $box-model;
@@ -49,9 +49,9 @@
 // ======================================================================== /
 @mixin make-row {
   // Negative margin the row out to align the content of columns
-  margin-left: -$grid--column-padding;
-  margin-right: -$grid--column-padding;
-  @include clearfix; // Then clear the floated columns
+  margin-left: -$grid__column_padding;
+  margin-right: -$grid__column_padding;
+  @extend %clearfix; // Then clear the floated columns
 }
 
 // @param  {integer} $columns
@@ -59,18 +59,18 @@
 @mixin make-column($columns, $collapse: true) {
   // Calculate width based on number of columns available
   @if ($collapse == true) {
-    @media (min-width: $grid--float-breakpoint) {
-      width: percentage($columns / $grid--columns);
+    @media (min-width: $grid__float__breakpoint) {
+      width: percentage($columns / $grid__columns);
     }
   } @else {
-    width: percentage($columns / $grid--columns);
+    width: percentage($columns / $grid__columns);
   }
 }
 
 // @param  {integer} $columns
 @mixin make-column-offset($columns) {
-  @media (min-width: $grid--float-breakpoint) {
-    margin-left: percentage($columns / $grid--columns);
+  @media (min-width: $grid__float__breakpoint) {
+    margin-left: percentage($columns / $grid__columns);
   }
 }
 
@@ -83,21 +83,11 @@
 //
 // Single side border-radius
 //
-@mixin border-top-radius($radius) {
-  border-top-right-radius: $radius;
-  border-top-left-radius: $radius;
-}
-@mixin border-right-radius($radius) {
-  border-bottom-right-radius: $radius;
-  border-top-right-radius: $radius;
-}
-@mixin border-bottom-radius($radius) {
-  border-bottom-right-radius: $radius;
-  border-bottom-left-radius: $radius;
-}
-@mixin border-left-radius($radius) {
-  border-bottom-left-radius: $radius;
-  border-top-left-radius: $radius;
+@mixin border-top-radius($top_right: 0, $bottom_right: 0, $bottom_left: 0, $top_left: 0) {
+  border-top-right-radius: $top;
+  border-bottom-right-radius: $right;
+  border-bottom-left-radius: $bottom;
+  border-top-left-radius: $left;
 }
 
 
@@ -121,17 +111,17 @@
        -o-transition: $transition;
           transition: $transition;
 }
-@mixin transition-delay($transition-delay) {
-  -webkit-transition-delay: $transition-delay;
-     -moz-transition-delay: $transition-delay;
-       -o-transition-delay: $transition-delay;
-          transition-delay: $transition-delay;
+@mixin transition-delay($transition_delay) {
+  -webkit-transition-delay: $transition_delay;
+     -moz-transition-delay: $transition_delay;
+       -o-transition-delay: $transition_delay;
+          transition-delay: $transition_delay;
 }
-@mixin transition-duration($transition-duration) {
-  -webkit-transition-duration: $transition-duration;
-     -moz-transition-duration: $transition-duration;
-       -o-transition-duration: $transition-duration;
-          transition-duration: $transition-duration;
+@mixin transition-duration($transition_duration) {
+  -webkit-transition-duration: $transition_duration;
+     -moz-transition-duration: $transition_duration;
+       -o-transition-duration: $transition_duration;
+          transition-duration: $transition_duration;
 }
 
 
@@ -222,8 +212,8 @@
 //
 @mixin opacity($opacity) {
   opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: "alpha(opacity=#{$opacity-ie})"; // IE8
+  $opacity_ie: $opacity * 100;
+  filter: "alpha(opacity=#{$opacity_ie})"; // IE8
 }
 
 
@@ -231,7 +221,7 @@
 //
 // Placeholder text
 //
-@mixin placeholder($color: $input-color-placeholder) {
+@mixin placeholder($color: $input_color_placeholder) {
   :-moz-placeholder            { color: $color; } // Firefox 4-18
   ::-moz-placeholder           { color: $color; } // Firefox 19+
   :-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
@@ -284,57 +274,57 @@
 //
 // Gradients
 //
-@mixin gradient-horizontal($startColor: #555, $endColor: #333) {
-  background-color: $endColor;
-  background-image: -moz-linear-gradient(left, $startColor, $endColor); // FF 3.6+
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
-  background-image: -webkit-linear-gradient(left, $startColor, $endColor); // Safari 5.1+, Chrome 10+
-  background-image: -o-linear-gradient(left, $startColor, $endColor); // Opera 11.10
-  background-image: linear-gradient(to right, $startColor, $endColor); // Standard, IE10
+@mixin gradient-horizontal($start_color: #555, $end_color: #333) {
+  background-color: $end_color;
+  background-image: -moz-linear-gradient(left, $start_color, $end_color); // FF 3.6+
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($start_color), to($end_color)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(left, $start_color, $end_color); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient(left, $start_color, $end_color); // Opera 11.10
+  background-image: linear-gradient(to right, $start_color, $end_color); // Standard, IE10
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=1); // IE9 and down
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($start_color)}', endColorstr='#{ie_hex_str($end_color)}', GradientType=1); // IE9 and down
 }
 
-@mixin gradient-vertical($startColor: #555, $endColor: #333) {
-  background-color: $endColor;
-  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
-  background-image: -webkit-linear-gradient(top, $startColor, $endColor); // Safari 5.1+, Chrome 10+
-  background-image: -o-linear-gradient(top, $startColor, $endColor); // Opera 11.10
-  background-image: linear-gradient(to bottom, $startColor, $endColor); // Standard, IE10
+@mixin gradient-vertical($start_color: #555, $end_color: #333) {
+  background-color: $end_color;
+  background-image: -moz-linear-gradient(top, $start_color, $end_color); // FF 3.6+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($start_color), to($end_color)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, $start_color, $end_color); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient(top, $start_color, $end_color); // Opera 11.10
+  background-image: linear-gradient(to bottom, $start_color, $end_color); // Standard, IE10
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($start_color)}', endColorstr='#{ie_hex_str($end_color)}', GradientType=0); // IE9 and down
 }
 
-@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg) {
-  background-color: $endColor;
+@mixin gradient-directional($start_color: #555, $end_color: #333, $deg: 45deg) {
+  background-color: $end_color;
   background-repeat: repeat-x;
-  background-image: -moz-linear-gradient($deg, $startColor, $endColor); // FF 3.6+
-  background-image: -webkit-linear-gradient($deg, $startColor, $endColor); // Safari 5.1+, Chrome 10+
-  background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
-  background-image: linear-gradient($deg, $startColor, $endColor); // Standard, IE10
+  background-image: -moz-linear-gradient($deg, $start_color, $end_color); // FF 3.6+
+  background-image: -webkit-linear-gradient($deg, $start_color, $end_color); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient($deg, $start_color, $end_color); // Opera 11.10
+  background-image: linear-gradient($deg, $start_color, $end_color); // Standard, IE10
 }
 
-@mixin gradient-horizontal-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) {
-  background-color: mix($midColor, $endColor, 80%);
-  background-image: -webkit-gradient(left, linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
-  background-image: -webkit-linear-gradient(left, $startColor, $midColor $colorStop, $endColor);
-  background-image: -moz-linear-gradient(left, $startColor, $midColor $colorStop, $endColor);
-  background-image: -o-linear-gradient(left, $startColor, $midColor $colorStop, $endColor);
-  background-image: linear-gradient(to right, $startColor, $midColor $colorStop, $endColor);
+@mixin gradient-horizontal-three-colors($start_color: #00b3ee, $mid_color: #7a43b6, $color_stop: 50%, $end_color: #c3325f) {
+  background-color: mix($mid_color, $end_color, 80%);
+  background-image: -webkit-gradient(left, linear, 0 0, 0 100%, from($start_color), color-stop($color_stop, $mid_color), to($end_color));
+  background-image: -webkit-linear-gradient(left, $start_color, $mid_color $color_stop, $end_color);
+  background-image: -moz-linear-gradient(left, $start_color, $mid_color $color_stop, $end_color);
+  background-image: -o-linear-gradient(left, $start_color, $mid_color $color_stop, $end_color);
+  background-image: linear-gradient(to right, $start_color, $mid_color $color_stop, $end_color);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($start_color)}', endColorstr='#{ie_hex_str($end_color)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
 
-@mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) {
-  background-color: mix($midColor, $endColor, 80%);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
-  background-image: -webkit-linear-gradient($startColor, $midColor $colorStop, $endColor);
-  background-image: -moz-linear-gradient(top, $startColor, $midColor $colorStop, $endColor);
-  background-image: -o-linear-gradient($startColor, $midColor $colorStop, $endColor);
-  background-image: linear-gradient($startColor, $midColor $colorStop, $endColor);
+@mixin gradient-vertical-three-colors($start_color: #00b3ee, $mid_color: #7a43b6, $color_stop: 50%, $end_color: #c3325f) {
+  background-color: mix($mid_color, $end_color, 80%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($start_color), color-stop($color_stop, $mid_color), to($end_color));
+  background-image: -webkit-linear-gradient($start_color, $mid_color $color_stop, $end_color);
+  background-image: -moz-linear-gradient(top, $start_color, $mid_color $color_stop, $end_color);
+  background-image: -o-linear-gradient($start_color, $mid_color $color_stop, $end_color);
+  background-image: linear-gradient($start_color, $mid_color $color_stop, $end_color);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($startColor)}', endColorstr='#{ie_hex_str($endColor)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($start_color)}', endColorstr='#{ie_hex_str($end_color)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 }
 
 @mixin gradient-radial($innerColor: #555, $outerColor: #333) {
@@ -368,35 +358,6 @@
 
 
 //
-// Mixins: utilities
-// ======================================================================== /
-
-//
-// Clearfix
-//
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-
-
-//
 // Center-align a block level element
 //
 @mixin center-block {
@@ -414,6 +375,7 @@
   width: $width;
   height: $height;
 }
+
 @mixin square($size) {
   @include size($size, $size);
 }
@@ -436,8 +398,8 @@
 // Retina images
 //
 // Retina background-image support with non-retina fall back
-@mixin retina-image($file-1x, $file-2x, $width-1x, $height-1x) {
-  background-image: url("#{$file-1x}");
+@mixin retina-image($file_1x, $file_2x, $width_1x, $height_1x) {
+  background-image: url("#{$file_1x}");
 
   @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -446,7 +408,7 @@
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
-    background-image: url("#{$file-2x}");
-    background-size: $width-1x $height-1x;
+    background-image: url("#{$file_2x}");
+    background-size: $width_1x $height_1x;
   }
 }

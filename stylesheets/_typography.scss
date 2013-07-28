@@ -25,9 +25,9 @@ html {
 }
 
 body {
-  line-height: $base--line-height;
-  font-family: $base--font-family;
-  font-size: $base--font-size;
+  line-height: $base__line_height;
+  font-family: $base__font_family;
+  font-size: $base__font_size;
 }
 
 html,
@@ -35,7 +35,7 @@ button,
 input,
 select,
 textarea {
-  color: $base--text-color;
+  color: $base__text_color;
 }
 
 p,
@@ -109,18 +109,18 @@ textarea {
  * Styles that apply to all headings for consistency.
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headings--font-family;
-  font-weight: $headings--font-weight;
-  line-height: $headings--line-height;
+  font-family: $headings__font_family;
+  font-weight: $headings__font_weight;
+  line-height: $headings__line_height;
 }
 
 /**
  * Styles for related sub headings
  */
 .sub-heading {
-  color: $grey--light;
+  color: $grey__light;
   font-style: italic;
-  font-weight: $font-weight--light;
+  font-weight: $font_weight__light;
 }
 
 
@@ -134,15 +134,15 @@ address,
 ul,
 ol,
 dl {
-  margin: $base--vertical-rhythm 0;
+  margin: $base__vertical_rhythm 0;
 }
 
 /**
  * Lead elements, paragraphs maybe?
  */
 .lead {
-  font-size: em($base--font-size--large);
-  font-weight: $font-weight--bold;
+  font-size: em($base__font_size__large);
+  font-weight: $font_weight__bold;
 }
 
 /**
@@ -151,7 +151,7 @@ dl {
  * of related content.
  */
 .related-content {
-  margin-bottom: $base--vertical-rhythm * 3;
+  margin-bottom: $base__vertical_rhythm * 3;
 }
 
 /**
@@ -160,8 +160,8 @@ dl {
 pre,
 code,
 .code {
-  font-family: $code--font-family;
-  font-size: em($base--font-size--small);
+  font-family: $code__font_family;
+  font-size: em($base__font_size__small);
 }
 
 

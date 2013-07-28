@@ -97,7 +97,7 @@
 
   li {
     float: left;
-    margin-right: $base--spacing;
+    margin-right: $base__spacing;
 
     &:last-child {
       margin-right: 0;
@@ -111,13 +111,13 @@
 
 /* Base alert styling */
 .alert {
-  background-color: $grey--lightest;
-  padding: $base--spacing;
-  border-radius: $base--border-radius;
-  border: 1px solid $grey--light;
-  margin: $base--vertical-rhythm 0;
+  background-color: $grey__lightest;
+  padding: $base__spacing;
+  border-radius: $base__border_radius;
+  border: 1px solid $grey__light;
+  margin: $base__vertical_rhythm 0;
   font-weight: 400;
-  color: $grey--darkest;
+  color: $grey__darkest;
   text-shadow: 0 1px 0 #fff;
 }
 

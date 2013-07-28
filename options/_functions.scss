@@ -13,18 +13,16 @@
 // ======================================================================== /
 
 //
-// Image URL
+// Em
 // ========================================================================
-// image-url()
+// em()
 // @version 1.0 | July 7th 2013
 // @author  Beau Charman | @beaucharman | http://www.beaucharman.me
 // @param  {string} $px-value
 // @param  {string} $base-value
 // ======================================================================== //
-@function em($px-value, $base-value: $base--pixel-value) {
-
-    @return ($px-value / $base-value) * 1em;
-
+@function em($px_value, $base_value: $base__pixel_value) {
+  @return ($px_value / $base_value) * 1em;
 }
 
 
@@ -40,10 +38,8 @@
 // @return {em}    em unit value
 // ======================================================================== //
 
-@function rhythm($fontsize, $lineheight: 1.5) {
-
-  @return ($lineheight + 0em) / $fontsize + 0em;
-
+@function rhythm($font_size, $line_height: 1.5) {
+  @return ($line_height + 0em) / $font_size + 0em;
 }
 
 
@@ -58,8 +54,6 @@
 // @param  {string} $path
 // ======================================================================== //
 
-@function image-url($image, $path: $base--image-directory-path) {
-
+@function image-url($image, $path: $base__image_directory_path) {
   @return url('#{$path}/#{$image}');
-
 }

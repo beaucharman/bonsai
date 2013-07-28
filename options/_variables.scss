@@ -9,7 +9,7 @@
 // @license   MIT license
 //
 // Variable construction
-// {element}--{property}--{identifier}
+// {element}__{property}__{identifier}
 // element, selector or module: base, headings, alert
 // property:                    css selector, color, font-weight
 // identifier or value:         primary, small, 50, display
@@ -24,55 +24,55 @@
 //
 // Brand color
 // ======================================================================== /
-$brand-color--primary:           #4f83cf;
-$brand-color--secondary:         #ef6240;
-$brand-color--ternary:           #555;
+$brand_color__primary:           #4f83cf;
+$brand_color__secondary:         #ef6240;
+$brand_color__ternary:           #555;
 
 
 
 //
 // Display color
 // ======================================================================== /
-$foreground-color:               #000;
-$background-color:               #fff;
+$foreground_color:               #000;
+$background_color:               #fff;
 
 // Grayscale
-$black-10:                       darken(#fff, 10%);
-$black-20:                       darken(#fff, 20%);
-$black-30:                       darken(#fff, 30%);
-$black-40:                       darken(#fff, 40%);
-$black-50:                       darken(#fff, 50%);
-$black-60:                       darken(#fff, 60%);
-$black-70:                       darken(#fff, 70%);
-$black-80:                       darken(#fff, 80%);
-$black-90:                       darken(#fff, 90%);
+$black_10:                       darken(#fff, 10%);
+$black_20:                       darken(#fff, 20%);
+$black_30:                       darken(#fff, 30%);
+$black_40:                       darken(#fff, 40%);
+$black_50:                       darken(#fff, 50%);
+$black_60:                       darken(#fff, 60%);
+$black_70:                       darken(#fff, 70%);
+$black_80:                       darken(#fff, 80%);
+$black_90:                       darken(#fff, 90%);
 
 // limit grey shades for
 // simplicity of design
-$grey--lightest:                 #eee;
-$grey--light:                    #bbb;
-$grey--medium:                   #888;
-$grey--dark:                     #555;
-$grey--darkest:                  #222;
+$grey__lightest:                 #eee;
+$grey__light:                    #bbb;
+$grey__medium:                   #888;
+$grey__dark:                     #555;
+$grey__darkest:                  #222;
 
 // User feedback
 // and control colors
-$base--link-color--primary:      $brand-color--secondary;
+$base__link_color__primary:      $brand_color__secondary;
 
 // Selection color
-$base--selection--color:         #b3d4fc;
+$base__selection__color:         #b3d4fc;
 
 // Alert / notification colors
-$alert--color--primary:          #428bca;
-$alert--color--success:          #5cb85c;
-$alert--color--warning:          #f0ad4e;
-$alert--color--danger:           #d9534f;
-$alert--color--info:             #5bc0de;
+$alert__color__primary:          #428bca;
+$alert__color__success:          #5cb85c;
+$alert__color__warning:          #f0ad4e;
+$alert__color__danger:           #d9534f;
+$alert__color__info:             #5bc0de;
 
 // Alert variation styles
-$alerts:                         success $alert--color--success,
-                                 danger $alert--color--danger,
-                                 info $alert--color--info;
+$alerts:                         success $alert__color__success,
+                                 danger $alert__color__danger,
+                                 info $alert__color__info;
 
 
 
@@ -81,44 +81,44 @@ $alerts:                         success $alert--color--success,
 // ======================================================================== /
 
 // Base pixel value
-$base--pixel-value:              16px;
+$base__pixel_value:              16px;
 
 // base border radius
-$base--border-radius:            3px;
+$base__border_radius:            3px;
 
 // global
 // box sizing: border box
-$global--border-box-sizing:      true;
+$global__border_box_sizing:      true;
 
 
 // Breakpoints
-$display--narrow:                520px;
-$display--medium:                780px;
-$display--generic:               960px;
-$display--wide:                  1140px;
+$display__narrow:                520px;
+$display__medium:                780px;
+$display__generic:               960px;
+$display__wide:                  1140px;
 
 // Consistent spacing
-$base--spacing:                  1.5em;
+$base__spacing:                  1.5em;
 
 // Vertical rhythm
-$base--vertical-rhythm:          $base--spacing;
+$base__vertical_rhythm:          $base__spacing;
 
 // Consistent margin and
 // padding values
-$base--margin:                   $base--spacing;
-$base--padding:                  $base--spacing / 2;
+$base__margin:                   $base__spacing;
+$base__padding:                  $base__spacing / 2;
 
 // Grid
-$grid--columns:                  12;
-$grid--column-padding:           $base--padding; // Left and right inner padding
+$grid__columns:                  12;
+$grid__column_padding:           $base__padding; // Left and right inner padding
 
 // Set the point in which
 // columns collapse
-$grid--float-breakpoint:         $display--medium;
+$grid__float__breakpoint:         $display__medium;
 
 // Set the page wrap's
 // max width
-$base--max-width:                $display--wide;
+$base__max_width:                $display__wide;
 
 
 
@@ -127,12 +127,12 @@ $base--max-width:                $display--wide;
 
 // Image location path
 // (omit trailing slash)
-$base--image-directory-path:     "relative/path/to/images/from/main/css";
-$images:                         $base--image-directory-path; // alias
+$base__image_directory_path:     "relative/path/to/images/from/main/css";
+$images:                         $base__image_directory_path; // alias
 
 // Font source location
-$base--font-directory-path:      "relative/path/to/fonts/from/main/css";
-$fonts:                          $base--font-directory-path; // alias
+$base__font_directory_path:      "relative/path/to/fonts/from/main/css";
+$fonts:                          $base__font_directory_path; // alias
 
 
 
@@ -141,61 +141,61 @@ $fonts:                          $base--font-directory-path; // alias
 // ======================================================================== /
 
 // Font families
-$base--font-family--serif:       "Lucida Serif", Lucida, Georgia, serif;
-$base--font-family--sans-serif:  "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$base--font-family--monospace:   Consolas, monaco, monospace;
+$base__font_family__serif:       "Lucida Serif", Lucida, Georgia, serif;
+$base__font_family__sans_serif:  "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+$base__font_family__monospace:   Consolas, monaco, monospace;
 
 // Text
-$base--text-color:               $foreground-color;
+$base__text_color:               $foreground_color;
 
 // Links
-$base--link-color:               $base--link-color--primary;
-$base--link-color--hover:        darken($base--link-color, 15%);
-$base--link-color--active:       lighten($base--link-color, 15%);
+$base__link_color:               $base__link_color__primary;
+$base__link_color__hover:        darken($base__link_color, 15%);
+$base__link_color__active:       lighten($base__link_color, 15%);
 
 // Font size variations
-$base--font-size:                $base--pixel-value;
-$base--font-size--large:         $base--font-size * 1.25;
-$base--font-size--small:         $base--font-size * 0.85;
-$base--font-size--mini:          $base--font-size * 0.75;
+$base__font_size:                $base__pixel_value;
+$base__font_size__large:         $base__font_size * 1.25;
+$base__font_size__small:         $base__font_size * 0.85;
+$base__font_size__mini:          $base__font_size * 0.75;
 
 // Font weights
-$font-weight--lightest:          100;
-$font-weight--light:             300;
-$font-weight--normal:            400;
-$font-weight--bold:              500;
-$font-weight--boldest:           700;
+$font_weight__lightest:          100;
+$font_weight__light:             300;
+$font_weight__normal:            400;
+$font_weight__bold:              500;
+$font_weight__boldest:           700;
 
 // Font characteristics
-$base--font-family:              $base--font-family--sans-serif;
-$base--font-weight:              $font-weight--normal;
-$base--line-height:              1.5;
+$base__font_family:              $base__font_family__sans_serif;
+$base__font_weight:              $font_weight__normal;
+$base__line_height:              1.5;
 
 // Miscellaneous type
 // properties
-$code--font-family:              $base--font-family--monospace;
+$code__font_family:              $base__font_family__monospace;
 
 
 
 // Headings
 // ======================================================================== /
-$h1--font-size:                  3em; // h1, alpha
-$h2--font-size:                  2.6em; // h2, beta
-$h3--font-size:                  2.2em; // h3, gamma
-$h4--font-size:                  1.8em; // h4, delta
-$h5--font-size:                  1.4em; // h5, epsilon
-$h6--font-size:                  1em;   // h6, zeta
+$h1__font_size:                  3em; // h1, alpha
+$h2__font_size:                  2.6em; // h2, beta
+$h3__font_size:                  2.2em; // h3, gamma
+$h4__font_size:                  1.8em; // h4, delta
+$h5__font_size:                  1.4em; // h5, epsilon
+$h6__font_size:                  1em;   // h6, zeta
 
 // Various headings and
 // size alias.
-$headings:                       h1 $h1--font-size alpha,
-                                 h2 $h2--font-size beta,
-                                 h3 $h3--font-size gamma,
-                                 h4 $h4--font-size delta,
-                                 h5 $h5--font-size epsilon,
-                                 h6 $h6--font-size zeta;
+$headings:                       h1 $h1__font_size alpha,
+                                 h2 $h2__font_size beta,
+                                 h3 $h3__font_size gamma,
+                                 h4 $h4__font_size delta,
+                                 h5 $h5__font_size epsilon,
+                                 h6 $h6__font_size zeta;
 
 // Heading characteristics
-$headings--font-family:          $base--font-family--serif;
-$headings--font-weight:          $font-weight--boldest;
-$headings--line-height:          1.2;
+$headings__font_family:          $base__font_family__serif;
+$headings__font_weight:          $font_weight__boldest;
+$headings__line_height:          1.2;

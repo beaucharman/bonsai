@@ -23,15 +23,15 @@
 a, a:link,
 a:visited {
   text-decoration: underline;
-  color: $base--link-color;
+  color: $base__link_color;
 }
 
 a:hover {
-  color: $base--link-color--hover;
+  color: $base__link_color__hover;
 }
 
 a:active {
-  color: $base--link-color--active;
+  color: $base__link_color__active;
 }
 
 
@@ -57,18 +57,18 @@ fieldset {
  * Details / Summary
  */
 details {
-  border-radius: $base--border-radius;
-  border-bottom: 1px solid darken($brand-color--primary, 20%);
+  border-radius: $base__border_radius;
+  border-bottom: 1px solid darken($brand_color__primary, 20%);
 
   summary {
     cursor: default;
-    background-color: $brand-color--primary;
+    background-color: $brand_color__primary;
     padding: 0.5em;
-    border: 1px solid darken($brand-color--primary, 20%);
+    border: 1px solid darken($brand_color__primary, 20%);
     border-bottom: 0;
     color: #fff;
-    border-radius: $base--border-radius $base--border-radius 0 0;
-    text-shadow: 0 -1px 0 darken($brand-color--primary, 20%);
+    border-radius: $base__border_radius $base__border_radius 0 0;
+    text-shadow: 0 -1px 0 darken($brand_color__primary, 20%);
   }
 }
 

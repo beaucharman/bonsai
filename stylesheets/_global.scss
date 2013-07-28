@@ -19,12 +19,12 @@
    ======================================================================== */
 
 ::-moz-selection {
-  background: $base--selection--color;
+  background: $base__selection__color;
   text-shadow: none;
 }
 
 ::selection {
-  background: $base--selection--color;
+  background: $base__selection__color;
   text-shadow: none;
 }
 
@@ -32,8 +32,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $grey--light;
-  margin: $base--vertical-rhythm 0;
+  border-top: 1px solid $grey__light;
+  margin: $base__vertical_rhythm 0;
   padding: 0;
 }
 
@@ -67,9 +67,9 @@ img {
  */
 .blockquote {
   font-style: italic;
-  font-size: em($base--font-size--large);
-  border-left: 0.5em solid $brand-color--primary;
-  padding-left: $base--spacing;
+  font-size: em($base__font_size__large);
+  border-left: 0.5em solid $brand_color__primary;
+  padding-left: $base__spacing;
   margin: 0;
 }
 
@@ -77,19 +77,19 @@ img {
  * Blockquote variations
  */
 .blockquote--pull-left {
-  margin-right: $base--spacing;
-  @include breakpoint($display--medium) {
+  margin-right: $base__spacing;
+  @include breakpoint($display__medium) {
     float: left;
   }
 }
 
 .blockquote--pull-right {
-  margin-left: $base--spacing;
+  margin-left: $base__spacing;
   padding-left: 0;
-  padding-right: $base--spacing;
+  padding-right: $base__spacing;
   border-left: none;
-  border-right: 0.5em solid $brand-color--primary;
-  @include breakpoint($display--medium) {
+  border-right: 0.5em solid $brand_color__primary;
+  @include breakpoint($display__medium) {
     float: right;
   }
 }
@@ -97,9 +97,9 @@ img {
 .blockquote--pull-left,
 .blockquote--pull-right {
   @extend .flush--ceil;
-  @include breakpoint($display--medium) {
+  @include breakpoint($display__medium) {
     width: 40%;
-    margin-bottom: $base--spacing;
+    margin-bottom: $base__spacing;
   }
 }
 
@@ -112,10 +112,10 @@ pre,
 code,
 .code {
   overflow: auto;
-  background-color: $grey--lightest;
+  background-color: $grey__lightest;
   padding: 0.1em 0.5em;
-  border: solid 1px $grey--light;
-  border-radius: $base--border-radius;
+  border: solid 1px $grey__light;
+  border-radius: $base__border_radius;
 }
 
 code,

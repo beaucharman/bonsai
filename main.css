@@ -480,11 +480,6 @@
   .row {
     margin-left: -0.75em;
     margin-right: -0.75em; }
-    .row:before, .row:after {
-      content: " ";
-      display: table; }
-    .row:after {
-      clear: both; }
 
   /**
    * Column
@@ -961,6 +956,14 @@
     color: #31b0d5;
     border: 1px solid #d2eef6;
     background-color: #ebf7fb; }
+
+  .row {
+    *zoom: 1; }
+    .row:before, .row:after {
+      content: " ";
+      display: table; }
+    .row:after {
+      clear: both; }
 
   /* ========================================================================
      Project
