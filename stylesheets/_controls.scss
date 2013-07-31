@@ -59,14 +59,15 @@ fieldset {
  * Details / Summary
  */
 details {
-
+  background-color: $brand_color__primary;
+  border: 1px solid darken($brand_color__primary, 20%);
+  border-radius: $base__border_radius;
+  padding: 0.5em;
   summary {
     color: #fff;
     cursor: default;
     text-shadow: 0 -1px 0 darken($brand_color__primary, 20%);
-    background-color: $brand_color__primary;
-    border: 1px solid darken($brand_color__primary, 20%);
-    padding: 0.5em;
+    padding: 0.25em 0.5em;
   }
 }
 

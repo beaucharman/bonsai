@@ -185,11 +185,11 @@
 // Keyframes
 //
 @mixin keyframes($handle) {
-  @-webkit-keyframes $handle { @content }
-     @-moz-keyframes $handle { @content }
-      @-ms-keyframes $handle { @content }
-       @-o-keyframes $handle { @content }
-          @keyframes $handle { @content }
+  @-webkit-keyframes $handle { @content; }
+     @-moz-keyframes $handle { @content; }
+      @-ms-keyframes $handle { @content; }
+       @-o-keyframes $handle { @content; }
+          @keyframes $handle { @content; }
 }
 
 

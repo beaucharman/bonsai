@@ -70,7 +70,7 @@ img {
   font-size: em($base__font_size__large);
   border-left: 0.5em solid $brand_color__primary;
   padding-left: $base__spacing;
-  margin: 0;
+  margin: $base__vertical_rhythm 0;
 }
 
 /**
