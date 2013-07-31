@@ -16,18 +16,29 @@
     <style type="text/css">
       .grid-content {
         background-color: #f07036;
-        padding: 1.5em;
+        border-radius: 3px;
         color: #fff;
+        text-align: center;
+        min-height: 3em;
+        line-height: 3em;
       }
+
       .grid-content-lvl-2 {
         background-color: #d96632;
       }
       .grid-content-lvl-3 {
         background-color: #bc592c;
       }
+      .grid-content-lvl-4 {
+        background-color: #9d4c18;
+      }
+
+      .grid-content-row {
+        border: 1px dotted #bc592c;
+        background-color: #fef7f4;
+      }
       .column {
-        margin-top: 0.75em;
-        margin-bottom: 0.75em;
+        margin-bottom: 0.375em;
       }
       .grid-content code {
         color: #111;
@@ -61,26 +72,179 @@
         </div>
         <div class="column grid--6">
 
-         <div class="row  grid-content-lvl-2">
+         <div class="row  grid-content-row">
 
-          <div class="grid-content grid-content-lvl-2">
+          <div class="grid-content-row-inner">
             <span class="info">Row</span>
           </div>
 
-        <div class="column grid--4">
-          <div class="grid-content">
-            <span class="info">Column<br>(one third Grid)</span>
+          <div class="column grid--4">
+            <div class="grid-content">
+              <span class="info">Column<br>(one third Grid)</span>
+            </div>
           </div>
+
+          <div class="column grid--8">
+            <div class="grid-content">
+              <span class="info">Column<br>(two thirds Grid)</span>
+            </div>
+          </div>
+
         </div>
 
-        <div class="column grid--8">
-          <div class="grid-content">
-            <span class="info">Column<br>(two thirds Grid)</span>
-          </div>
         </div>
-
       </div>
 
+<div class="row">
+        <div class="column grid--12">
+          <div class="grid-content">
+            <span class="info">12</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--6">
+          <div class="grid-content">
+            <span class="info">6</span>
+          </div>
+        </div>
+        <div class="column grid--6">
+          <div class="grid-content">
+            <span class="info">6</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
         </div>
       </div>
 
@@ -90,12 +254,11 @@
 
       <h3>Rows</h3>
 
-      <details>
-        <summary>SCSS source</summary>
-          <div class="row">
-            <div class="column grid--4">
 
-              <strong>_mixins.scss</strong>
+      <div class="row">
+        <div class="column grid--4">
+
+          <strong>_mixins.scss</strong>
 
 <pre>@mixin make-row {
   // Negative margin the row out
@@ -105,7 +268,11 @@
 
   // Then clear the floated columns
   @include clearfix;
-}</pre>
+}
+
+
+
+</pre>
           </div>
           <div class="column grid--4">
 
@@ -113,7 +280,17 @@
 
 <pre>.row {
   @include make-row;
-}</pre>
+}
+
+
+
+
+
+
+
+
+
+</pre>
 
           </div>
           <div class="column grid--4">
@@ -133,9 +310,8 @@
   }
 </pre>
 
-          </div>
         </div>
-      </details>
+      </div>
 
     </section>
 
@@ -143,14 +319,13 @@
 
       <h3>Columns</h3>
 
-      <details>
-        <summary>SCSS source</summary>
 
-          <div class="row">
 
-            <div class="column grid--6">
+      <div class="row">
 
-              <strong>_layout.scss</strong>
+        <div class="column grid--6">
+
+          <strong>_layout.scss</strong>
 
 <pre>.column {
   float: left;
@@ -181,22 +356,22 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}</pre>
+}
 
-          </div>
+
+
+
+
+</pre>
+
         </div>
-
-      </details>
+      </div>
 
     </section>
 
     <section class="related-content">
 
       <h3>Grid</h3>
-
-
-      <details>
-      <summary>SCSS source</summary>
 
         <div class="row">
 
@@ -224,7 +399,16 @@
 
 <pre>.grid--6 {
   @include make-column(6);
-}</pre>
+}
+
+
+
+
+
+
+
+
+</pre>
 
           </div>
           <div class="column grid--4">
@@ -234,12 +418,17 @@
   .grid--6 {
     width: 50%;
   }
-}</pre>
+}
 
-          </div>
+
+
+
+
+
+</pre>
+
         </div>
-
-      </details>
+      </div>
 
     </section>
 
@@ -325,7 +514,7 @@
 
       <div class="row">
 
-        <div class="column grid--static--6">
+        <div class="column grid--6">
 
           <p class="flush--ceil">
             Static columns won't collapse at the allocated <code>$grid--float-breakpoint</code>. Awesomely useful if the layout requires a particular column set, no matter what device or screen size it's displayed on.
@@ -333,7 +522,7 @@
 
         </div>
 
-        <div class="column grid--static--6">
+        <div class="column grid--6">
 
           <details>
             <summary>HTML Example</summary>
@@ -401,7 +590,20 @@
   @include breakpoint($display--medium) {
     @include make-column(3, false);
   }
-}</pre>
+}
+
+.grid--cascade--6-4-2 {
+  @include make-column(6, false);
+
+  @include breakpoint($display--narrow) {
+    @include make-column(4, false);
+  }
+
+  @include breakpoint($display--medium) {
+    @include make-column(2, false);
+  }
+}
+</pre>
 
          </details>
         </div>
@@ -462,6 +664,39 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">.column <br>.grid--cascade--6-4-2</span>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <section class="related-content">
@@ -489,10 +724,10 @@
 
 <pre>&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column grid--9&quot;&gt;
-    Parent
+    lvl 1
       &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;column grid--6&quot;&gt;
-          Child
+          lvl 2
           &hellip;</pre>
 
           </details>
@@ -504,30 +739,133 @@
       <div class="row">
         <div class="column grid--3">
           <div class="grid-content">
-            <span class="info">Parent</span>
-          </div>
-        </div>
-        <div class="column grid--9">
-          <div class="grid-content">
-            <span class="info">Parent</span>
+            <span class="info">lvl 1</span>
             <div class="row">
-              <div class="column grid--6">
+              <div class="column grid--12">
                 <div class="grid-content grid-content-lvl-2">
-                  <span class="info">Child</span>
-                </div>
-              </div>
-              <div class="column grid--6">
-                <div class="grid-content grid-content-lvl-2">
-                  <span class="info">Child</span>
+                  <span class="info">lvl 2</span>
                   <div class="row">
                     <div class="column grid--6">
                       <div class="grid-content grid-content-lvl-3">
-                        <span class="info">Grandchild</span>
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="column grid--6">
                       <div class="grid-content grid-content-lvl-3">
-                        <span class="info">Grandchild</span>
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column grid--9">
+          <div class="grid-content">
+            <span class="info">lvl 1</span>
+            <div class="row">
+              <div class="column grid--6">
+                <div class="grid-content grid-content-lvl-2">
+                  <span class="info">lvl 2</span>
+                  <div class="row">
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4<span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4<span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column grid--6">
+                <div class="grid-content grid-content-lvl-2">
+                  <span class="info">lvl 2</span>
+                  <div class="row">
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4<span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">lvl 3</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">lvl 4<span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -623,6 +961,301 @@
       </div>
 
     </section>
+
+    <section class="related-content">
+
+      <h2>Mix it up</h2>
+
+      <div class="row">
+        <div class="column grid--12">
+          <div class="grid-content">
+            <span class="info">12</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--6">
+          <div class="grid-content">
+            <span class="info">6</span>
+          </div>
+        </div>
+        <div class="column grid--6">
+          <div class="grid-content">
+            <span class="info">6</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+        <div class="column grid--4">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+        <div class="column grid--3">
+          <div class="grid-content grid-content-lvl-2">
+            <span class="info">3</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+        <div class="column grid--2">
+          <div class="grid-content grid-content-lvl-3">
+            <span class="info">2</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--1">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column grid--12">
+          <div class="grid-content">
+            <span class="info">12</span>
+            <div class="row">
+              <div class="column grid--6">
+                <div class="grid-content grid-content-lvl-2">
+                  <span class="info">6</span>
+                  <div class="row">
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">3</span>
+                        <div class="row">
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column grid--6">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">3</span>
+                        <div class="row">
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                          <div class="column grid--4">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column grid--6">
+                <div class="grid-content grid-content-lvl-2">
+                  <span class="info">6</span>
+                  <div class="row">
+                    <div class="column grid--8">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">4</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">2</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">2</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column grid--4">
+                      <div class="grid-content grid-content-lvl-3">
+                        <span class="info">2</span>
+                        <div class="row">
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                          <div class="column grid--6">
+                            <div class="grid-content grid-content-lvl-4">
+                              <span class="info">1</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+        <div class="column grid--cascade--6-4-2">
+          <div class="grid-content grid-content-lvl-4">
+            <span class="info">1</span>
+          </div>
+        </div>
+      </div>
+
+
+</section>
 
     <p>Made with &lt;3 by <a href="http://www.twitter.com/beaucharman" title="Beau on Twitter">Beau Charman</a> | <a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a> | <a href="index.html">Home</a></p>
 

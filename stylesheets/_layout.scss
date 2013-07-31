@@ -39,7 +39,7 @@
  */
 .container {
   margin: 0 auto;
-  padding: 1.5em;
+  padding: $base__padding;
   max-width: $base__max_width;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .column--vertical-space {
-  margin-bottom: $base__spacing;
+  margin-bottom: $grid__column_padding;
 }
 
 
@@ -77,6 +77,11 @@
  * These are example column class selectors,
  * given there is a 12 column system in play.
  */
+
+/* 1/12 */
+.grid--1 {
+  @include make-column(1);
+}
 
 /* 1/6 */
 .grid--2 {
@@ -103,6 +108,11 @@
   @include make-column(6);
 }
 
+/* 7/12*/
+.grid--7 {
+  @include make-column(7);
+}
+
 /* 2 thirds column */
 .grid--8 {
   @include make-column(8);
@@ -116,6 +126,11 @@
 /* 5/6 column */
 .grid--10 {
   @include make-column(10);
+}
+
+/* 11/12 column */
+.grid--11 {
+  @include make-column(11);
 }
 
 /* Full width column */
@@ -187,5 +202,17 @@
 
   @include breakpoint($display__medium) {
     @include make-column(3, false);
+  }
+}
+
+.grid--cascade--6-4-2 {
+  @include make-column(6, false);
+
+  @include breakpoint($display__narrow) {
+    @include make-column(4, false);
+  }
+
+  @include breakpoint($display__medium) {
+    @include make-column(2, false);
   }
 }

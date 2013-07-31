@@ -1,16 +1,16 @@
-//
-// Controls
-// ========================================================================
-// _controls.scss
-// @version   2.0 | June 30th 2013
-// @packege   sass-directory
-// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
-// @link      https://github.com/beaucharman/sass-directory
-// @license   MIT license
-//
-// Can also include  base and project specific styles
-// related to buttons and clickable, interactive controls.
-// ======================================================================== /
+/**
+ * Controls
+ * ========================================================================
+ * _controls.scss
+ * @version   2.0 | June 30th 2013
+ * @packege   sass-directory
+ * @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+ * @link      https://github.com/beaucharman/sass-directory
+ * @license   MIT license
+ *
+ * Can also include  base and project specific styles
+ * related to buttons and clickable, interactive controls.
+ * ======================================================================== /
 
 
 
@@ -20,13 +20,15 @@
 
 /* Anchors
    ======================================================================== */
-a, a:link,
+a,
+a:link,
 a:visited {
   text-decoration: underline;
   color: $base__link_color;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: $base__link_color__hover;
 }
 
@@ -57,18 +59,14 @@ fieldset {
  * Details / Summary
  */
 details {
-  border-radius: $base__border_radius;
-  border-bottom: 1px solid darken($brand_color__primary, 20%);
 
   summary {
-    cursor: default;
-    background-color: $brand_color__primary;
-    padding: 0.5em;
-    border: 1px solid darken($brand_color__primary, 20%);
-    border-bottom: 0;
     color: #fff;
-    border-radius: $base__border_radius $base__border_radius 0 0;
+    cursor: default;
     text-shadow: 0 -1px 0 darken($brand_color__primary, 20%);
+    background-color: $brand_color__primary;
+    border: 1px solid darken($brand_color__primary, 20%);
+    padding: 0.5em;
   }
 }
 

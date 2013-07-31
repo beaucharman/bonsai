@@ -85,22 +85,28 @@
 }
 
 .float-left {
-  .float: left;
+  float: left;
 }
 
 .float-right {
-  .float: right;
+  float: right;
 }
 
+/**
+ * Collapsible horizontal list
+ */
 .horizontal-list {
   list-style-type: none;
 
   li {
-    float: left;
-    margin-right: $base__spacing;
-
-    &:last-child {
-      margin-right: 0;
+    margin-top: $base__spacing / 2;
+    margin-bottom: $base__spacing / 2;
+    @include breakpoint($grid__float__breakpoint) {
+      float: left;
+      margin-right: $base__spacing;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -113,8 +119,7 @@
 .alert {
   background-color: $grey__lightest;
   padding: $base__spacing;
-  border-radius: $base__border_radius;
-  border: 1px solid $grey__light;
+  border-left: 5px solid $grey__light;
   margin: $base__vertical_rhythm 0;
   font-weight: 400;
   color: $grey__darkest;
@@ -127,8 +132,8 @@
 @each $alert in $alerts {
   .alert--#{nth($alert, 1)} {
     color: darken(nth($alert, 2), 10%);
-    border: 1px solid lighten(nth($alert, 2), 28%);
-    background-color: lighten(nth($alert, 2), 34%);
+    border-color: lighten(nth($alert, 2), 28%);
+    background-color: lighten(nth($alert, 2), 38%);
   }
 }
 
