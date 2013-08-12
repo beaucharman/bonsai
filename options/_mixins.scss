@@ -16,19 +16,8 @@
 // ========================================================================
 // Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
 // ======================================================================== /
-@mixin breakpoint($point) {
-  @media screen and (min-width: $point) { @content; }
-}
-
-
-
-//
-// Background RGBA
-// ======================================================================== /
-@mixin background-rgba($color, $opacity: 0.5)
-{
-  background-color: $color;
-  background-color: rgba($color, $opacity);
+@mixin breakpoint($point: $grid__float_breakpoint, $condition: min-width) {
+  @media screen and ($condition: $point) { @content; }
 }
 
 
@@ -56,10 +45,11 @@
 
 // @param  {integer} $columns
 // @param  {boolean} $collapse | column auto collapses
-@mixin make-column($columns, $collapse: true) {
+@mixin make-column($columns, $collapse: true, $breakpoint: $grid__float_breakpoint) {
+
   // Calculate width based on number of columns available
   @if ($collapse == true) {
-    @media (min-width: $grid__float__breakpoint) {
+    @include breakpoint($breakpoint) {
       width: percentage($columns / $grid__columns);
     }
   } @else {
@@ -69,11 +59,21 @@
 
 // @param  {integer} $columns
 @mixin make-column-offset($columns) {
-  @media (min-width: $grid__float__breakpoint) {
+  @media (min-width: $grid__float_breakpoint) {
     margin-left: percentage($columns / $grid__columns);
   }
 }
 
+
+
+//
+// Background RGBA
+// ======================================================================== /
+@mixin background-rgba($color, $opacity: 0.5)
+{
+  background-color: $color;
+  background-color: rgba($color, $opacity);
+}
 
 
 //

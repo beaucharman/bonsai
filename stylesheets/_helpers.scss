@@ -75,6 +75,39 @@
     visibility: hidden;
 }
 
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * The media object
+ */
+.media {
+  margin-top:0.75em;
+  margin-bottom: 0.75em;
+
+  &, .media--content {
+    overflow:hidden;
+    _overflow:visible;
+    zoom:1;
+  }
+
+  .media--figure {
+    float:left;
+    margin-right: 0.75em;
+
+    img {
+      /**
+       * If the media object is an image, make it
+       * display nicely.
+       */
+      display:block;
+    }
+  }
+}
+
 
 
 /* Position and Layout
@@ -92,6 +125,14 @@
   float: right;
 }
 
+.float-right,
+.float-left {
+
+  .collapse {
+    @include breakpoint($grid__float_breakpoint, max-width);
+  }
+}
+
 /**
  * Collapsible horizontal list
  */
@@ -101,7 +142,7 @@
   li {
     margin-top: $base__spacing / 2;
     margin-bottom: $base__spacing / 2;
-    @include breakpoint($grid__float__breakpoint) {
+    @include breakpoint($grid__float_breakpoint) {
       float: left;
       margin-right: $base__spacing;
       &:last-child {

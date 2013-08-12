@@ -11,32 +11,52 @@
 
 // Sass variables, mixins and functions
 // ======================================================================== /
+
+// Bourbon.io
+// @import 'bourbon/bourbon';
+
+// Variables
 @import 'options/variables';
+
+// Mixins
 @import 'options/mixins';
+
+// Functions
 @import 'options/functions';
-//@import 'includes/wp-theme-declaration';
+
+// WordPress Theme Header
+// @import 'includes/wp-theme-header';
+
 
 @media screen {
 
-  // Base styles
-  // ======================================================================== /
-  @import 'stylesheets/tabularasa';
-  @import 'stylesheets/global';
-  @import 'stylesheets/layout';
-  @import 'stylesheets/typography';
+  // Normalize
+  @import 'includes/normalize';
 
-  // Helpers, forms, components and WordPress related styles
-  // ======================================================================== /
-  @import 'stylesheets/components';
-  @import 'stylesheets/controls';
+  // Global
+  @import 'stylesheets/global';
+
+  // Helpers
   @import 'stylesheets/helpers';
 
-  // Project specific styles
-  // ======================================================================== /
+  // Layout
+  @import 'stylesheets/layout';
+
+  // Typography
+  @import 'stylesheets/typography';
+
+  // Components
+  @import 'stylesheets/components';
+
+  // Controls
+  @import 'stylesheets/controls';
+
+  // Project
   @import 'stylesheets/project';
-  //@import 'includes/wordpress-styles';
+
+  // WordPress
+  // @import 'includes/wordpress-styles';
 }
 
-// Print styles
-// ======================================================================== /
+// Print
 @import 'stylesheets/print';
