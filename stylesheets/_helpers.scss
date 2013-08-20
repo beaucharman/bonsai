@@ -128,7 +128,7 @@
 .float-right,
 .float-left {
 
-  .collapse {
+  .float-collapse {
     @include breakpoint($grid__float_breakpoint, max-width);
   }
 }
@@ -136,17 +136,20 @@
 /**
  * Collapsible horizontal list
  */
-.horizontal-list {
+%list-horizontal {
   list-style-type: none;
 
   li {
     margin-top: $base__spacing / 2;
     margin-bottom: $base__spacing / 2;
-    @include breakpoint($grid__float_breakpoint) {
-      float: left;
-      margin-right: $base__spacing;
-      &:last-child {
-        margin-right: 0;
+
+    %list-collapse & {
+      @include breakpoint($grid__float_breakpoint) {
+        float: left;
+        margin-right: $base__spacing;
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
