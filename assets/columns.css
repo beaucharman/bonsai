@@ -1,0 +1,40 @@
+
+/**
+ * Styles to aid with
+ * the columns demonstrations
+ */
+.grid-content {
+  background-color: #f07036;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  min-height: 3em;
+  line-height: 3em;
+}
+
+.grid-content-lvl-2 {
+  background-color: #d96632;
+}
+.grid-content-lvl-3 {
+  background-color: #bc592c;
+}
+.grid-content-lvl-4 {
+  background-color: #9d4c18;
+}
+
+.grid-content-row {
+  border: 1px dotted #bc592c;
+  background-color: #fef7f4;
+}
+.grid-content-row-inner {
+  margin-left: 12px;
+}
+.column {
+  margin-bottom: 0.375em;
+}
+.grid-content code {
+  color: #111;
+}
+.info {
+  color: #fbac88;
+}
