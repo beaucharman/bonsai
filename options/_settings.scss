@@ -1,14 +1,14 @@
 //
-// Variables
+// Settings
 // ========================================================================
-// _variables.scss
+// _settings.scss
 // @version   2.0 | June 30th 2013
 // @packege   sass-directory
 // @author    Beau Charman | @beaucharman | http://www.beaucharman.me
 // @link      https://github.com/beaucharman/sass-directory
 // @license   MIT license
 //
-// Variable construction
+// Variable and selector construction inspired by http://bem.info/
 // {element}__{property}__{identifier}
 // element, selector or module: base, headings, alert
 // property:                    css selector, color, font-weight
@@ -20,6 +20,8 @@
 // ========================================================================
 // Color Palette
 // ======================================================================== /
+
+
 
 //
 // Brand color
