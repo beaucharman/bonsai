@@ -537,6 +537,9 @@
   /**
    * Collapsible horizontal list
    */
+  .list--no-bullet {
+    list-style-type: none; }
+
   /* Notifications and alerts
      ======================================================================== */
   /* Base alert styling */
@@ -977,15 +980,38 @@
 
   /* Form elements
    ======================================================================== */
-  textarea {
-    resize: vertical; }
-
   fieldset {
     border: 0;
     margin: 0;
     padding: 0; }
 
-  /* Input type of text */
+  textarea {
+    resize: vertical; }
+
+  .input-text {
+    padding: 0.15em 0.25em; }
+
+  label, select {
+    display: block; }
+
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    cursor: pointer; }
+
+  select,
+  input[type="file"] {
+    *margin-top: 4px; }
+
   /* Other Controls
    ======================================================================== */
   /**
@@ -1001,53 +1027,6 @@
       cursor: default;
       text-shadow: 0 -1px 0 #275291;
       padding: 0.25em 0.5em; }
-
-  label, select {
-    display: block; }
-
-  input[type="search"] {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    -webkit-appearance: textfield;
-    box-sizing: content-box; }
-
-  input[type="search"]::-webkit-search-decoration,
-  input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none; }
-
-  textarea {
-    overflow: auto;
-    vertical-align: top; }
-
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 4px 0 0;
-    margin-top: 1px \9;
-    *margin-top: 0;
-    line-height: normal;
-    cursor: pointer; }
-
-  input[type="file"],
-  input[type="image"],
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"],
-  input[type="radio"],
-  input[type="checkbox"] {
-    width: auto; }
-
-  select,
-  input[type="file"] {
-    *margin-top: 4px;
-    /* In IE7, the height of the select element cannot be changed by height, only font-size */ }
-
-  select:focus,
-  input[type="file"]:focus,
-  input[type="radio"]:focus,
-  input[type="checkbox"]:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
 
   /* ========================================================================
      Project

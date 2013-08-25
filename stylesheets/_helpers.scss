@@ -136,25 +136,33 @@
 /**
  * Collapsible horizontal list
  */
-%list-horizontal {
-  list-style-type: none;
+ %list--horizontal {
+   list-style-type: none;
+
+   li {
+     margin-right: $base__spacing;
+     float: left;
+     &:last-child {
+       margin-right: 0;
+     }
+   }
+ }
+
+%list--collapse {
 
   li {
-    margin-top: $base__spacing / 2;
-    margin-bottom: $base__spacing / 2;
-
-    %list-collapse & {
-      @include breakpoint($grid__float_breakpoint) {
-        float: left;
-        margin-right: $base__spacing;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
+    @include breakpoint($grid__float_breakpoint, max-width) {
+      margin-top: $base__spacing / 2;
+      margin-bottom: $base__spacing / 2;
+      margin-right: 0;
+      float: none;
     }
   }
 }
 
+.list--no-bullet {
+  list-style-type: none;
+}
 
 /* Notifications and alerts
    ======================================================================== */

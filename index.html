@@ -369,42 +369,47 @@ var toQueryString = function(obj) {
 
         <div>
           <form action="" method="">
-            <input type="text">
-            <textarea name="" id="" cols="30" rows="10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, odit, dolorem dolor accusantium minus eligendi natus tempora voluptates placeat aperiam autem recusandae nesciunt ea unde illo qui optio quidem repellat libero facilis. Quisquam, cumque, non, saepe debitis optio officia maiores placeat qui voluptates alias nobis accusamus quas consequuntur commodi recusandae porro laboriosam ipsa magni cupiditate quos voluptatum a animi quae.
-            </textarea>
-            <select name="" id="">
-              <option value="">one</option>
-              <option value="">two</option>
-              <option value="">three</option>
-              <option value="">four</option>
-              <option value="">five</option>
-            </select>
 
-            <label for="">Text <input type="text"></label>
-            <input type="password">
-            <input type="datetime">
-            <input type="datetime-local">
-            <input type="date">
-            <input type="month">
-            <input type="time">
-            <input type="week">
-            <input type="number">
-            <input type="email">
-            <input type="url">
-            <input type="search">
-            <input type="tel">
-            <input type="file">
-            <input type="image" value="image">
-            <input type="submit" value="submit">
-            <input type="reset" value="reset">
-            <input type="button" value="button">
-            <label for="radio">
-              <input type="radio" name="radio" id="radio" value="radio"> Radio
-            </label>
-            <label for="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" value="checkbox"> Checkbox
-            </label>
+            <ul class="list--no-bullet">
+
+              <li>
+                <label for="textarea">textarea</label>
+                <textarea class="input-text" name="textarea" id="textarea"></textarea>
+              </li>
+              <li>
+                <select name="select" id="select">
+                  <option value="">one</option>
+                  <option value="">two</option>
+                  <option value="">three</option>
+                  <option value="">four</option>
+                  <option value="">five</option>
+                </select>
+              </li>
+
+              <li>
+              <label for="text">text <input class="input-text" type="text" name="text" id="text"></label>
+              <label for="password">password <input class="input-text" type="password" name="password" id="password"></label>
+              <label for="date">date <input class="input-text" type="date" name="date" id="date"></label>
+              <label for="number">number <input class="input-text" type="number" name="number" id="number"></label>
+              <label for="email">email <input class="input-text" type="email" name="email" id="email"></label>
+              <label for="url">url <input class="input-text" type="url" name="url" id="url"></label>
+              <label for="search">search <input class="input-text" type="search" name="search" id="search"></label>
+              <label for="tel">tel <input class="input-text" type="tel" name="tel" id="tel"></label>
+              <label for="file">file <input class="input-text" type="file" name="file" id="file"></label>
+
+              <input class="input-button" type="submit" value="submit">
+              <input class="input-button" type="reset" value="reset">
+              <input class="input-button" type="button" value="button">
+
+              <label for="radio">
+                <input type="radio" name="radio" id="radio" value="radio"> Radio
+              </label>
+              <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" value="checkbox"> Checkbox
+              </label>
+
+            </ul>
+
           </form>
         </div>
 

@@ -109,23 +109,3 @@ The normalize styles, or other reset stylesheets. Taken from normalize.css, git.
 `stylesheets/_typography.scss`
 
 Type and font styles, and related element styles. Can also include font declarations.
-
-## WordPress Theme Development
-If using this with a WordPress theme, un-comment the `@import 'includes/wp-theme-declaration';` and `@import 'styles/wordpress';` lines in the `main.scss` file, and then add the appropriate information to those files. The `wp-theme-declaration.scss` file just contains:
-
-```css
-/**
- * Theme Name
- * ========================================================================
- * style.css
- * Theme Name:   themename
- * Theme URI:    http://
- * Description:
- * Author:       @authorname | details
- * Author URI:   http://
- * Version:      1.0
- * Version Date: xx/xx/xxxx
- * License:
- * License URI:
- * ======================================================================== */
-```
