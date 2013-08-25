@@ -51,8 +51,11 @@
   @import 'stylesheets/project';
 
   // WordPress
-  // @import 'includes/wordpress-styles';
+  // @import 'includes/wordpress';
 }
 
 // Print
 @import 'stylesheets/print';
+
+// Debug
+@import 'includes/debug';
