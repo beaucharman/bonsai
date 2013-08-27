@@ -538,7 +538,8 @@
    * Collapsible horizontal list
    */
   .list--no-bullet {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 0; }
 
   /* Notifications and alerts
      ======================================================================== */
@@ -557,18 +558,21 @@
    */
   .alert--success {
     color: #449d44;
-    border-color: #bfe3bf;
-    background-color: #e3f3e3; }
+    text-shadow: 0 1px 0 #e3f3e3;
+    border-color: #9cd49c;
+    background-color: #b5dfb5; }
 
   .alert--danger {
     color: #c9302c;
-    border-color: #f2c6c4;
-    background-color: #fbefee; }
+    text-shadow: 0 1px 0 #fbefee;
+    border-color: #e99d9a;
+    background-color: #f0b9b8; }
 
   .alert--info {
     color: #31b0d5;
-    border-color: #d2eef6;
-    background-color: #fcfefe; }
+    text-shadow: 0 1px 0 #fcfefe;
+    border-color: #a7dded;
+    background-color: #c5e9f3; }
 
   .row {
     *zoom: 1; }
@@ -989,6 +993,7 @@
     resize: vertical; }
 
   .input-text {
+    border: 1px solid #bbb;
     padding: 0.15em 0.25em; }
 
   label, select {
@@ -1011,6 +1016,10 @@
   select,
   input[type="file"] {
     *margin-top: 4px; }
+
+  input[type="file"] {
+    background-color: transparent;
+    border: none; }
 
   /* Other Controls
    ======================================================================== */

@@ -52,6 +52,7 @@ textarea {
 }
 
 .input-text {
+  border: 1px solid #bbb;
   padding: 0.15em 0.25em;
 }
 
@@ -77,6 +78,11 @@ input[type="checkbox"] {
 select,
 input[type="file"] {
   *margin-top: 4px;
+}
+
+input[type="file"] {
+  background-color: transparent;
+  border: none;
 }
 
 

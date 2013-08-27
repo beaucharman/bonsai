@@ -162,6 +162,7 @@
 
 .list--no-bullet {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* Notifications and alerts
@@ -184,8 +185,9 @@
 @each $alert in $alerts {
   .alert--#{nth($alert, 1)} {
     color: darken(nth($alert, 2), 10%);
-    border-color: lighten(nth($alert, 2), 28%);
-    background-color: lighten(nth($alert, 2), 38%);
+    text-shadow: 0 1px 0 lighten(nth($alert, 2), 38%);
+    border-color: lighten(nth($alert, 2), 18%);
+    background-color: lighten(nth($alert, 2), 25%);
   }
 }
 
