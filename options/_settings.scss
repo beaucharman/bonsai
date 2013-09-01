@@ -13,7 +13,7 @@
 // element, selector or module: base, headings, alert
 // property:                    css selector, color, font-weight
 // identifier or value:         primary, small, 50, display
-// ======================================================================== /
+//
 
 
 
@@ -64,11 +64,10 @@ $base__link_color__primary:      $brand_color__secondary;
 $base__selection__color:         #b3d4fc;
 
 // Alert / notification colors
-$alert__color__primary:          #428bca;
 $alert__color__success:          #5cb85c;
 $alert__color__warning:          #f0ad4e;
 $alert__color__danger:           #d9534f;
-$alert__color__info:             #5bc0de;
+$alert__color__info:             #379abf;
 
 // Alert variation styles
 $alerts:                         success $alert__color__success,
@@ -82,7 +81,7 @@ $alerts:                         success $alert__color__success,
 // ======================================================================== /
 
 // Base pixel value
-$base__pixel_value:              16px;
+$base__pixel_value:              18px;
 
 // base border radius
 $base__border_radius:            3px;
@@ -155,6 +154,7 @@ $base__link_color__active:       lighten($base__link_color, 15%);
 
 // Font size variations
 $base__font_size:                $base__pixel_value;
+$base__font_size__hero:          $base__font_size * 5.25;
 $base__font_size__large:         $base__font_size * 1.25;
 $base__font_size__small:         $base__font_size * 0.85;
 $base__font_size__mini:          $base__font_size * 0.75;

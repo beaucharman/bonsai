@@ -1,16 +1,16 @@
-/**
- * Controls
- * ========================================================================
- * _controls.scss
- * @version   2.0 | June 30th 2013
- * @packege   sass-directory
- * @author    Beau Charman | @beaucharman | http://www.beaucharman.me
- * @link      https://github.com/beaucharman/sass-directory
- * @license   MIT license
- *
- * Can also include  base and project specific styles
- * related to buttons and clickable, interactive controls.
- * ======================================================================== /
+//
+// Controls
+// ========================================================================
+// _controls.scss
+// @version   2.0 | June 30th 2013
+// @packege   sass-directory
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/sass-directory
+// @license   MIT license
+//
+// Can also include  base and project specific styles
+// related to buttons and clickable, interactive controls.
+//
 
 
 
@@ -19,7 +19,7 @@
    ======================================================================== */
 
 /* Anchors
-   ======================================================================== */
+======================================================================== */
 a,
 a:link,
 a:visited {
@@ -34,6 +34,41 @@ a:focus {
 
 a:active {
   color: $base__link_color__active;
+}
+
+
+/* Buttons
+======================================================================== */
+.btn,
+.btn:link,
+.btn:visited {
+  @extend %border-box-sizing;
+  display: inline-block;
+  padding: 0.4em 1.25em;
+  margin: 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  background-image: none;
+  border-radius: 2px;
+  cursor: default;
+  color: $grey__dark;
+  border: 1px solid darken($grey__light, 2%);
+  border-bottom-color: darken($grey__light, 10%);
+  text-shadow: 0 1px 0 lighten($grey__light, 10%);
+  @include gradient-vertical(lighten($grey__light, 10%), $grey__light);
+
+ &:hover {
+    border-color: darken($grey__light, 8%);
+    @include gradient-vertical(darken($grey__light, 12%), darken($grey__light, 4%));
+ }
+
+  &:active {
+    @include gradient-vertical(lighten($grey__light, 2%), $grey__light);
+  }
 }
 
 

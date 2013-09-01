@@ -11,7 +11,7 @@
 // Any modulated styles that help with cross browser compatibility and
 // user feedback. A good place for extends too.
 // thanks to http://html5boilerplate.com/
-// ======================================================================== /
+//
 
 
 
@@ -185,9 +185,24 @@
 @each $alert in $alerts {
   .alert--#{nth($alert, 1)} {
     color: darken(nth($alert, 2), 10%);
-    text-shadow: 0 1px 0 lighten(nth($alert, 2), 38%);
+    text-shadow: 0 1px 0 lighten(nth($alert, 2), 34%);
     border-color: lighten(nth($alert, 2), 18%);
     background-color: lighten(nth($alert, 2), 25%);
+
+    a {
+      &:link,
+      &:visited {
+        color: darken(nth($alert, 2), 10%);
+      }
+
+      &:hover {
+        color: darken(nth($alert, 2), 15%);
+      }
+
+      &:active {
+        color: lighten(nth($alert, 2), 5%);
+      }
+    }
   }
 }
 

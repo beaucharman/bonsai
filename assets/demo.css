@@ -15,7 +15,23 @@ h1, h2, h3, h4, h5, h6 {
  * the columns demonstrations
  */
 .front-page .container {
-  max-width: 720px;
+  max-width: 820px;
+}
+
+.columns-page .container {
+  max-width: 960px;
+}
+
+.hero-wrapper {
+  padding-top: 2.25em;
+  padding-bottom: 2.25em;
+  background-color: #4f83cf;
+  text-shadow: none;
+  color: #fff;
+}
+
+.hero-wrapper .blockquote {
+  border-color: #fff;
 }
 
 .grid-content {
@@ -23,8 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   color: #fff;
   text-align: center;
-  min-height: 3em;
-  line-height: 3em;
+  padding: 0.75em 0;
   text-shadow: none;
 }
 
@@ -39,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grid-content-row {
-  border: 1px dotted #bc592c;
-  background-color: #fef7f4;
+  background-color: #fbac88;
+  color: #f07036;
 }
 .grid-content-row-inner {
   margin-left: 12px;

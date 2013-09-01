@@ -10,7 +10,7 @@
 //
 // Type and font styles, and related element styles.
 // Can also include font declarations.
-// ======================================================================== /
+//
 
 
 
@@ -115,6 +115,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
+ * Hero titles, for that extra attention
+ */
+.hero-title {
+  font-size: $base__font_size__hero;
+}
+
+/**
  * Styles for related sub headings
  */
 .sub-heading {
@@ -151,7 +158,8 @@ dl {
  * of related content.
  */
 .related-content {
-  margin: ($base__vertical_rhythm * 3) 0;
+  margin-top: ($base__vertical_rhythm * 2.25);
+  margin-bottom: ($base__vertical_rhythm * 2.25);
 }
 
 /**

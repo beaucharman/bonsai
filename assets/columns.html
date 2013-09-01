@@ -18,50 +18,57 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   </head>
-  <body>
+  <body class="columns-page">
 
-    <div class="page-wrap container">
+    <div class="page-wrap">
 
-    <section class="related-content">
+      <div class="hero-wrapper">
+        <div class="container">
 
-      <h4 class="sub-heading h1--drop">Sass Directory</h4>
-      <h1>Grid System</h1>
+        <h4 class="sub-heading h1--drop">Sass Directory</h4>
+        <h1>Grid System</h1>
 
-      <div class="row">
-        <div class="column grid--6">
+        <div class="row">
+          <div class="column grid--6">
 
-          <p class="flush--ceil">
-            A grid system, as with the one you are looking at, is a combination or semantic markup, class names, related styles and good math.
-          </p>
-          <p>
-            This grid system is built on <strong>rows</strong>, <strong>columns</strong>, <strong>grid</strong> patterns and helper classes.
-          </p>
+            <p class="flush--ceil">
+              A grid system, as with the one you are looking at, is a combination or semantic markup, class names, related styles and good math.
+            </p>
+            <p>
+              This grid system is built on <strong>rows</strong>, <strong>columns</strong>, <strong>grid</strong> patterns and helper classes.
+            </p>
 
-        </div>
-        <div class="column grid--6">
-
-         <div class="row  grid-content-row">
-
-          <div class="grid-content-row-inner">
-            <span class="info">Row</span>
           </div>
+          <div class="column grid--6">
 
-          <div class="column grid--4">
-            <div class="grid-content">
-              <span class="info">Column<br>(one third Grid)</span>
+           <div class="row  grid-content-row">
+
+            <div class="grid-content-row-inner">
+              <span>Row</span>
             </div>
-          </div>
 
-          <div class="column grid--8">
-            <div class="grid-content">
-              <span class="info">Column<br>(two thirds Grid)</span>
+            <div class="column grid--4">
+              <div class="grid-content">
+                <span class="info">Column</span><br><span class="info">[3 of 12 grid pattern]</span>
+              </div>
             </div>
+
+            <div class="column grid--8">
+              <div class="grid-content">
+                <span class="info">Column</span><br><span class="info">[9 of 12 grid pattern]</span>
+              </div>
+            </div>
+
           </div>
 
+          </div>
         </div>
 
-        </div>
       </div>
+
+    </div>
+
+    <div class="container related-content">
 
       <div class="row">
         <div class="column grid--12">
@@ -216,14 +223,11 @@
         </div>
       </div>
 
-    </section>
+    </div>
 
-    <hr>
-
-    <section class="related-content">
+    <section class="related-content container">
 
       <h3>Rows</h3>
-
 
       <div class="row">
         <div class="column grid--4">
@@ -252,14 +256,6 @@
   @include make-row;
 }
 
-
-
-
-
-
-
-
-
 </pre>
 
           </div>
@@ -285,13 +281,9 @@
 
     </section>
 
-    <hr>
-
-    <section class="related-content">
+    <section class="related-content container">
 
       <h3>Columns</h3>
-
-
 
       <div class="row">
 
@@ -330,10 +322,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 </pre>
 
         </div>
@@ -341,9 +329,7 @@
 
     </section>
 
-    <hr>
-
-    <section class="related-content">
+    <section class="related-content container">
 
       <h3>Grid</h3>
 
@@ -375,13 +361,6 @@
   @include make-column(6);
 }
 
-
-
-
-
-
-
-
 </pre>
 
           </div>
@@ -394,11 +373,6 @@
   }
 }
 
-
-
-
-
-
 </pre>
 
         </div>
@@ -406,11 +380,15 @@
 
     </section>
 
-    <hr>
+    <div class="hero-wrapper">
+      <div class="container">
 
-    <section class="related-content">
+        <h2>Basic, Responsive Grid</h2>
 
-      <h2>Basic, Responsive Grid</h2>
+      </div>
+    </div>
+
+    <section class="related-content container">
 
       <div class="row">
 
@@ -484,11 +462,15 @@
 
     </section>
 
-        <hr>
+    <div class="hero-wrapper">
+      <div class="container">
 
-    <section class="related-content">
+        <h2>Static Grid</h2>
 
-      <h2>Static Grid</h2>
+      </div>
+    </div>
+
+    <section class="related-content container">
 
       <div class="row">
 
@@ -534,14 +516,18 @@
 
     </section>
 
-    <hr>
+    <div class="hero-wrapper">
+      <div class="container">
 
-    <section class="related-content">
+        <h2>Cascading Grid</h2>
+        <p class="blockquote">
+          You set the breakpoints and their related column widths, kiddo!
+        </p>
 
-      <h2>Cascading Grid</h2>
-      <p class="blockquote">
-        You set the breakpoints and their related column widths, kiddo!
-      </p>
+      </div>
+    </div>
+
+    <section class="related-content container">
 
       <div class="row">
 
@@ -650,18 +636,21 @@
       </div>
 
     </section>
+    <div class="hero-wrapper">
+      <div class="container">
 
-        <hr>
+        <h2>Nested Columns</h2>
 
-    <section class="related-content">
+        <p class="blockquote">
+          Totally meta.
+        </p>
 
-      <h2>Nested Columns</h2>
+      </div>
+    </div>
 
-      <p class="blockquote">
-        Totally meta.
-      </p>
+    <section class="related-content container">
 
-       <div class="row">
+      <div class="row">
 
         <div class="column grid--static--6">
 
@@ -832,13 +821,17 @@
 
     </section>
 
-        <hr>
+    <div class="hero-wrapper">
+      <div class="container">
 
-    <section class="related-content">
+        <h2>Offset Columns</h2>
 
-      <h2>Offset Columns</h2>
+        <p>Offeset coloumns are useful for creating interesting layouts, and just adding some space around columns.</p>
 
-      <p>Offeset coloumns are useful for creating interesting layouts, and just adding some space around columns.</p>
+      </div>
+    </div>
+
+    <section class="related-content container">
 
       <div class="row">
 
@@ -918,11 +911,15 @@
 
     </section>
 
-        <hr>
+    <div class="hero-wrapper">
+      <div class="container">
 
-    <section class="related-content">
+        <h2>Mix it up</h2>
 
-      <h2>Mix it up</h2>
+      </div>
+    </div>
+
+    <section class="related-content container">
 
       <div class="row">
         <div class="column grid--12">
@@ -1112,9 +1109,7 @@
 
 </section>
 
-<hr>
-
-<section class="related-content">
+<section class="related-content container">
   <h2>Another example</h2>
       <div class="row">
         <div class="column grid--6">
@@ -1205,7 +1200,11 @@ $display__wide: 1140px;
 
     </section>
 
-    <p>Made with &lt;3 by <a href="http://www.twitter.com/beaucharman" title="Beau on Twitter">Beau Charman</a> | <a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a> | <a href="../index.html">Home</a></p>
+    <footer class="container">
+
+      <p>Made with &lt;3 by <a href="http://www.twitter.com/beaucharman" title="Beau on Twitter">Beau Charman</a> | <a href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a> | <a href="../index.html">Home</a></p>
+
+    </footer>
 
   </div>
 
