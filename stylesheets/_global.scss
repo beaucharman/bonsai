@@ -98,7 +98,7 @@ img {
 .blockquote--pull-right {
   @extend .flush--ceil;
   @include breakpoint($display__medium) {
-    width: 40%;
+    width: 45%;
     margin-bottom: $base__spacing;
   }
 }

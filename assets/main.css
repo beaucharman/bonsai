@@ -339,117 +339,6 @@
     border-spacing: 0; }
 
   /* ========================================================================
-     Global
-     ======================================================================== */
-  ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none; }
-
-  ::selection {
-    background: #b3d4fc;
-    text-shadow: none; }
-
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #bbbbbb;
-    margin: 1.5em 0;
-    padding: 0; }
-
-  /* ========================================================================
-     Text level elements
-     ======================================================================== */
-  /* Images
-     ======================================================================== */
-  img {
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto; }
-
-  .img--full-width {
-    width: 100%; }
-
-  /* ========================================================================
-     Block level elements
-     ======================================================================== */
-  /**
-   * Blockquotes
-   */
-  .blockquote {
-    font-style: italic;
-    font-size: 1.25em;
-    border-left: 0.5em solid #4f83cf;
-    padding-left: 1.5em;
-    margin: 1.5em 0; }
-
-  /**
-   * Blockquote variations
-   */
-  .blockquote--pull-left {
-    margin-right: 1.5em; }
-  .blockquote--pull-right {
-    margin-left: 1.5em;
-    padding-left: 0;
-    padding-right: 1.5em;
-    border-left: none;
-    border-right: 0.5em solid #4f83cf; }
-  /**
-   * Source code
-   */
-  pre,
-  code,
-  .code {
-    overflow: auto;
-    background-color: #eeeeee;
-    padding: 0.25em 0.5em;
-    border: solid 1px #bbbbbb; }
-
-  code,
-  .code {
-    white-space: nowrap; }
-
-  pre {
-    white-space: pre; }
-
-  /**
-   * Miscellaneous elements
-   */
-  iframe {
-    display: block; }
-
-  /* Lists
-     ======================================================================== */
-  /**
-   * Definition lists
-   */
-  dl dd {
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 0.5em; }
-  dl dt {
-    font-weight: 600; }
-
-  /**
-   * Ordered and unordered lists
-   */
-  ul,
-  ol {
-    padding-left: 1.75em; }
-
-  li {
-    line-height: 1.6;
-    margin-bottom: 0.5em; }
-
-  li:last-child {
-    margin-bottom: 0; }
-
-  /* Tables
-     ======================================================================== */
-  table {
-    width: 100%; }
-
-  /* ========================================================================
      Helpers
      ======================================================================== */
   .chromeframe {
@@ -545,7 +434,7 @@
      ======================================================================== */
   /* Base alert styling */
   .alert {
-    background-color: #eeeeee;
+    background-color: #dddddd;
     padding: 1.5em;
     border-left: 5px solid #bbbbbb;
     margin: 1.5em 0;
@@ -692,6 +581,117 @@
   .grid--cascade--6-4-2 {
     width: 50%; }
   /* ========================================================================
+     Global
+     ======================================================================== */
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #bbbbbb;
+    margin: 1.5em 0;
+    padding: 0; }
+
+  /* ========================================================================
+     Text level elements
+     ======================================================================== */
+  /* Images
+     ======================================================================== */
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto; }
+
+  .img--full-width {
+    width: 100%; }
+
+  /* ========================================================================
+     Block level elements
+     ======================================================================== */
+  /**
+   * Blockquotes
+   */
+  .blockquote {
+    font-style: italic;
+    font-size: 1.25em;
+    border-left: 0.5em solid #4f83cf;
+    padding-left: 1.5em;
+    margin: 1.5em 0; }
+
+  /**
+   * Blockquote variations
+   */
+  .blockquote--pull-left {
+    margin-right: 1.5em; }
+  .blockquote--pull-right {
+    margin-left: 1.5em;
+    padding-left: 0;
+    padding-right: 1.5em;
+    border-left: none;
+    border-right: 0.5em solid #4f83cf; }
+  /**
+   * Source code
+   */
+  pre,
+  code,
+  .code {
+    overflow: auto;
+    background-color: #dddddd;
+    padding: 0.25em 0.5em;
+    border: solid 1px #bbbbbb; }
+
+  code,
+  .code {
+    white-space: nowrap; }
+
+  pre {
+    white-space: pre; }
+
+  /**
+   * Miscellaneous elements
+   */
+  iframe {
+    display: block; }
+
+  /* Lists
+     ======================================================================== */
+  /**
+   * Definition lists
+   */
+  dl dd {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.5em; }
+  dl dt {
+    font-weight: 600; }
+
+  /**
+   * Ordered and unordered lists
+   */
+  ul,
+  ol {
+    padding-left: 1.75em; }
+
+  li {
+    line-height: 1.6;
+    margin-bottom: 0.5em; }
+
+  li:last-child {
+    margin-bottom: 0; }
+
+  /* Tables
+     ======================================================================== */
+  table {
+    width: 100%; }
+
+  /* ========================================================================
      Typography
      ======================================================================== */
   /* Global
@@ -702,7 +702,7 @@
   body {
     line-height: 1.5;
     font-family: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-    font-size: 18px; }
+    font-size: 16px; }
 
   html,
   button,
@@ -909,7 +909,7 @@
    * Hero titles, for that extra attention
    */
   .hero-title {
-    font-size: 94.5px; }
+    font-size: 84px; }
 
   /**
    * Styles for related sub headings
@@ -997,52 +997,48 @@
   .btn:link,
   .btn:visited {
     display: inline-block;
-    padding: 0.4em 1.25em;
-    margin: 0;
-    font-size: 1em;
-    font-family: sans-serif;
-    line-height: 1.4;
+    padding: 0.25em 1.25em;
     font-weight: 300;
     text-align: center;
     text-decoration: none;
     background-image: none;
     border-radius: 2px;
-    cursor: default;
+    cursor: pointer;
     color: #555555;
-    border: 1px solid #b6b6b6;
-    border-bottom-color: #a2a2a2;
-    text-shadow: 0 1px 0 #d4d4d4;
-    background-color: #bbbbbb;
-    background-image: -moz-linear-gradient(top, #d4d4d4, #bbbbbb);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d4d4d4), to(#bbbbbb));
-    background-image: -webkit-linear-gradient(top, #d4d4d4, #bbbbbb);
-    background-image: -o-linear-gradient(top, #d4d4d4, #bbbbbb);
-    background-image: linear-gradient(to bottom, #d4d4d4, #bbbbbb);
+    border: 1px solid #d8d8d8;
+    border-bottom-color: #c4c4c4;
+    text-shadow: 0 1px 0 #f7f7f7;
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(top, #fcfcfc, #dddddd);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#dddddd));
+    background-image: -webkit-linear-gradient(top, #fcfcfc, #dddddd);
+    background-image: -o-linear-gradient(top, #fcfcfc, #dddddd);
+    background-image: linear-gradient(to bottom, #fcfcfc, #dddddd);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD4D4D4', endColorstr='#FFBBBBBB', GradientType=0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFCFCFC', endColorstr='#FFDDDDDD', GradientType=0); }
     .btn:hover,
     .btn:link:hover,
     .btn:visited:hover {
-      border-color: #a7a7a7;
-      background-color: #b1b1b1;
-      background-image: -moz-linear-gradient(top, #9c9c9c, #b1b1b1);
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c9c9c), to(#b1b1b1));
-      background-image: -webkit-linear-gradient(top, #9c9c9c, #b1b1b1);
-      background-image: -o-linear-gradient(top, #9c9c9c, #b1b1b1);
-      background-image: linear-gradient(to bottom, #9c9c9c, #b1b1b1);
+      background-color: #ececec;
+      background-image: -moz-linear-gradient(top, #f7f7f7, #ececec);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#ececec));
+      background-image: -webkit-linear-gradient(top, #f7f7f7, #ececec);
+      background-image: -o-linear-gradient(top, #f7f7f7, #ececec);
+      background-image: linear-gradient(to bottom, #f7f7f7, #ececec);
       background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9C9C9C', endColorstr='#FFB1B1B1', GradientType=0); }
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF7F7F7', endColorstr='#FFECECEC', GradientType=0); }
     .btn:active,
     .btn:link:active,
     .btn:visited:active {
-      background-color: #bbbbbb;
-      background-image: -moz-linear-gradient(top, silver, #bbbbbb);
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(silver), to(#bbbbbb));
-      background-image: -webkit-linear-gradient(top, silver, #bbbbbb);
-      background-image: -o-linear-gradient(top, silver, #bbbbbb);
-      background-image: linear-gradient(to bottom, silver, #bbbbbb);
+      background-color: #dddddd;
+      background-image: -moz-linear-gradient(top, #d8d8d8, #dddddd);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d8d8d8), to(#dddddd));
+      background-image: -webkit-linear-gradient(top, #d8d8d8, #dddddd);
+      background-image: -o-linear-gradient(top, #d8d8d8, #dddddd);
+      background-image: linear-gradient(to bottom, #d8d8d8, #dddddd);
       background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFC0C0C0', endColorstr='#FFBBBBBB', GradientType=0); }
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD8D8D8', endColorstr='#FFDDDDDD', GradientType=0);
+      box-shadow: inset 0 1px 8px -2px rgba(0, 0, 0, 0.4); }
 
   /* Form elements
    ======================================================================== */
@@ -1104,20 +1100,6 @@
      ======================================================================== */
   body {
     background-color: white; } }
-  @media screen and (min-width: 780px) {
-    .blockquote--pull-left {
-      float: left; } }
-
-  @media screen and (min-width: 780px) {
-    .blockquote--pull-right {
-      float: right; } }
-
-@media screen and (min-width: 780px) {
-  .blockquote--pull-left,
-  .blockquote--pull-right {
-    width: 40%;
-    margin-bottom: 1.5em; } }
-
 @media screen and (min-width: 780px) {
   .grid--1 {
     width: 8.33333%; } }
@@ -1203,6 +1185,20 @@
   @media screen and (min-width: 780px) {
     .grid--cascade--6-4-2 {
       width: 16.66667%; } }
+
+  @media screen and (min-width: 780px) {
+    .blockquote--pull-left {
+      float: left; } }
+
+  @media screen and (min-width: 780px) {
+    .blockquote--pull-right {
+      float: right; } }
+
+@media screen and (min-width: 780px) {
+  .blockquote--pull-left,
+  .blockquote--pull-right {
+    width: 45%;
+    margin-bottom: 1.5em; } }
 
 /* ========================================================================
    Print

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/demo.css">
 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="//use.typekit.net/cln2xjj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -31,7 +32,7 @@
         </p>
 
         <p>
-          <a class="btn" href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external">Fork this project on GitHub</a>
+          <a class="btn" href="https://github.com/beaucharman/sass-directory" title="Fork this project on GitHub" rel="external"><i class="icon-github-alt"> </i>Fork this project on GitHub</a>
         </p>
 
       </div>
@@ -63,7 +64,7 @@
 
           <div class="column grid--4">
 
-            <h4>Elements</h4>
+            <h4><i class="icon-code"></i> Elements</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, minus, aperiam voluptatem explicabo inventore repellendus perspiciatis quas deleniti eveniet voluptate mollitia cupiditate exercitationem adipisci. Inventore dolorum in magni dolore repudiandae.
             </p>
@@ -210,7 +211,7 @@
       </div>
     </div>
 
-    <div class="container related-content">
+    <div class="container related-content column-show-outline">
 
       <div class="row">
         <div class="column grid--12">
@@ -410,17 +411,15 @@
       <div class="related-content">
 
         <h3>Code</h3>
-  <pre>
-  var toQueryString = function(obj) {
+  <pre>var toQueryString = function(obj) {
   var str = '';
   var ln;
   for (var pro in obj) {
-  str += pro + '=' + obj[pro] + '&amp;';
+    str += pro + '=' + obj[pro] + '&amp;';
   }
   ln = str.length;
   return str.slice(0, ln - 1);
-  };
-  </pre>
+};</pre>
 
       </div>
 

@@ -49,8 +49,8 @@ $black_80:                       darken(#fff, 80%);
 $black_90:                       darken(#fff, 90%);
 
 // limit grey shades for
-// simplicity of design
-$grey__lightest:                 #eee;
+// simplicity of design:
+$grey__lightest:                 #ddd;
 $grey__light:                    #bbb;
 $grey__medium:                   #888;
 $grey__dark:                     #555;
@@ -81,7 +81,7 @@ $alerts:                         success $alert__color__success,
 // ======================================================================== /
 
 // Base pixel value
-$base__pixel_value:              18px;
+$base__pixel_value:              16px;
 
 // base border radius
 $base__border_radius:            3px;

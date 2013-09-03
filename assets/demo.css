@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-content {
   background-color: #f07036;
-  border-radius: 3px;
+  border-radius: 1px;
   color: #fff;
   text-align: center;
   padding: 0.75em 0;
@@ -61,8 +61,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 12px;
 }
 .column {
-  margin-bottom: 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
 }
+
+.column-show-outline .column {
+  border: 1px dotted #ccc;
+}
+
 .grid-content code {
   color: #111;
 }

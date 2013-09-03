@@ -42,32 +42,27 @@ a:active {
 .btn,
 .btn:link,
 .btn:visited {
-  @extend %border-box-sizing;
   display: inline-block;
-  padding: 0.4em 1.25em;
-  margin: 0;
-  font-size: 1em;
-  font-family: sans-serif;
-  line-height: 1.4;
+  padding: 0.25em 1.25em;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
   background-image: none;
   border-radius: 2px;
-  cursor: default;
+  cursor: pointer;
   color: $grey__dark;
-  border: 1px solid darken($grey__light, 2%);
-  border-bottom-color: darken($grey__light, 10%);
-  text-shadow: 0 1px 0 lighten($grey__light, 10%);
-  @include gradient-vertical(lighten($grey__light, 10%), $grey__light);
+  border: 1px solid darken($grey__lightest, 2%);
+  border-bottom-color: darken($grey__lightest, 10%);
+  text-shadow: 0 1px 0 lighten($grey__lightest, 10%);
+  @include gradient-vertical(lighten($grey__lightest, 12%), $grey__lightest);
 
  &:hover {
-    border-color: darken($grey__light, 8%);
-    @include gradient-vertical(darken($grey__light, 12%), darken($grey__light, 4%));
+    @include gradient-vertical(lighten($grey__lightest, 10%), lighten($grey__lightest, 6%));
  }
 
   &:active {
-    @include gradient-vertical(lighten($grey__light, 2%), $grey__light);
+    @include gradient-vertical(darken($grey__lightest, 2%), $grey__lightest);
+    box-shadow: inset 0 1px 8px -2px rgba(0,0,0,.4);
   }
 }
 

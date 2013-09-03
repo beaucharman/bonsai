@@ -29,14 +29,14 @@
   // Normalize
   @import 'includes/normalize';
 
-  // Global
-  @import 'stylesheets/global';
-
   // Helpers
   @import 'stylesheets/helpers';
 
   // Layout
   @import 'stylesheets/layout';
+
+  // Global
+  @import 'stylesheets/global';
 
   // Typography
   @import 'stylesheets/typography';
