@@ -20,6 +20,7 @@
 
 /* Anchors
 ======================================================================== */
+
 a,
 a:link,
 a:visited {
@@ -39,6 +40,7 @@ a:active {
 
 /* Buttons
 ======================================================================== */
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -90,6 +92,9 @@ label, select {
   display: block;
 }
 
+/**
+ * Control style tweaks
+ */
 input[type="search"] {
   -webkit-appearance: textfield;
   @include box-sizing(content-box);

@@ -12,7 +12,7 @@ Normalize creates an invaluable blank slate for which to begin building applicat
 
 **Current version, Normalize.css v2.1.2**
 
-Normalize.css is inlcuded in the `stylesheets/_tabularasa.scss` file, however the newest version can be obtained via [Normalize's GitHub project page](https://github.com/necolas/normalize.css), or via Bower:
+Normalize.css is inlcuded in the `includes/_normalize.scss` file, however the newest version can be obtained via [Normalize's GitHub project page](https://github.com/necolas/normalize.css), or via Bower:
 
 `bower install --save normalize-css`
 
@@ -22,9 +22,21 @@ Bourbon is a really awesome, lightweight and non opinionated / uncluttered mixin
 
 This can be installed and then included in the Sass Directory via [Bourbon's GitHub project page](https://github.com/thoughtbot/bourbon).
 
+**[Font Awesome](http://fortawesome.github.io/Font-Awesome/)**
+
+> Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+
+You can include font awesome stright from the Bootsrap CDN, via:
+
+```html
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+```
+
+Or, check out [other options](http://fortawesome.github.io/Font-Awesome/get-started/).
+
 ## Todo (Roadmap)
 
-- Consider testing options (https://github.com/csswizardry/inuit.css)
+- Mind blank at the moment
 
 ## File Structure
 
@@ -32,19 +44,23 @@ This can be installed and then included in the Sass Directory via [Bourbon's Git
 
 ### Includes
 
-**WordPress theme declaration**
+**Debug utility from inuitcss.com**
 
-`includes/_wp-theme-declaration.scss`
+`includes/_debug.scss`
 
-**Wordpress styles**
+**Normalize github.com/necolas/normalize.css**
 
-`includes/_wordpress-styles.scss`
+`includes/_normalize.scss`
+
+**Wordpress**
+
+`includes/_wordpress.scss`
 
 Other files in this directory could include debugging tools (such as the debug.scss from http://inuitcss.com/), vendor style, etc.
 
 ### Options
 
-**Sass Functions**
+**Functions**
 
 `options/_functions.scss`
 
@@ -52,9 +68,9 @@ Other files in this directory could include debugging tools (such as the debug.s
 
 `options/_mixins.scss`
 
-**Sass Variables**
+**Project Settings**
 
-`options/_variables.scss`
+`options/_settings.scss`
 
 ### Stylesheets
 
@@ -96,13 +112,7 @@ Grid layouts and any global layout styles.
 
 `stylesheets/_project.scss`
 
-Project related styles, pages specific and branding styles etc...
-
-**Tabula Rasa**
-
-`stylesheets/_tabularasa.scss`
-
-The normalize styles, or other reset stylesheets. Taken from normalize.css, git.io/normalize, and http://html5boilerplate.com/, thank you :)
+Project related styles, pages specific and branding styles and so on.
 
 **Typography styles**
 
