@@ -1057,6 +1057,9 @@
   label, select {
     display: block; }
 
+  /**
+   * Control style tweaks
+   */
   input[type="search"] {
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
