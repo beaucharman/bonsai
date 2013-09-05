@@ -16,13 +16,13 @@
 // @import 'bourbon/bourbon';
 
 // Settings
-@import 'options/settings';
+@import 'settings';
 
 // Mixins
-@import 'options/mixins';
+@import 'includes/mixins';
 
 // Functions
-@import 'options/functions';
+@import 'includes/functions';
 
 @media screen {
 
