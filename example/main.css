@@ -643,9 +643,9 @@
   code,
   .code {
     overflow: auto;
-    background-color: #dddddd;
+    background-color: #e6e6e6;
     padding: 0.25em 0.5em;
-    border: solid 1px #bbbbbb; }
+    border: solid 1px #cccccc; }
 
   code,
   .code {
@@ -952,7 +952,8 @@
   code,
   .code {
     font-family: Consolas, monaco, monospace;
-    font-size: 0.85em; }
+    font-size: 0.85em;
+    text-shadow: none; }
 
   /* Miscellaneous
      ======================================================================== */
