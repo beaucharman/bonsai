@@ -38,7 +38,7 @@
 // @return {em}    em unit value
 // ======================================================================== //
 
-@function rhythm($font_size, $line_height: 1.5) {
+@function rhythm($font_size, $line_height: $base__line_height) {
   @return ($line_height + 0em) / $font_size + 0em;
 }
 
