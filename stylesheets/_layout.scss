@@ -13,8 +13,9 @@
 
 
 
-/* Global border box sizing
-   ======================================================================== */
+/**
+ * Global border box sizing
+ */
 @if $global__border_box_sizing {
   * {
     @include box-sizing();

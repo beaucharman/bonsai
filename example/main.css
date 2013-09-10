@@ -347,6 +347,9 @@
     color: #000;
     padding: 0.2em 0; }
 
+  /**
+   * Image replacement
+   */
   .ir {
     background-color: transparent;
     border: 0;
@@ -397,7 +400,8 @@
    */
   .media {
     margin-top: 0.75em;
-    margin-bottom: 0.75em; }
+    margin-bottom: 0.75em;
+    clear: left; }
     .media, .media .media--content {
       overflow: hidden;
       _overflow: visible;
@@ -426,6 +430,14 @@
   /**
    * Collapsible horizontal list
    */
+  .list--horizontal {
+    list-style-type: none; }
+    .list--horizontal li {
+      margin-right: 1.5em;
+      float: left; }
+      .list--horizontal li:last-child {
+        margin-right: 0; }
+
   .list--no-bullet {
     list-style-type: none;
     padding-left: 0; }
@@ -489,8 +501,9 @@
     .row:after {
       clear: both; }
 
-  /* Global border box sizing
-     ======================================================================== */
+  /**
+   * Global border box sizing
+   */
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1104,101 +1117,108 @@
      ======================================================================== */
   body {
     background-color: white; } }
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 720px) {
+  .list--collapse li {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-right: 0;
+    float: none; } }
+
+@media screen and (min-width: 720px) {
   .grid--1 {
     width: 8.33333%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--2 {
     width: 16.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--3 {
     width: 25%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--4 {
     width: 33.33333%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--5 {
     width: 41.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--6 {
     width: 50%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--7 {
     width: 58.33333%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--8 {
     width: 66.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--9 {
     width: 75%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--10 {
     width: 83.33333%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--11 {
     width: 91.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--12 {
     width: 100%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--2 {
     margin-left: 16.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--3 {
     margin-left: 25%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--4 {
     margin-left: 33.33333%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--6 {
     margin-left: 50%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--8 {
     margin-left: 66.66667%; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .grid--offset--9 {
     margin-left: 75%; } }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 480px) {
     .grid--cascade--12-6-3 {
       width: 50%; } }
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 720px) {
     .grid--cascade--12-6-3 {
       width: 25%; } }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 480px) {
     .grid--cascade--6-4-2 {
       width: 33.33333%; } }
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 720px) {
     .grid--cascade--6-4-2 {
       width: 16.66667%; } }
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 720px) {
     .blockquote--pull-left {
       float: left; } }
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 720px) {
     .blockquote--pull-right {
       float: right; } }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 720px) {
   .blockquote--pull-left,
   .blockquote--pull-right {
     width: 45%;

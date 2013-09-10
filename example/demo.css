@@ -10,12 +10,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova-soft",sans-serif;
 }
 
+.section-heading {
+  border-left: 0.15em solid #ef6240;
+  padding-left: 0.5em;
+}
+
 /**
  * Styles to aid with
  * the columns demonstrations
  */
 .front-page .container {
-  max-width: 820px;
+  max-width: 920px;
 }
 
 .columns-page .container {

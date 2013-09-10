@@ -26,6 +26,9 @@
   padding: 0.2em 0;
 }
 
+/**
+ * Image replacement
+ */
 .ir {
   background-color: transparent;
   border: 0;
@@ -87,6 +90,7 @@
 .media {
   margin-top:0.75em;
   margin-bottom: 0.75em;
+  clear: left;
 
   &, .media--content {
     overflow:hidden;
@@ -136,7 +140,7 @@
 /**
  * Collapsible horizontal list
  */
- %list--horizontal {
+.list--horizontal {
    list-style-type: none;
 
    li {
@@ -148,7 +152,7 @@
    }
  }
 
-%list--collapse {
+.list--collapse {
 
   li {
     @include breakpoint($grid__float_breakpoint, max-width) {
