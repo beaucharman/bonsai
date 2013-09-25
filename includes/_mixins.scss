@@ -13,9 +13,8 @@
 
 //
 // Breakpoints
-// ========================================================================
 // Thank you http://css-tricks.com/media-queries-sass-3-2-and-codekit/
-// ======================================================================== /
+//
 @mixin breakpoint($point: $grid__float_breakpoint, $condition: min-width) {
   @media screen and ($condition: $point) { @content; }
 }
@@ -35,14 +34,16 @@
 
 //
 // Grid system
-// ======================================================================== /
+//
+
+// Make Row
 @mixin make-row {
   // Negative margin the row out to align the content of columns
   margin-left: -$grid__column_padding;
   margin-right: -$grid__column_padding;
   @extend %clearfix; // Then clear the floated columns
 }
-
+// Make Column
 // @param  {integer} $columns
 // @param  {boolean} $collapse | column auto collapses
 @mixin make-column($columns, $collapse: true, $breakpoint: $grid__float_breakpoint) {
@@ -57,6 +58,7 @@
   }
 }
 
+// Make Column Offset
 // @param  {integer} $columns
 @mixin make-column-offset($columns) {
   @media (min-width: $grid__float_breakpoint) {
@@ -68,7 +70,7 @@
 
 //
 // Background RGBA
-// ======================================================================== /
+//
 @mixin background-rgba($color, $opacity: 0.5)
 {
   background-color: $color;

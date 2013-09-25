@@ -112,17 +112,17 @@ pre,
 code,
 .code {
   overflow: auto;
-  background-color: $black_10;
-  padding: 0.25em 0.5em;
-  border: solid 1px $black_20;
 }
 
-code,
 .code {
   white-space: nowrap;
+  background-color: #eee;
+  padding: 0.25em 0.5em;
+  border: solid 1px #ddd;
 }
 
-pre {
+pre,
+pre.code {
   white-space: pre;
 }
 
@@ -177,9 +177,63 @@ li:last-child {
 
 
 
-/* Tables
-   ======================================================================== */
+/**
+ * Tables
+ * ========================================================================
+ * .table--bordered
+ * .table--hover
+ * .table--columned
+ * .table--flat
+ */
 
 table {
   width: 100%;
+}
+
+td, th {
+  padding: ($base__spacing / 4) ($base__spacing / 2);
+  border-bottom: 1px solid $grey__lightest;
+
+  /* Border all table cells */
+  .table--bordered & {
+    border: 1px solid $grey__lightest;
+  }
+
+  /* Flat table cells */
+  .table--flat & {
+    border: none;
+  }
+
+  /* Columned table */
+  .table--columned & {
+    border: none;
+    border-right: 1px solid $grey__lightest;
+  }
+
+  .table--columned &:first-child {
+    border-left: 1px solid $grey__lightest;
+  }
+
+}
+
+tr {
+
+  /* Highlight row on hover*/
+  .table--hover &:hover {
+    background-color: #eee;
+  }
+}
+
+thead {
+  text-align: left;
+}
+
+tbody {  }
+
+tfoot {
+  color: $grey__medium;
+
+  td {
+    border-bottom: none;
+  }
 }
