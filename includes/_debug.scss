@@ -163,15 +163,4 @@ input[type=submit][value]{
   outline:5px solid yellow;
 }
 
-
-/**
- * Are you using the grid system correctly?
- */
-.gw > :not(.g),
-.grid-wrapper > :not(.grid),
-.gw--rev > :not(.g),
-.grid-wrapper--rev > :not(.grid){
-  outline:5px solid red;
-}
-
 } /* endif */
