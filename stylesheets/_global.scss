@@ -3,9 +3,9 @@
 // ========================================================================
 // _global.scss
 // @version   2.0 | June 30th 2013
-// @packege   sass-directory
+// @packege   bonsai
 // @author    Beau Charman | @beaucharman | http://www.beaucharman.me
-// @link      https://github.com/beaucharman/sass-directory
+// @link      https://github.com/beaucharman/bonsai
 // @license   MIT license
 //
 // base / global / elements styles, core boilerplate styles.
@@ -180,60 +180,9 @@ li:last-child {
 /**
  * Tables
  * ========================================================================
- * .table--bordered
- * .table--hover
- * .table--columned
- * .table--flat
  */
 
 table {
   width: 100%;
 }
 
-td, th {
-  padding: ($base__spacing / 4) ($base__spacing / 2);
-  border-bottom: 1px solid $grey__lightest;
-
-  /* Border all table cells */
-  .table--bordered & {
-    border: 1px solid $grey__lightest;
-  }
-
-  /* Flat table cells */
-  .table--flat & {
-    border: none;
-  }
-
-  /* Columned table */
-  .table--columned & {
-    border: none;
-    border-right: 1px solid $grey__lightest;
-  }
-
-  .table--columned &:first-child {
-    border-left: 1px solid $grey__lightest;
-  }
-
-}
-
-tr {
-
-  /* Highlight row on hover*/
-  .table--hover &:hover {
-    background-color: #eee;
-  }
-}
-
-thead {
-  text-align: left;
-}
-
-tbody {  }
-
-tfoot {
-  color: $grey__medium;
-
-  td {
-    border-bottom: none;
-  }
-}

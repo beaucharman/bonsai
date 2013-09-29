@@ -702,42 +702,9 @@
   /**
    * Tables
    * ========================================================================
-   * .table--bordered
-   * .table--hover
-   * .table--columned
-   * .table--flat
    */
   table {
     width: 100%; }
-
-  td, th {
-    padding: 0.375em 0.75em;
-    border-bottom: 1px solid #dddddd;
-    /* Border all table cells */
-    /* Flat table cells */
-    /* Columned table */ }
-    .table--bordered td, .table--bordered th {
-      border: 1px solid #dddddd; }
-    .table--flat td, .table--flat th {
-      border: none; }
-    .table--columned td, .table--columned th {
-      border: none;
-      border-right: 1px solid #dddddd; }
-    .table--columned td:first-child, .table--columned th:first-child {
-      border-left: 1px solid #dddddd; }
-
-  tr {
-    /* Highlight row on hover*/ }
-    .table--hover tr:hover {
-      background-color: #eee; }
-
-  thead {
-    text-align: left; }
-
-  tfoot {
-    color: #888888; }
-    tfoot td {
-      border-bottom: none; }
 
   /* ========================================================================
      Typography

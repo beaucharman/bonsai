@@ -2,7 +2,7 @@
 
 > A Sass directory with simple & smart initial styles, and room to grow.
 
-[View the example output of this Sass directory](http://beaucharman.github.io/sass-directory).
+[View the example output of this Sass directory](http://beaucharman.github.io/bonsai).
 
 ## Notes
 

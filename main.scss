@@ -3,9 +3,9 @@
 // ========================================================================
 // main.scss
 // @version   2.0 | June 30th 2013
-// @package   sass-directory
+// @package   bonsai
 // @author    Beau Charman | @beaucharman | http://www.beaucharman.me
-// @link      https://github.com/beaucharman/sass-directory
+// @link      https://github.com/beaucharman/bonsai
 // @license   MIT license
 // ======================================================================== /
 
@@ -55,7 +55,7 @@
 }
 
 // Print
-@import 'stylesheets/print';
+@import 'includes/print';
 
 // Debug
 @import 'includes/debug';
