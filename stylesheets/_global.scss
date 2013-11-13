@@ -62,22 +62,18 @@ img {
    Block level elements
    ======================================================================== */
 
-/**
- * Blockquotes
- */
 .blockquote {
   font-style: italic;
   font-size: em($base__font_size__large);
-  border-left: 0.5em solid $brand_color__primary;
-  padding-left: $base__spacing;
   margin: $base__vertical_rhythm 0;
 }
 
 /**
- * Blockquote variations
- */
+* Blockquote variations
+*/
 .blockquote--pull-left {
   margin-right: $base__spacing;
+
   @include breakpoint($display__medium) {
     float: left;
   }
@@ -87,23 +83,21 @@ img {
   margin-left: $base__spacing;
   padding-left: 0;
   padding-right: $base__spacing;
-  border-left: none;
-  border-right: 0.5em solid $brand_color__primary;
+
   @include breakpoint($display__medium) {
     float: right;
   }
 }
 
-.blockquote--pull-left,
-.blockquote--pull-right {
-  @extend .flush--ceil;
-  @include breakpoint($display__medium) {
-    width: 45%;
-    margin-bottom: $base__spacing;
+  .blockquote--pull-left,
+  .blockquote--pull-right {
+    @extend .flush--ceil;
+
+    @include breakpoint($display__medium) {
+      width: 45%;
+      margin-bottom: $base__spacing;
+    }
   }
-}
-
-
 
 /**
  * Source code
