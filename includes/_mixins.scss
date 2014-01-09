@@ -37,10 +37,10 @@
 //
 
 // Make Row
-@mixin make-row {
+@mixin make-row($padding_offset: $grid__column_padding) {
   // Negative margin the row out to align the content of columns
-  margin-left: -$grid__column_padding;
-  margin-right: -$grid__column_padding;
+  margin-left: -$padding_offset;
+  margin-right: -$padding_offset;
   @extend %clearfix; // Then clear the floated columns
 }
 // Make Column
