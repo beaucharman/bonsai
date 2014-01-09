@@ -65,6 +65,12 @@
   padding-left: $grid__column_padding; // Set inner padding as gutters instead of margin
   padding-right: $grid__column_padding;
   @include box-sizing(border-box); // Proper box-model (padding doesn't add to width)
+  
+  
+  /* Keep semeantic markup but flip the visual order of columns */
+  .row__reverse & {
+    float: right;
+  }
 }
 
 .column--vertical-space {
