@@ -51,10 +51,6 @@
  */
 .row {
   @include make-row();
-  
-  .container__narrow & {
-    @include make-row($grid__column_padding_large);
-  }
 }
 
 
@@ -74,12 +70,6 @@
   /* Keep semeantic markup but flip the visual order of columns */
   .row__reverse & {
     float: right;
-  }
-
-  /* Alternate sizes */
-  .container__narrow & {
-    padding-left: $grid__column_padding_large; // Set inner padding as gutters instead of margin
-    padding-right: $grid__column_padding_large;
   }
 }
 
