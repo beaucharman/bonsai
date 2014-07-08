@@ -74,6 +74,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &.truncate--reveal:hover, &.truncate--reveal:focus {
+    overflow: visible;
+    white-space: pre-line;
+  }
 }
 
 /**
